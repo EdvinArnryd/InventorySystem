@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\is\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\x64\\iseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\is\\definitions.is.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\unrealeditor\\inc\\is\\uht\\isplayercontroller.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\x64\\iseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\is\\definitions.is.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\source\\is\\isplayercontroller.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\unreal projects\\is\\intermediate\\build\\win64\\unrealeditor\\inc\\is\\uht\\isplayercontroller.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
