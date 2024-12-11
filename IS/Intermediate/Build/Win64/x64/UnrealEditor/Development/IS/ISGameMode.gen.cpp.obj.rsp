@@ -1,12 +1,12 @@
-"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\UnrealEditor\Inc\IS\UHT\ISGameMode.gen.cpp"
-/FI"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\ISEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\Definitions.IS.h"
-/Yu"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\ISEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\ISEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\ISGameMode.gen.cpp.obj"
-/experimental:log "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\ISGameMode.gen.cpp.sarif"
-/sourceDependencies "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\ISGameMode.gen.cpp.dep.json"
-@"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\IS.Shared.rsp"
+"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\UnrealEditor\Inc\IS\UHT\ISGameMode.gen.cpp"
+/FI"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\ISEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\Definitions.IS.h"
+/Yu"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\ISEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\ISEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\ISGameMode.gen.cpp.obj"
+/experimental:log "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\ISGameMode.gen.cpp.sarif"
+/sourceDependencies "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\ISGameMode.gen.cpp.dep.json"
+@"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\x64\UnrealEditor\Development\IS\IS.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

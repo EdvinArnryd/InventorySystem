@@ -54,6 +54,12 @@
     <ClCompile Include="..\..\Source\IS\ISGameMode.h">
       <Filter>Source\IS</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\IS\ISItem.cpp">
+      <Filter>Source\IS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IS\ISItem.h">
+      <Filter>Source\IS</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IS\ISPlayerController.cpp">
       <Filter>Source\IS</Filter>
     </ClCompile>

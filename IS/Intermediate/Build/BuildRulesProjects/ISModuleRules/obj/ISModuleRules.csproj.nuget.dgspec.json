@@ -1,9 +1,83 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\Unreal Projects\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj": {}
+    "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\GitHub\\InventorySystem\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj": {}
   },
   "projects": {
+    "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj",
+        "projectName": "MarketplaceRules",
+        "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj",
+        "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
+                "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj"
+              },
+              "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\UE5Rules.csproj": {
+                "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\UE5Rules.csproj"
+              },
+              "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\EpicGames.Build.csproj": {
+                "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\EpicGames.Build.csproj"
+              },
+              "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj": {
+                "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\UnrealBuildTool\\UnrealBuildTool.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -13,6 +87,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -83,6 +158,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5Rules\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -150,6 +226,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Build\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -234,6 +311,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -328,6 +406,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Horde\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -458,6 +537,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.IoHash\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -532,6 +612,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.MsBuild\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -613,6 +694,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.OIDC\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -691,6 +773,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Oodle\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -751,6 +834,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.Serialization\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -815,6 +899,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.UBA\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -885,6 +970,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\Shared\\EpicGames.UHT\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -958,6 +1044,7 @@
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source\\Programs\\UnrealBuildTool\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -1095,15 +1182,16 @@
         }
       }
     },
-    "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\Unreal Projects\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj": {
+    "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\GitHub\\InventorySystem\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\Unreal Projects\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj",
+        "projectUniqueName": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\GitHub\\InventorySystem\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj",
         "projectName": "ISModuleRules",
-        "projectPath": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\Unreal Projects\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj",
+        "projectPath": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\GitHub\\InventorySystem\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj",
         "packagesPath": "C:\\Users\\edvin.arnryd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\Unreal Projects\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\obj\\",
+        "outputPath": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\GitHub\\InventorySystem\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\edvin.arnryd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -1119,6 +1207,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj": {
+                "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\MarketplaceRules\\MarketplaceRules.csproj"
+              },
               "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
                 "projectPath": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj"
               },

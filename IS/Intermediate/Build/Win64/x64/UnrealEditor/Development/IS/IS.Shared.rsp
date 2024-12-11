@@ -1,6 +1,6 @@
 /I "."
-/I "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Intermediate\Build\Win64\UnrealEditor\Inc\IS\UHT"
-/I "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\Unreal Projects\IS\Source"
+/I "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Intermediate\Build\Win64\UnrealEditor\Inc\IS\UHT"
+/I "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Dokument\GitHub\InventorySystem\IS\Source"
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"
 /I "Runtime\TraceLog\Public"

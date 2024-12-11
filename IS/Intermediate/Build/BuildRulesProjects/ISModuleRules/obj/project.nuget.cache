@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Y6Eye1pretwzZ6KuqR736syHXdEZUSIaYmYuK6fB+Jhaq0ph9c1WC670vJqx9D2g6FD22JqOdoSxRHWvjKdVw==",
+  "dgSpecHash": "kyfBofi1WXM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\Unreal Projects\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\edvin.arnryd\\OneDrive - Change Maker Education\\Dokument\\GitHub\\InventorySystem\\IS\\Intermediate\\Build\\BuildRulesProjects\\ISModuleRules\\ISModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edvin.arnryd\\.nuget\\packages\\bitfaster.caching\\2.4.1\\bitfaster.caching.2.4.1.nupkg.sha512",
     "C:\\Users\\edvin.arnryd\\.nuget\\packages\\blake3\\0.6.1\\blake3.0.6.1.nupkg.sha512",
