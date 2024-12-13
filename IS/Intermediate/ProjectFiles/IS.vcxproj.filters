@@ -54,17 +54,20 @@
     <ClCompile Include="..\..\Source\IS\ISGameMode.h">
       <Filter>Source\IS</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\IS\ISItem.cpp">
-      <Filter>Source\IS</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\IS\ISItem.h">
-      <Filter>Source\IS</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\IS\ISPlayerController.cpp">
       <Filter>Source\IS</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\IS\ISPlayerController.h">
       <Filter>Source\IS</Filter>
+    </ClCompile>
+    <Filter Include="Source\IS\Public">
+      <UniqueIdentifier>{0149D64C-50FD-3E07-95C2-FF22D6449840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IS\Public\Data">
+      <UniqueIdentifier>{577E9E68-D65C-34A1-A93D-65CDE7406D00}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IS\Public\Data\ItemDataStructs.h">
+      <Filter>Source\IS\Public\Data</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
