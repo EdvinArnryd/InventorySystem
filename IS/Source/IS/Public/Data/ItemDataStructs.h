@@ -67,6 +67,8 @@ struct FItemNumericData
 USTRUCT()
 struct FItemAssetData
 {
+	GENERATED_USTRUCT_BODY()
+
 	UPROPERTY(EditAnywhere)
 	UTexture2D* Icon;
 	
@@ -78,6 +80,9 @@ USTRUCT()
 struct FItemData : public FTableRowBase
 {
 	GENERATED_USTRUCT_BODY()
+
+	UPROPERTY(EditAnywhere, Category="Item Data")
+	FName ID;
 
 	UPROPERTY(EditAnywhere, Category="Item Data")
 	EItemType ItemType;

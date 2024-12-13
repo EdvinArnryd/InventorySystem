@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\source\\is\\private\\items\\itembase.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\intermediate\\build\\win64\\x64\\iseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\is\\definitions.is.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\source\\is\\public\\items\\itembase.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\source\\is\\public\\data\\itemdatastructs.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\intermediate\\build\\win64\\unrealeditor\\inc\\is\\uht\\itemdatastructs.generated.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\dokument\\github\\inventorysystem\\is\\intermediate\\build\\win64\\unrealeditor\\inc\\is\\uht\\itembase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

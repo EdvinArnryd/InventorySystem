@@ -60,6 +60,15 @@
     <ClCompile Include="..\..\Source\IS\ISPlayerController.h">
       <Filter>Source\IS</Filter>
     </ClCompile>
+    <Filter Include="Source\IS\Private">
+      <UniqueIdentifier>{F41312D6-0376-3846-9F53-E2CF4C6D64B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IS\Private\Items">
+      <UniqueIdentifier>{642AA8D5-9284-34B3-BCF1-B413A04538E7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IS\Private\Items\ItemBase.cpp">
+      <Filter>Source\IS\Private\Items</Filter>
+    </ClCompile>
     <Filter Include="Source\IS\Public">
       <UniqueIdentifier>{0149D64C-50FD-3E07-95C2-FF22D6449840}</UniqueIdentifier>
     </Filter>
@@ -68,6 +77,12 @@
     </Filter>
     <ClCompile Include="..\..\Source\IS\Public\Data\ItemDataStructs.h">
       <Filter>Source\IS\Public\Data</Filter>
+    </ClCompile>
+    <Filter Include="Source\IS\Public\Items">
+      <UniqueIdentifier>{82F53EED-24E3-3B0F-A25D-65C1FBB20B2E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IS\Public\Items\ItemBase.h">
+      <Filter>Source\IS\Public\Items</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

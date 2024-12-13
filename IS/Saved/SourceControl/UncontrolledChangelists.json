@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Dokument/GitHub/InventorySystem/IS/Content/ItemData/MundaneItems.uasset",
+				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Dokument/GitHub/InventorySystem/IS/Content/__ExternalActors__/TopDown/Maps/TopDownMap/9/3S/7NXYGEG8JRL5X2DLOI79A6.uasset"
+			]
+		}
+	]
+}
