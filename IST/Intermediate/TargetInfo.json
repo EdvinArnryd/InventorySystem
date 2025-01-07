@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "IST",
+			"Path": "..\\Source\\IST.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ISTEditor",
+			"Path": "..\\Source\\ISTEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\IST.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\IST.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ISTEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\IST">
+      <UniqueIdentifier>{EC4AB8EC-570C-3B9B-9217-05C1FFBE6B09}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\IST\IST.Build.cs">
+      <Filter>Source\IST</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\IST\IST.cpp">
+      <Filter>Source\IST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\IST.h">
+      <Filter>Source\IST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\ISTCharacter.cpp">
+      <Filter>Source\IST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\ISTCharacter.h">
+      <Filter>Source\IST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\ISTGameMode.cpp">
+      <Filter>Source\IST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\ISTGameMode.h">
+      <Filter>Source\IST</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
