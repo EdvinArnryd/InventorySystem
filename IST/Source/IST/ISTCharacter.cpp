@@ -119,7 +119,12 @@ void AISTCharacter::Look(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
-
+	
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Green, FString::Printf(TEXT("LookAxisVector.X: %f"), LookAxisVector.X));
+	}
+	
 	if (Controller != nullptr)
 	{
 		// add yaw and pitch input to controller

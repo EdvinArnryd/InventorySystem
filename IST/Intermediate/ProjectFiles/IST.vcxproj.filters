@@ -54,5 +54,29 @@
     <ClCompile Include="..\..\Source\IST\ISTGameMode.h">
       <Filter>Source\IST</Filter>
     </ClCompile>
+    <Filter Include="Source\IST\Private">
+      <UniqueIdentifier>{182F9585-262B-3299-9F6D-863C0B00D644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IST\Private\Items">
+      <UniqueIdentifier>{0E2D02A1-4180-34A5-884A-B5B05EA3EF78}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\Items\ItemBase.h">
+      <Filter>Source\IST\Private\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Public">
+      <UniqueIdentifier>{FAB6453F-E551-3470-B2DB-132FFA8FFD77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IST\Public\Data">
+      <UniqueIdentifier>{98971F6A-AAEC-3409-A382-61807056EB5E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\Data\ItemDataStructs.h">
+      <Filter>Source\IST\Public\Data</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Public\Items">
+      <UniqueIdentifier>{F13BE6B0-F55C-3995-B166-34A05139F1D0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\Items\ItemBase.cpp">
+      <Filter>Source\IST\Public\Items</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
