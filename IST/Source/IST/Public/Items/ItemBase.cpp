@@ -1,78 +1,43 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#pragma once
 
-#include "CoreMinimal.h"
-#include "Data/ItemDataStructs.h"
-#include "ItemBase.generated.h"
+#include "Items/ItemBase.h"
 
-/**
- * 
- */
-UCLASS()
-class IS_API UItemBase : public UObject
+UItemBase::UItemBase()
 {
-	GENERATED_BODY()
+}
 
-public:
-	//===========================================================================
-	// Properties & Variables
-	//===========================================================================
-	
-	//UPROPERTY()
-	//UInventoryComponent* OwningInventory;
-	
-	UPROPERTY(VisibleAnywhere, Category = "Item Data", meta = (UIMin=1, UIMax=100))
-	int32 Quantity;
-	
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	FName ID;
+UItemBase* UItemBase::CreateItemCopy()
+{
+	UItemBase* ItemCopy = NewObject<UItemBase>(GetOuter(), StaticClass());
+    
+	ItemCopy->ID = this->ID;
+	ItemCopy->Quantity = this->Quantity;
+	ItemCopy->ItemQuality = this->ItemQuality;
+	ItemCopy->ItemType = this->ItemType;
+	ItemCopy->TextData = this->TextData;
+	ItemCopy->NumericData = this->NumericData;
+	ItemCopy->ItemStatistics = this->ItemStatistics;
+	ItemCopy->AssetData = this->AssetData;
 
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	EItemType ItemType;
+	return ItemCopy;
+}
 
-	UPROPERTY(EditAnywhere, Category="Item Data") 
-	EItemQuality ItemQuality;
-
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	FItemStatistics ItemStatistics;
-
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	FItemTextData TextData;
-
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	FItemNumericData NumericData;
-
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	FItemAssetData AssetData;
-
-	//===========================================================================
-	// Functions
-	//===========================================================================
-	UItemBase();
-
-	UFUNCTION(Category = "Item")
-	UItemBase* CreateItemCopy();
-
-	UFUNCTION(Category = "Item")
-	FORCEINLINE float GetItemStackWeight() const { return Quantity * NumericData.Weight; };
-
-	UFUNCTION(Category = "Item")
-	FORCEINLINE float GetItemSingleWeight() const { return Quantity * NumericData.Weight; };
-
-	UFUNCTION(Category = "Item")
-	FORCEINLINE bool IsFullItemStack() const { return Quantity == NumericData.MaxStackSize; };
-
-	UFUNCTION(Category = "Item")
-	void SetQuantity(const int32 NewQuantity);
-
-	UFUNCTION(Category = "Item")
-	virtual void Use(AISCharacter* Character);
-
-protected:
-	bool operator == (const FName& OtherID) const
+void UItemBase::SetQuantity(const int32 NewQuantity)
+{
+	if (NewQuantity != Quantity)
 	{
-		return ID == OtherID;
+		Quantity = FMath::Clamp(NewQuantity, 0, NumericData.bIsStackable ? NumericData.MaxStackSize: 1);
+		// if (OwningInventory)
+		// {
+		// 	if (Quantity <= 0)
+		// 	{
+		// 		OwningInventory->RemoveItem(this);
+		// 	}
+		// }
 	}
-	
-};
+}
+
+void UItemBase::Use(AISTCharacter* Character)
+{
+}
