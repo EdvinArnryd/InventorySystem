@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\IST.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -57,11 +58,23 @@
     <Filter Include="Source\IST\Private">
       <UniqueIdentifier>{182F9585-262B-3299-9F6D-863C0B00D644}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\IST\Private\Interfaces">
+      <UniqueIdentifier>{C9AB919C-1477-3C0B-983C-30EC48044A24}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\Interfaces\InteractionInterface.cpp">
+      <Filter>Source\IST\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\IST\Private\Items">
       <UniqueIdentifier>{0E2D02A1-4180-34A5-884A-B5B05EA3EF78}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\IST\Private\Items\ItemBase.h">
       <Filter>Source\IST\Private\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Private\World">
+      <UniqueIdentifier>{BC07C59A-D602-325B-9AED-0D34EEF99265}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\World\InterfaceTestActor.cpp">
+      <Filter>Source\IST\Private\World</Filter>
     </ClCompile>
     <Filter Include="Source\IST\Public">
       <UniqueIdentifier>{FAB6453F-E551-3470-B2DB-132FFA8FFD77}</UniqueIdentifier>
@@ -72,11 +85,23 @@
     <ClCompile Include="..\..\Source\IST\Public\Data\ItemDataStructs.h">
       <Filter>Source\IST\Public\Data</Filter>
     </ClCompile>
+    <Filter Include="Source\IST\Public\Interfaces">
+      <UniqueIdentifier>{F145DDCB-3FFB-3C61-A0D3-339FA886DAD8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\Interfaces\InteractionInterface.h">
+      <Filter>Source\IST\Public\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\IST\Public\Items">
       <UniqueIdentifier>{F13BE6B0-F55C-3995-B166-34A05139F1D0}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\IST\Public\Items\ItemBase.cpp">
       <Filter>Source\IST\Public\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Public\World">
+      <UniqueIdentifier>{D1594C30-CB1B-3E1C-B08B-DF3C23ED0500}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\World\InterfaceTestActor.h">
+      <Filter>Source\IST\Public\World</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

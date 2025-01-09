@@ -1,6 +1,8 @@
 /I "."
+/I "C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Private"
 /I "C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Intermediate\Build\Win64\UnrealEditor\Inc\IST\UHT"
 /I "C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source"
+/I "C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public"
 /I "Runtime\Core\Public"
 /I "Runtime\Core\Internal"
 /I "Runtime\TraceLog\Public"
