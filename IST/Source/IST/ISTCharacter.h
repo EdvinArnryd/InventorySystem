@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+#include "Interfaces/InteractionInterface.h"
 #include "ISTCharacter.generated.h"
 
 USTRUCT()
@@ -68,6 +69,8 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	FORCEINLINE bool IsInteracting() const { return GetWorldTimerManager().IsTimerActive(TimerHandle_Interaction);};
 	
 
 protected:
@@ -84,6 +87,26 @@ protected:
 	virtual void NotifyControllerChanged() override;
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	float InteractionCheckFrequency;
+
+	float InteractionCheckDistance;
+
+	FTimerHandle TimerHandle_Interaction;
+
+	FInteractionData InteractionData;
+
+	//
+
+	void PerformInteractionCheck();
+	void FoundInteractable(AActor* NewInteractable);
+	void NoInteractableFound();
+	void BeginInteract();
+	void EndInteract();
+	void Interact();
 	
+	virtual void Tick(float DeltaSeconds) override;
+
+	virtual void BeginPlay() override;
 };
 

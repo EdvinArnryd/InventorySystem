@@ -11,6 +11,8 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 
+#include "DrawDebugHelpers.h"
+
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 //////////////////////////////////////////////////////////////////////////
@@ -50,8 +52,8 @@ AISTCharacter::AISTCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
-	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+	InteractionCheckFrequency = 0.1;
+	InteractionCheckDistance = 225.0f;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -89,6 +91,149 @@ void AISTCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	else
 	{
 		UE_LOG(LogTemplateCharacter, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
+	}
+}
+
+void AISTCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void AISTCharacter::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (GetWorld()->TimeSince(InteractionData.LastInteractionCheckTime) > InteractionCheckFrequency)
+	{
+		PerformInteractionCheck();
+	}
+}
+
+void AISTCharacter::PerformInteractionCheck()
+{
+	InteractionData.LastInteractionCheckTime = GetWorld()->GetTimeSeconds();
+
+	FVector TraceStart{GetPawnViewLocation()};
+	FVector TraceEnd{TraceStart + (GetViewRotation().Vector() * InteractionCheckDistance)};
+
+	float LookDirection = FVector::DotProduct(GetActorForwardVector(), GetViewRotation().Vector());
+
+	if (LookDirection > 0)
+	{
+		DrawDebugLine(GetWorld(), TraceStart, TraceEnd, FColor::Purple, false, 0.5f,0, 2.0f);
+	
+		FCollisionQueryParams QueryParams;
+		QueryParams.AddIgnoredActor(this);
+		FHitResult TraceHit;
+
+		if (GetWorld()->LineTraceSingleByChannel(TraceHit, TraceStart, TraceEnd, ECC_Visibility, QueryParams))
+		{
+			if (TraceHit.GetActor()->GetClass()->ImplementsInterface(UInteractionInterface::StaticClass()))
+			{
+				const float Distance = (TraceStart - TraceHit.ImpactPoint).Size();
+
+				if (TraceHit.GetActor() != InteractionData.CurrentInteractable && Distance <= InteractionCheckDistance)
+				{
+					FoundInteractable(TraceHit.GetActor());
+					return;
+				}
+
+				if (TraceHit.GetActor() == InteractionData.CurrentInteractable)
+				{
+					return;
+				}
+			
+			}
+		}
+	}
+	
+	NoInteractableFound();
+}
+
+void AISTCharacter::FoundInteractable(AActor* NewInteractable)
+{
+	if (IsInteracting())
+	{
+		EndInteract();
+	}
+
+	if (InteractionData.CurrentInteractable)
+	{
+		TargetInteractable = InteractionData.CurrentInteractable;
+		TargetInteractable->EndFocus();
+	}
+
+	InteractionData.CurrentInteractable = NewInteractable;
+	TargetInteractable = NewInteractable;
+
+	TargetInteractable->BeginFocus();
+}
+
+void AISTCharacter::NoInteractableFound()
+{
+	if (IsInteracting())
+	{
+		GetWorldTimerManager().ClearTimer(TimerHandle_Interaction);
+	}
+
+	if (InteractionData.CurrentInteractable)
+	{
+		if (IsValid(TargetInteractable.GetObject()))
+		{
+			TargetInteractable->EndFocus();
+		}
+
+		// hide interaction widget on the HUD
+
+		InteractionData.CurrentInteractable = nullptr;
+		TargetInteractable = nullptr;
+	}
+}
+
+void AISTCharacter::BeginInteract()
+{
+	// verify nothing has changed
+	PerformInteractionCheck();
+
+	if (InteractionData.CurrentInteractable)
+	{
+		if (IsValid(TargetInteractable.GetObject()))
+		{
+			TargetInteractable->BeginInteract();
+
+			if (FMath::IsNearlyZero(TargetInteractable->InteractableData.InteractionDuration, 0.1f))
+			{
+				Interact();
+			}
+			else
+			{
+				GetWorldTimerManager().SetTimer(TimerHandle_Interaction,
+					this,
+					&AISTCharacter::Interact,
+					TargetInteractable->InteractableData.InteractionDuration,
+					false);
+			}
+		}
+	}
+}
+
+void AISTCharacter::EndInteract()
+{
+	GetWorldTimerManager().ClearTimer(TimerHandle_Interaction);
+
+	if (IsValid(TargetInteractable.GetObject()))
+	{
+		TargetInteractable->EndInteract();
+	}
+}
+
+void AISTCharacter::Interact()
+{
+	GetWorldTimerManager().ClearTimer(TimerHandle_Interaction);
+
+	if (IsValid(TargetInteractable.GetObject()))
+	{
+		TargetInteractable->Interact();
 	}
 }
 
