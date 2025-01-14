@@ -14,35 +14,35 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define IST_ItemDataStructs_generated_h
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_29_GENERATED_BODY \
+#define FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_29_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemStatistics_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct FItemStatistics>();
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_42_GENERATED_BODY \
+#define FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_42_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemTextData_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct FItemTextData>();
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_57_GENERATED_BODY \
+#define FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_57_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemNumericData_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct FItemNumericData>();
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_70_GENERATED_BODY \
+#define FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_70_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemAssetData_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct FItemAssetData>();
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_82_GENERATED_BODY \
+#define FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h_82_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemData_Statics; \
 	IST_API static class UScriptStruct* StaticStruct(); \
 	typedef FTableRowBase Super;
@@ -51,7 +51,7 @@ template<> IST_API UScriptStruct* StaticStruct<struct FItemAssetData>();
 template<> IST_API UScriptStruct* StaticStruct<struct FItemData>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h
+#define CURRENT_FILE_ID FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Data_ItemDataStructs_h
 
 
 #define FOREACH_ENUM_EITEMQUALITY(op) \

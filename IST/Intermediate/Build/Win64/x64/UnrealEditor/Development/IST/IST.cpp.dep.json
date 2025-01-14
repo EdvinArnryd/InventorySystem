@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\ist.cpp",
+        "Source": "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\ist.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
-            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\ist.h"
+            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\ist.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -67,8 +67,29 @@
     <Filter Include="Source\IST\Private\Items">
       <UniqueIdentifier>{0E2D02A1-4180-34A5-884A-B5B05EA3EF78}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\IST\Private\Items\ItemBase.h">
+    <ClCompile Include="..\..\Source\IST\Private\Items\ItemBase.cpp">
       <Filter>Source\IST\Private\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Private\UserInterface">
+      <UniqueIdentifier>{6FCB8C4B-A83F-3322-AEE3-9000A4F0B88B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\ISTHud.cpp">
+      <Filter>Source\IST\Private\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\MainMenu.cpp">
+      <Filter>Source\IST\Private\UserInterface</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Private\UserInterface\Interaction">
+      <UniqueIdentifier>{FC764105-4946-3DE6-80FF-62BAE42DA81C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Interaction\InteractionWidget.cpp">
+      <Filter>Source\IST\Private\UserInterface\Interaction</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Private\UserInterface\Inventory">
+      <UniqueIdentifier>{BD558D6C-F638-345B-90D3-A5134914D137}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\InventoryPanel.cpp">
+      <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
     </ClCompile>
     <Filter Include="Source\IST\Private\World">
       <UniqueIdentifier>{BC07C59A-D602-325B-9AED-0D34EEF99265}</UniqueIdentifier>
@@ -94,8 +115,29 @@
     <Filter Include="Source\IST\Public\Items">
       <UniqueIdentifier>{F13BE6B0-F55C-3995-B166-34A05139F1D0}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\IST\Public\Items\ItemBase.cpp">
+    <ClCompile Include="..\..\Source\IST\Public\Items\ItemBase.h">
       <Filter>Source\IST\Public\Items</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Public\UserInterface">
+      <UniqueIdentifier>{D80CD837-8F06-3502-8FC4-58C33AAC2FF0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\ISTHud.h">
+      <Filter>Source\IST\Public\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\MainMenu.h">
+      <Filter>Source\IST\Public\UserInterface</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Public\UserInterface\Interaction">
+      <UniqueIdentifier>{50E0A701-91FF-332A-B279-E4400C1C7D49}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Interaction\InteractionWidget.h">
+      <Filter>Source\IST\Public\UserInterface\Interaction</Filter>
+    </ClCompile>
+    <Filter Include="Source\IST\Public\UserInterface\Inventory">
+      <UniqueIdentifier>{92800DF7-B093-3A6C-81D4-3581C8BDC1C9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\InventoryPanel.h">
+      <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
     </ClCompile>
     <Filter Include="Source\IST\Public\World">
       <UniqueIdentifier>{D1594C30-CB1B-3E1C-B08B-DF3C23ED0500}</UniqueIdentifier>
