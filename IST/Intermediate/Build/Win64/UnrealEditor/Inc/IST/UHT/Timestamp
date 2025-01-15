@@ -1,23 +1,10 @@
-<<<<<<< HEAD
-C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\Interaction\InteractionWidget.h
-C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\Inventory\InventoryPanel.h
-C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\ISTHud.h
 C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\Data\ItemDataStructs.h
-C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\MainMenu.h
-C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\Interfaces\InteractionInterface.h
 C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\Items\ItemBase.h
+C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\Interaction\InteractionWidget.h
+C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\Interfaces\InteractionInterface.h
+C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\Inventory\InventoryPanel.h
 C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\World\InterfaceTestActor.h
-C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\ISTCharacter.h
+C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\ISTHud.h
+C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\MainMenu.h
 C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\ISTGameMode.h
-=======
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\Interaction\InteractionWidget.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\Items\ItemBase.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\Interfaces\InteractionInterface.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\World\InterfaceTestActor.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\MainMenu.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\Inventory\InventoryPanel.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\Data\ItemDataStructs.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\Public\UserInterface\ISTHud.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\ISTGameMode.h
-C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Source\IST\ISTCharacter.h
->>>>>>> 25705f80fa6648c1876e440bc5c529fa86008a02
+C:\Users\Edvin\Desktop\InventorySystemTutorial\InventorySystemTutorial\IST\Source\IST\ISTCharacter.h
