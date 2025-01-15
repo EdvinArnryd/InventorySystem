@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ISTModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d19da35dcd3419b174fb72b3a4f3bf1c796309e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e896b4ea00ee4159b883d02aa761146d916b65a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ISTModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ISTModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

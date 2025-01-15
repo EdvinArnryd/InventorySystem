@@ -8,6 +8,8 @@
 #include "Interfaces/InteractionInterface.h"
 #include "ISTCharacter.generated.h"
 
+class AISTHud;
+
 USTRUCT()
 struct FInteractionData
 {
@@ -74,6 +76,8 @@ public:
 	
 
 protected:
+	UPROPERTY()
+	AISTHud* HUD;
 
 	UPROPERTY(VisibleAnywhere, Category = "Character | Interaction")
 	TScriptInterface<IInteractionInterface> TargetInteractable;
@@ -95,8 +99,6 @@ protected:
 	FTimerHandle TimerHandle_Interaction;
 
 	FInteractionData InteractionData;
-
-	//
 
 	void PerformInteractionCheck();
 	void FoundInteractable(AActor* NewInteractable);

@@ -50,6 +50,9 @@ void UInteractionWidget::UpdateWidget(const FInteractableData* InteractableData)
 	case EInteractableType::Container:
 		break;
 	}
+
+	ActionText->SetText(InteractableData->Action);
+	NameText->SetText(InteractableData->Name);
 }
 
 float UInteractionWidget::UpdateInteractionProgress()

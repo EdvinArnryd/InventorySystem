@@ -1,12 +1,21 @@
 {
     "Version": "1.2",
     "Data": {
+<<<<<<< HEAD
         "Source": "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\private\\userinterface\\inventory\\inventorypanel.cpp",
         "ProvidedModule": "",
         "PCH": "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
             "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
             "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\public\\userinterface\\inventory\\inventorypanel.h",
+=======
+        "Source": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\private\\userinterface\\inventory\\inventorypanel.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\public\\userinterface\\inventory\\inventorypanel.h",
+>>>>>>> 25705f80fa6648c1876e440bc5c529fa86008a02
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\umg\\public\\blueprint\\userwidget.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\umg\\public\\blueprint\\widgetchild.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetchild.generated.h",
@@ -39,7 +48,11 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\umg\\public\\animation\\widgetanimationevents.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimationevents.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
+<<<<<<< HEAD
             "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\inventorypanel.generated.h"
+=======
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\inventorypanel.generated.h"
+>>>>>>> 25705f80fa6648c1876e440bc5c529fa86008a02
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

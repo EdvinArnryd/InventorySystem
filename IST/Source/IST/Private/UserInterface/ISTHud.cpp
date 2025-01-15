@@ -49,7 +49,7 @@ void AISTHud::HideMenu()
 	}
 }
 
-void AISTHud::ShowInteractionWidget()
+void AISTHud::ShowInteractionWidget() const
 {
 	if (InteractionWidget)
 	{
@@ -57,7 +57,7 @@ void AISTHud::ShowInteractionWidget()
 	}
 }
 
-void AISTHud::HideInteractionWidget()
+void AISTHud::HideInteractionWidget() const
 {
 	if (InteractionWidget)
 	{
@@ -66,7 +66,7 @@ void AISTHud::HideInteractionWidget()
 }
 
 
-void AISTHud::UpdateInteractionWidget(const FInteractableData* InteractableData)
+void AISTHud::UpdateInteractionWidget(const FInteractableData* InteractableData) const
 {
 	if (InteractionWidget)
 	{
