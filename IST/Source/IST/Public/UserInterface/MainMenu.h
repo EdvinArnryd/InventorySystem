@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "IST/ISTCharacter.h"
 #include "MainMenu.generated.h"
 
 /**

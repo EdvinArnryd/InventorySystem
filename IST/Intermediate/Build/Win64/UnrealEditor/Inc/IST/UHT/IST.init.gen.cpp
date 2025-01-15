@@ -17,22 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeIST_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-<<<<<<< HEAD
-				0xAA41F275,
-				0xEAD55208,
-=======
-				0xAC1EEA1C,
+				0x7B524DD4,
 				0xD86F1E67,
->>>>>>> d19da35dcd3419b174fb72b3a4f3bf1c796309e6
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_IST.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_IST.OuterSingleton;
 	}
-<<<<<<< HEAD
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_IST(Z_Construct_UPackage__Script_IST, TEXT("/Script/IST"), Z_Registration_Info_UPackage__Script_IST, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xAA41F275, 0xEAD55208));
-=======
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_IST(Z_Construct_UPackage__Script_IST, TEXT("/Script/IST"), Z_Registration_Info_UPackage__Script_IST, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xAC1EEA1C, 0xD86F1E67));
->>>>>>> d19da35dcd3419b174fb72b3a4f3bf1c796309e6
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_IST(Z_Construct_UPackage__Script_IST, TEXT("/Script/IST"), Z_Registration_Info_UPackage__Script_IST, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x7B524DD4, 0xD86F1E67));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

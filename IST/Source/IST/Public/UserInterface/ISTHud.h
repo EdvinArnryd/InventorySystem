@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "MainMenu.h"
 #include "GameFramework/HUD.h"
+#include "Interaction/InteractionWidget.h"
 #include "ISTHud.generated.h"
 
 /**
@@ -28,9 +30,9 @@ public:
 	void DisplayMenu();
 	void HideMenu();
 
-	void ShowInteractionWidget();
-	void HideInteractionWidget();
-	void UpdateInteractionWidget(const FInteractableData* InteractableData);
+	void ShowInteractionWidget() const;
+	void HideInteractionWidget() const;
+	void UpdateInteractionWidget(const FInteractableData* InteractableData) const;
 
 protected:
 	UPROPERTY()

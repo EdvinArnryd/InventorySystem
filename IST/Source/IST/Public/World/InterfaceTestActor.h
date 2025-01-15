@@ -19,17 +19,9 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, Category = "Test Actor")
 	UStaticMeshComponent* Mesh;
-<<<<<<< HEAD
 
 	UPROPERTY(EditInstanceOnly, Category = "Test Actor")
 	FInteractableData InstanceInteractableData;
-=======
-	
-	UPROPERTY(EditInstanceOnly, Category="Test Actor")
-	FInteractableData InstanceInteractableData;
-
-	
->>>>>>> d19da35dcd3419b174fb72b3a4f3bf1c796309e6
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 

@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "UserInterface/ISTHud.h"
 
 #include "DrawDebugHelpers.h"
 
@@ -100,6 +101,9 @@ void AISTCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 void AISTCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	
+	HUD = Cast<AISTHud>(GetWorld()->GetFirstPlayerController()->GetHUD());
 }
 
 void AISTCharacter::Tick(float DeltaSeconds)
@@ -168,6 +172,9 @@ void AISTCharacter::FoundInteractable(AActor* NewInteractable)
 	InteractionData.CurrentInteractable = NewInteractable;
 	TargetInteractable = NewInteractable;
 
+	
+	HUD->UpdateInteractionWidget(&TargetInteractable->InteractableData);
+
 	TargetInteractable->BeginFocus();
 }
 
@@ -185,7 +192,7 @@ void AISTCharacter::NoInteractableFound()
 			TargetInteractable->EndFocus();
 		}
 
-		// hide interaction widget on the HUD
+		HUD->HideInteractionWidget();
 
 		InteractionData.CurrentInteractable = nullptr;
 		TargetInteractable = nullptr;
