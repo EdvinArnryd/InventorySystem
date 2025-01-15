@@ -19,7 +19,8 @@ AInterfaceTestActor::AInterfaceTestActor()
 void AInterfaceTestActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	InteractableData = InstanceInteractableData;
 }
 
 // Called every frame
@@ -41,7 +42,7 @@ void AInterfaceTestActor::EndFocus()
 {
 	if (Mesh)
 	{
-		Mesh->SetRenderCustomDepth(true);
+		Mesh->SetRenderCustomDepth(false);
 	}
 }
 
