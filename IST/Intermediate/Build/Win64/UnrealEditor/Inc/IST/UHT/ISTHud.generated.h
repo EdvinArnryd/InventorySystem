@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_ISTHud_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AISTHud(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AISTHud(AISTHud&&); \
@@ -33,7 +31,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AISTHud); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AISTHud); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AISTHud) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AISTHud) \
 	NO_API virtual ~AISTHud();
 
 
