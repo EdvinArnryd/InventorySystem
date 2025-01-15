@@ -82,6 +82,9 @@ void AISTCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 
+		PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AISTCharacter::BeginInteract);
+		PlayerInputComponent->BindAction("Interact", IE_Released, this, &AISTCharacter::EndInteract);
+
 		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AISTCharacter::Move);
 
@@ -130,9 +133,8 @@ void AISTCharacter::PerformInteractionCheck()
 		{
 			if (TraceHit.GetActor()->GetClass()->ImplementsInterface(UInteractionInterface::StaticClass()))
 			{
-				const float Distance = (TraceStart - TraceHit.ImpactPoint).Size();
 
-				if (TraceHit.GetActor() != InteractionData.CurrentInteractable && Distance <= InteractionCheckDistance)
+				if (TraceHit.GetActor() != InteractionData.CurrentInteractable)
 				{
 					FoundInteractable(TraceHit.GetActor());
 					return;
@@ -233,7 +235,7 @@ void AISTCharacter::Interact()
 
 	if (IsValid(TargetInteractable.GetObject()))
 	{
-		TargetInteractable->Interact();
+		TargetInteractable->Interact(this);
 	}
 }
 

@@ -5,10 +5,18 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/Blueprints/BP_InterfaceTestActor.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/AZ/A7GPT109Y6ZTTJD4A7TXER.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/6U/N3L1UIR2VQC758B6VNWA7D.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/AZ/A7GPT109Y6ZTTJD4A7TXER.uasset",
+<<<<<<< HEAD
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/Blueprints/BP_InterfaceTestActor.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/Q5/HJRCPVJHT8DN8WFTYO5R4H.uasset",
 				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/StarterContent/Architecture/Floor_400x400.uasset"
+=======
+				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/Blueprints/BP_InterfaceTestActor.uasset"
+>>>>>>> d19da35dcd3419b174fb72b3a4f3bf1c796309e6
 			]
 		}
 	]
