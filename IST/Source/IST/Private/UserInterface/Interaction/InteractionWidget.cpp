@@ -12,7 +12,7 @@ void UInteractionWidget::NativeOnInitialized()
 	Super::NativeOnInitialized();
 
 	InteractionbProgressBar->PercentDelegate.BindUFunction(this, "UpdateInteractionProgress");
-	}
+}
 
 void UInteractionWidget::NativeConstruct()
 {

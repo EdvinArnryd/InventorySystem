@@ -5,6 +5,12 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/UserInterface/WBP_InventoryPanel.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/UserInterface/WBP_MainMenu.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/UserInterface/WBP_InteractionWidget.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/ItemData/MundaneItems.uasset",
+				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/E/07/LG8JMGVY9NR53EIAS3W16X.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/UserInterface/WBP_InteractionWidget.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/UserInterface/WBP_MainMenu.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/Blueprints/BP_ISTHud.uasset",
@@ -17,10 +23,6 @@
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/Assets/Scythe.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/RN/9IU8IAKXNRTTJ7YULJ0N6L.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/Blueprints/BP_PickupBase.uasset",
-				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
-				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/UserInterface/WBP_InventoryPanel.uasset",
-				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/UserInterface/WBP_MainMenu.uasset",
-				"C:/Users/Edvin/Desktop/InventorySystemTutorial/InventorySystemTutorial/IST/Content/UserInterface/WBP_InteractionWidget.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/BP_NewGameMode.uasset",
 				"C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Content/Blueprints/ISTHud.uasset"
 			]

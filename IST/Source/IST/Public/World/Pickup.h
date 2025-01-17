@@ -53,5 +53,9 @@ protected:
 	void UpdateInteractableData();
 	
 	void TakePickup(const AISTCharacter* Taker);
+
+#if WITH_EDITOR
+	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
 };
 
