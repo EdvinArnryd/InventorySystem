@@ -76,6 +76,12 @@
     <ClCompile Include="..\..\Source\IST\Private\Items\ItemBase.cpp">
       <Filter>Source\IST\Private\Items</Filter>
     </ClCompile>
+    <Filter Include="Source\IST\Private\Player">
+      <UniqueIdentifier>{D1BB9535-9EED-35E8-8D69-509F5F0A0BBC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\Player\ISTPlayerController.cpp">
+      <Filter>Source\IST\Private\Player</Filter>
+    </ClCompile>
     <Filter Include="Source\IST\Private\UserInterface">
       <UniqueIdentifier>{6FCB8C4B-A83F-3322-AEE3-9000A4F0B88B}</UniqueIdentifier>
     </Filter>
@@ -94,10 +100,19 @@
     <Filter Include="Source\IST\Private\UserInterface\Inventory">
       <UniqueIdentifier>{BD558D6C-F638-345B-90D3-A5134914D137}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\DragItemVisual.cpp">
+      <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\InventoryItemSlot.cpp">
       <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\InventoryPanel.cpp">
+      <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\InventoryToolTip.cpp">
+      <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\ItemDragDropOperation.cpp">
       <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
     </ClCompile>
     <Filter Include="Source\IST\Private\World">
@@ -136,6 +151,12 @@
     <ClCompile Include="..\..\Source\IST\Public\Items\ItemBase.h">
       <Filter>Source\IST\Public\Items</Filter>
     </ClCompile>
+    <Filter Include="Source\IST\Public\Player">
+      <UniqueIdentifier>{2CD5CDB0-F8DB-3ABB-AE8F-91DAA86FB2A3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\Player\ISTPlayerController.h">
+      <Filter>Source\IST\Public\Player</Filter>
+    </ClCompile>
     <Filter Include="Source\IST\Public\UserInterface">
       <UniqueIdentifier>{D80CD837-8F06-3502-8FC4-58C33AAC2FF0}</UniqueIdentifier>
     </Filter>
@@ -154,10 +175,19 @@
     <Filter Include="Source\IST\Public\UserInterface\Inventory">
       <UniqueIdentifier>{92800DF7-B093-3A6C-81D4-3581C8BDC1C9}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\DragItemVisual.h">
+      <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\InventoryItemSlot.h">
       <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\InventoryPanel.h">
+      <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\InventoryToolTip.h">
+      <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\ItemDragDropOperation.h">
       <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
     </ClCompile>
     <Filter Include="Source\IST\Public\World">
