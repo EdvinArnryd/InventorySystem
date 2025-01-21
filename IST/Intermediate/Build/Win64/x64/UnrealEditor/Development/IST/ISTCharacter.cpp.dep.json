@@ -111,7 +111,9 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\hud.generated.h",
             "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\public\\userinterface\\interaction\\interactionwidget.h",
             "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\interactionwidget.generated.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\isthud.generated.h"
+            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\isthud.generated.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\public\\components\\inventorycomponent.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\inventorycomponent.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

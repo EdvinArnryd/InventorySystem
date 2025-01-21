@@ -20,6 +20,7 @@ IST_API UClass* Z_Construct_UClass_AISTCharacter();
 IST_API UClass* Z_Construct_UClass_AISTCharacter_NoRegister();
 IST_API UClass* Z_Construct_UClass_AISTHud_NoRegister();
 IST_API UClass* Z_Construct_UClass_UInteractionInterface_NoRegister();
+IST_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 IST_API UScriptStruct* Z_Construct_UScriptStruct_FInteractionData();
 UPackage* Z_Construct_UPackage__Script_IST();
 // End Cross Module References
@@ -182,6 +183,11 @@ struct Z_Construct_UClass_AISTCharacter_Statics
 		{ "Category", "Character | Interaction" },
 		{ "ModuleRelativePath", "ISTCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerInventory_MetaData[] = {
+		{ "Category", "Character | Inventory" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ISTCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -191,6 +197,7 @@ struct Z_Construct_UClass_AISTCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HUD;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_TargetInteractable;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerInventory;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -206,6 +213,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AISTCharacter_
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AISTCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AISTCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AISTCharacter_Statics::NewProp_HUD = { "HUD", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AISTCharacter, HUD), Z_Construct_UClass_AISTHud_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HUD_MetaData), NewProp_HUD_MetaData) };
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_AISTCharacter_Statics::NewProp_TargetInteractable = { "TargetInteractable", nullptr, (EPropertyFlags)0x0024080000020001, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AISTCharacter, TargetInteractable), Z_Construct_UClass_UInteractionInterface_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetInteractable_MetaData), NewProp_TargetInteractable_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AISTCharacter_Statics::NewProp_PlayerInventory = { "PlayerInventory", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AISTCharacter, PlayerInventory), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerInventory_MetaData), NewProp_PlayerInventory_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AISTCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AISTCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AISTCharacter_Statics::NewProp_FollowCamera,
@@ -215,6 +223,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AISTChara
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AISTCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AISTCharacter_Statics::NewProp_HUD,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AISTCharacter_Statics::NewProp_TargetInteractable,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AISTCharacter_Statics::NewProp_PlayerInventory,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AISTCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AISTCharacter_Statics::DependentSingletons[])() = {
@@ -260,10 +269,10 @@ struct Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_Inv
 		{ FInteractionData::StaticStruct, Z_Construct_UScriptStruct_FInteractionData_Statics::NewStructOps, TEXT("InteractionData"), &Z_Registration_Info_UScriptStruct_InteractionData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInteractionData), 537902031U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AISTCharacter, AISTCharacter::StaticClass, TEXT("AISTCharacter"), &Z_Registration_Info_UClass_AISTCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AISTCharacter), 2338950407U) },
+		{ Z_Construct_UClass_AISTCharacter, AISTCharacter::StaticClass, TEXT("AISTCharacter"), &Z_Registration_Info_UClass_AISTCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AISTCharacter), 631907738U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_ISTCharacter_h_928730968(TEXT("/Script/IST"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_ISTCharacter_h_3052176384(TEXT("/Script/IST"),
 	Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_ISTCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_ISTCharacter_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_ISTCharacter_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_ISTCharacter_h_Statics::ScriptStructInfo),
 	nullptr, 0);

@@ -58,6 +58,12 @@
     <Filter Include="Source\IST\Private">
       <UniqueIdentifier>{182F9585-262B-3299-9F6D-863C0B00D644}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\IST\Private\Components">
+      <UniqueIdentifier>{6D428991-EAD2-39D4-B40D-78CD6282BAB1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\Components\InventoryComponent.cpp">
+      <Filter>Source\IST\Private\Components</Filter>
+    </ClCompile>
     <Filter Include="Source\IST\Private\Interfaces">
       <UniqueIdentifier>{C9AB919C-1477-3C0B-983C-30EC48044A24}</UniqueIdentifier>
     </Filter>
@@ -88,6 +94,9 @@
     <Filter Include="Source\IST\Private\UserInterface\Inventory">
       <UniqueIdentifier>{BD558D6C-F638-345B-90D3-A5134914D137}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\InventoryItemSlot.cpp">
+      <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Private\UserInterface\Inventory\InventoryPanel.cpp">
       <Filter>Source\IST\Private\UserInterface\Inventory</Filter>
     </ClCompile>
@@ -103,6 +112,12 @@
     <Filter Include="Source\IST\Public">
       <UniqueIdentifier>{FAB6453F-E551-3470-B2DB-132FFA8FFD77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\IST\Public\Components">
+      <UniqueIdentifier>{14EBE018-41CD-3446-9F6C-7F9A0A343015}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\Components\InventoryComponent.h">
+      <Filter>Source\IST\Public\Components</Filter>
+    </ClCompile>
     <Filter Include="Source\IST\Public\Data">
       <UniqueIdentifier>{98971F6A-AAEC-3409-A382-61807056EB5E}</UniqueIdentifier>
     </Filter>
@@ -139,6 +154,9 @@
     <Filter Include="Source\IST\Public\UserInterface\Inventory">
       <UniqueIdentifier>{92800DF7-B093-3A6C-81D4-3581C8BDC1C9}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\InventoryItemSlot.h">
+      <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Public\UserInterface\Inventory\InventoryPanel.h">
       <Filter>Source\IST\Public\UserInterface\Inventory</Filter>
     </ClCompile>
