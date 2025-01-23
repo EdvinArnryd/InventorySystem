@@ -91,6 +91,8 @@ void AISTCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 		PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AISTCharacter::BeginInteract);
 		PlayerInputComponent->BindAction("Interact", IE_Released, this, &AISTCharacter::EndInteract);
 
+		PlayerInputComponent->BindAction("ToggleMenu", IE_Pressed, this, &AISTCharacter::ToggleMenu);
+
 		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AISTCharacter::Move);
 
@@ -259,6 +261,11 @@ void AISTCharacter::UpdateInteractionWidget() const
 		HUD->UpdateInteractionWidget(&TargetInteractable->InteractableData);
 	}
 	
+}
+
+void AISTCharacter::ToggleMenu()
+{
+	HUD->ToggleMenu();
 }
 
 void AISTCharacter::Move(const FInputActionValue& Value)
