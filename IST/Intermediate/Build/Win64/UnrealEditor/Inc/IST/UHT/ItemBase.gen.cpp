@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeItemBase() {}
 // Begin Cross Module References
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 IST_API UClass* Z_Construct_UClass_AISTCharacter_NoRegister();
+IST_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 IST_API UClass* Z_Construct_UClass_UItemBase();
 IST_API UClass* Z_Construct_UClass_UItemBase_NoRegister();
 IST_API UEnum* Z_Construct_UEnum_IST_EItemQuality();
@@ -315,15 +316,19 @@ struct Z_Construct_UClass_UItemBase_Statics
 		{ "IncludePath", "Items/ItemBase.h" },
 		{ "ModuleRelativePath", "Public/Items/ItemBase.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
-		{ "Category", "Item" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OwningInventory_MetaData[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//UPROPERTY()\n//UInventoryComponent* OwningInventory;\n" },
+		{ "Comment", "//===========================================================================\n// Properties & Variables\n//===========================================================================\n" },
 #endif
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Items/ItemBase.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "UPROPERTY()\nUInventoryComponent* OwningInventory;" },
+		{ "ToolTip", "Properties & Variables" },
 #endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Quantity_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "Public/Items/ItemBase.h" },
 		{ "UIMax", "100" },
 		{ "UIMin", "1" },
 	};
@@ -356,6 +361,7 @@ struct Z_Construct_UClass_UItemBase_Statics
 		{ "ModuleRelativePath", "Public/Items/ItemBase.h" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwningInventory;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Quantity;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ID;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ItemType_Underlying;
@@ -382,6 +388,7 @@ struct Z_Construct_UClass_UItemBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UItemBase_Statics::NewProp_OwningInventory = { "OwningInventory", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemBase, OwningInventory), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningInventory_MetaData), NewProp_OwningInventory_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UItemBase_Statics::NewProp_Quantity = { "Quantity", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemBase, Quantity), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Quantity_MetaData), NewProp_Quantity_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UItemBase_Statics::NewProp_ID = { "ID", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemBase, ID), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ID_MetaData), NewProp_ID_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UItemBase_Statics::NewProp_ItemType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
@@ -393,6 +400,7 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemBase_Stat
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemBase_Statics::NewProp_NumericData = { "NumericData", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemBase, NumericData), Z_Construct_UScriptStruct_FItemNumericData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumericData_MetaData), NewProp_NumericData_MetaData) }; // 2923867555
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemBase_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemBase, AssetData), Z_Construct_UScriptStruct_FItemAssetData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AssetData_MetaData), NewProp_AssetData_MetaData) }; // 3086951985
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UItemBase_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemBase_Statics::NewProp_OwningInventory,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemBase_Statics::NewProp_Quantity,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemBase_Statics::NewProp_ID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemBase_Statics::NewProp_ItemType_Underlying,
@@ -422,7 +430,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UItemBase_Statics::Clas
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UItemBase_Statics::PropPointers),
 	0,
-	0x001000A0u,
+	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UItemBase_Statics::Class_MetaDataParams), Z_Construct_UClass_UItemBase_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_UItemBase()
@@ -445,10 +453,10 @@ UItemBase::~UItemBase() {}
 struct Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UItemBase, UItemBase::StaticClass, TEXT("UItemBase"), &Z_Registration_Info_UClass_UItemBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemBase), 805301297U) },
+		{ Z_Construct_UClass_UItemBase, UItemBase::StaticClass, TEXT("UItemBase"), &Z_Registration_Info_UClass_UItemBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemBase), 1779719945U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_1746070514(TEXT("/Script/IST"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_3523210662(TEXT("/Script/IST"),
 	Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Edvin_Desktop_InventorySystemTutorial_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
