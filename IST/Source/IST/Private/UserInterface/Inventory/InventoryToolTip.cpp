@@ -16,14 +16,19 @@ void UInventoryToolTip::NativeConstruct()
 	switch (ItemBeingHovered->ItemType)
 	{
 	case EItemType::Armor:
+		ItemType->SetText(FText::FromString("Armor"));
 		break;
 	case EItemType::Weapon:
+		ItemType->SetText(FText::FromString("Weapon"));
 		break;
 	case EItemType::Shield:
+		ItemType->SetText(FText::FromString("Shield"));
 		break;
 	case EItemType::Consumable:
+		ItemType->SetText(FText::FromString("Consumable"));
 		break;
 	case EItemType::Scroll:
+		ItemType->SetText(FText::FromString("Scroll"));
 		break;
 	default:;
 	}

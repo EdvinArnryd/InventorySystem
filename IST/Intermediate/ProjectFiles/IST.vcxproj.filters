@@ -199,5 +199,32 @@
     <ClCompile Include="..\..\Source\IST\Public\World\Pickup.h">
       <Filter>Source\IST\Public\World</Filter>
     </ClCompile>
+    <Filter Include="Source\IST\TP_TopDown">
+      <UniqueIdentifier>{46B30F36-A5C1-31D5-98BE-F2728FC2D515}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDown.cpp">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDown.h">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDownCharacter.cpp">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDownCharacter.h">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDownGameMode.cpp">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDownGameMode.h">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDownPlayerController.cpp">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\IST\TP_TopDown\TP_TopDownPlayerController.h">
+      <Filter>Source\IST\TP_TopDown</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

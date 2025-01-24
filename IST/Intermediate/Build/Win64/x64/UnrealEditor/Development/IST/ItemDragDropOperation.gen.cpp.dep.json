@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\itemdragdropoperation.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\public\\userinterface\\inventory\\itemdragdropoperation.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\umg\\public\\blueprint\\dragdropoperation.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\dragdropoperation.generated.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\itemdragdropoperation.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
