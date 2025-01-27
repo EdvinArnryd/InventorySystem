@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "IST/TP_TopDown/TP_TopDownCharacter.h"
+#include "IST/TP_TopDownCharacter.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTP_TopDownCharacter() {}
 
@@ -33,9 +33,9 @@ struct Z_Construct_UClass_ATP_TopDownCharacter_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "HideCategories", "Navigation" },
-		{ "IncludePath", "TP_TopDown/TP_TopDownCharacter.h" },
+		{ "IncludePath", "TP_TopDownCharacter.h" },
 		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownCharacter.h" },
+		{ "ModuleRelativePath", "TP_TopDownCharacter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TopDownCameraComponent_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -44,7 +44,7 @@ struct Z_Construct_UClass_ATP_TopDownCharacter_Statics
 		{ "Comment", "/** Top down camera */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownCharacter.h" },
+		{ "ModuleRelativePath", "TP_TopDownCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Top down camera" },
 #endif
@@ -56,7 +56,7 @@ struct Z_Construct_UClass_ATP_TopDownCharacter_Statics
 		{ "Comment", "/** Camera boom positioning the camera above the character */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownCharacter.h" },
+		{ "ModuleRelativePath", "TP_TopDownCharacter.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Camera boom positioning the camera above the character" },
 #endif
@@ -115,14 +115,14 @@ ATP_TopDownCharacter::~ATP_TopDownCharacter() {}
 // End Class ATP_TopDownCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATP_TopDownCharacter, ATP_TopDownCharacter::StaticClass, TEXT("ATP_TopDownCharacter"), &Z_Registration_Info_UClass_ATP_TopDownCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownCharacter), 372942389U) },
+		{ Z_Construct_UClass_ATP_TopDownCharacter, ATP_TopDownCharacter::StaticClass, TEXT("ATP_TopDownCharacter"), &Z_Registration_Info_UClass_ATP_TopDownCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownCharacter), 3521488652U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownCharacter_h_1246258051(TEXT("/Script/IST"),
-	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownCharacter_h_2607146008(TEXT("/Script/IST"),
+	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -6,7 +6,7 @@
         "PCH": "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
             "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
-            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\tp_topdown\\tp_topdownplayercontroller.h",
+            "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\tp_topdownplayercontroller.h",
             "c:\\users\\edvin.arnryd\\onedrive - change maker education\\skrivbordet\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\tp_topdownplayercontroller.generated.h"
         ],
         "ImportedModules": [],

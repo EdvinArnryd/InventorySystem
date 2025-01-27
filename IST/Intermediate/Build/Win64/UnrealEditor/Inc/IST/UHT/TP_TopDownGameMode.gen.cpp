@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "IST/TP_TopDown/TP_TopDownGameMode.h"
+#include "IST/TP_TopDownGameMode.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTP_TopDownGameMode() {}
 
@@ -30,8 +30,8 @@ struct Z_Construct_UClass_ATP_TopDownGameMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
-		{ "IncludePath", "TP_TopDown/TP_TopDownGameMode.h" },
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownGameMode.h" },
+		{ "IncludePath", "TP_TopDownGameMode.h" },
+		{ "ModuleRelativePath", "TP_TopDownGameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif // WITH_METADATA
@@ -78,14 +78,14 @@ ATP_TopDownGameMode::~ATP_TopDownGameMode() {}
 // End Class ATP_TopDownGameMode
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownGameMode_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownGameMode_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATP_TopDownGameMode, ATP_TopDownGameMode::StaticClass, TEXT("ATP_TopDownGameMode"), &Z_Registration_Info_UClass_ATP_TopDownGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownGameMode), 1427586070U) },
+		{ Z_Construct_UClass_ATP_TopDownGameMode, ATP_TopDownGameMode::StaticClass, TEXT("ATP_TopDownGameMode"), &Z_Registration_Info_UClass_ATP_TopDownGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownGameMode), 4085926389U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownGameMode_h_712960937(TEXT("/Script/IST"),
-	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownGameMode_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownGameMode_h_2461000272(TEXT("/Script/IST"),
+	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownGameMode_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

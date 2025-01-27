@@ -36,6 +36,7 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
 /NOIMPLIB
+/NATVIS:"..\Plugins\FX\Niagara\Intermediate\Build\Win64\x64\UnrealEditor\Development\Niagara\Niagara.natvis"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\Module.IST.cpp.obj"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\TP_TopDown.cpp.obj"
@@ -43,8 +44,6 @@
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\TP_TopDownGameMode.cpp.obj"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\TP_TopDownPlayerController.cpp.obj"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\IST.init.gen.cpp.obj"
-"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\TP_TopDownCharacter.gen.cpp.obj"
-"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\TP_TopDownGameMode.gen.cpp.obj"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\TP_TopDownPlayerController.gen.cpp.obj"
 "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
@@ -54,6 +53,7 @@
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Plugins\EnhancedInput\Intermediate\Build\Win64\x64\UnrealEditor\Development\EnhancedInput\UnrealEditor-EnhancedInput.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\AIModule\UnrealEditor-AIModule.lib"
+"..\Plugins\FX\Niagara\Intermediate\Build\Win64\x64\UnrealEditor\Development\Niagara\UnrealEditor-Niagara.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "IST/TP_TopDown/TP_TopDownPlayerController.h"
+#include "IST/TP_TopDownPlayerController.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTP_TopDownPlayerController() {}
 
@@ -32,16 +32,22 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);\n" },
+#endif
 		{ "HideCategories", "Collision Rendering Transformation" },
-		{ "IncludePath", "TP_TopDown/TP_TopDownPlayerController.h" },
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownPlayerController.h" },
+		{ "IncludePath", "TP_TopDownPlayerController.h" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShortPressThreshold_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Time Threshold to know if it was a short press */" },
 #endif
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownPlayerController.h" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Time Threshold to know if it was a short press" },
 #endif
@@ -51,7 +57,7 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** FX Class that we will spawn when clicking */" },
 #endif
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownPlayerController.h" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "FX Class that we will spawn when clicking" },
 #endif
@@ -62,7 +68,7 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** MappingContext */" },
 #endif
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownPlayerController.h" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MappingContext" },
 #endif
@@ -73,7 +79,7 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Jump Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownPlayerController.h" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Jump Input Action" },
 #endif
@@ -84,7 +90,7 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Jump Input Action */" },
 #endif
-		{ "ModuleRelativePath", "TP_TopDown/TP_TopDownPlayerController.h" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Jump Input Action" },
 #endif
@@ -152,14 +158,14 @@ ATP_TopDownPlayerController::~ATP_TopDownPlayerController() {}
 // End Class ATP_TopDownPlayerController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownPlayerController_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATP_TopDownPlayerController, ATP_TopDownPlayerController::StaticClass, TEXT("ATP_TopDownPlayerController"), &Z_Registration_Info_UClass_ATP_TopDownPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownPlayerController), 1806439682U) },
+		{ Z_Construct_UClass_ATP_TopDownPlayerController, ATP_TopDownPlayerController::StaticClass, TEXT("ATP_TopDownPlayerController"), &Z_Registration_Info_UClass_ATP_TopDownPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownPlayerController), 3140766047U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownPlayerController_h_416903710(TEXT("/Script/IST"),
-	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDown_TP_TopDownPlayerController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_786917427(TEXT("/Script/IST"),
+	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
