@@ -16,7 +16,7 @@ class UItemBase;
 #endif
 #define IST_ItemBase_generated_h
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_IST_Source_IST_Public_Items_ItemBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execUse); \
 	DECLARE_FUNCTION(execSetQuantity); \
 	DECLARE_FUNCTION(execIsFullItemStack); \
@@ -25,7 +25,7 @@ class UItemBase;
 	DECLARE_FUNCTION(execCreateItemCopy);
 
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_IST_Source_IST_Public_Items_ItemBase_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUItemBase(); \
 	friend struct Z_Construct_UClass_UItemBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UItemBase)
 
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_IST_Source_IST_Public_Items_ItemBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UItemBase(UItemBase&&); \
@@ -46,13 +46,13 @@ public: \
 	NO_API virtual ~UItemBase();
 
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_14_PROLOG
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_GENERATED_BODY \
+#define FID_IST_Source_IST_Public_Items_ItemBase_h_14_PROLOG
+#define FID_IST_Source_IST_Public_Items_ItemBase_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h_17_ENHANCED_CONSTRUCTORS \
+	FID_IST_Source_IST_Public_Items_ItemBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_IST_Source_IST_Public_Items_ItemBase_h_17_INCLASS_NO_PURE_DECLS \
+	FID_IST_Source_IST_Public_Items_ItemBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,7 +60,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> IST_API UClass* StaticClass<class UItemBase>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Items_ItemBase_h
+#define CURRENT_FILE_ID FID_IST_Source_IST_Public_Items_ItemBase_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

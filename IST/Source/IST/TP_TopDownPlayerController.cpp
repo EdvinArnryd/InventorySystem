@@ -11,6 +11,8 @@
 #include "InputActionValue.h"
 #include "EnhancedInputSubsystems.h"
 #include "Engine/LocalPlayer.h"
+#include "UserInterface/ISTHud.h"
+#include "World/Pickup.h"
 
 //DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -26,6 +28,8 @@ void ATP_TopDownPlayerController::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+	
+	HUD = Cast<AISTHud>(GetWorld()->GetFirstPlayerController()->GetHUD());
 }
 
 void ATP_TopDownPlayerController::SetupInputComponent()
@@ -48,6 +52,8 @@ void ATP_TopDownPlayerController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(SetDestinationClickAction, ETriggerEvent::Completed, this, &ATP_TopDownPlayerController::OnSetDestinationReleased);
 		EnhancedInputComponent->BindAction(SetDestinationClickAction, ETriggerEvent::Canceled, this, &ATP_TopDownPlayerController::OnSetDestinationReleased);
 
+		InputComponent->BindAction("ToggleMenu", IE_Pressed, this, &ATP_TopDownPlayerController::ToggleMenu);
+		
 		// Setup touch input events
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Started, this, &ATP_TopDownPlayerController::OnInputStarted);
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Triggered, this, &ATP_TopDownPlayerController::OnTouchTriggered);
@@ -63,6 +69,13 @@ void ATP_TopDownPlayerController::SetupInputComponent()
 void ATP_TopDownPlayerController::OnInputStarted()
 {
 	StopMovement();
+}
+
+void ATP_TopDownPlayerController::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	InteractionCheck();
 }
 
 // Triggered every frame when the input is held down
@@ -81,12 +94,24 @@ void ATP_TopDownPlayerController::OnSetDestinationTriggered()
 	else
 	{
 		bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
+
+		
 	}
 
 	// If we hit a surface, cache the location
 	if (bHitSuccessful)
 	{
 		CachedDestination = Hit.Location;
+
+		if (Hit.GetActor()->IsA(APickup::StaticClass()))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *Hit.GetActor()->GetName());
+			if (IsValid(TargetInteractable.GetObject()))
+			{
+				//TargetInteractable->Interact(this);
+			}
+			
+		}
 	}
 	
 	// Move towards mouse pointer or touch
@@ -123,3 +148,54 @@ void ATP_TopDownPlayerController::OnTouchReleased()
 	bIsTouch = false;
 	OnSetDestinationReleased();
 }
+
+void ATP_TopDownPlayerController::ToggleMenu()
+{
+	HUD->ToggleMenu();
+}
+
+void ATP_TopDownPlayerController::InteractionCheck()
+{
+	FHitResult TraceHit;
+	AActor* HitActor = nullptr;
+
+	// Perform the trace to check for interactable items
+	if (GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, TraceHit))
+	{
+		HitActor = TraceHit.GetActor();
+
+		// Check if the actor is of type APickup
+		if (HitActor && HitActor->IsA(APickup::StaticClass()))
+		{
+			CurrentInteractable = HitActor;
+
+			// If the current interactable is different from the previously targeted one
+			if (TargetInteractable != CurrentInteractable)
+			{
+				// End focus on the previously targeted interactable
+				if (TargetInteractable)
+				{
+					TargetInteractable->EndFocus();
+				}
+
+				// Begin focus on the new interactable
+				TargetInteractable = CurrentInteractable;
+				TargetInteractable->BeginFocus();
+			}
+			return; // Exit here since we found a valid interactable
+		}
+	}
+
+	// If no interactable is hit or the hit actor is not a pickup
+	if (TargetInteractable)
+	{
+		TargetInteractable->EndFocus();
+		TargetInteractable = nullptr;
+	}
+
+	// Clear CurrentInteractable to prevent stale references
+	CurrentInteractable = nullptr;
+}
+
+
+

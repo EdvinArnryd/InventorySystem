@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Interfaces/InteractionInterface.h"
 #include "IST/ISTCharacter.h"
+#include "IST/TP_TopDownCharacter.h"
 #include "Pickup.generated.h"
 
 class UItemBase;
@@ -50,6 +51,7 @@ protected:
 	virtual void BeginPlay() override;
 	
 	virtual void Interact(AISTCharacter* PlayerCharacter) override;
+	
 	void UpdateInteractableData();
 	
 	void TakePickup(const AISTCharacter* Taker);

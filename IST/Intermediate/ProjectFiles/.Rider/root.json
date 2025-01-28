@@ -18,17 +18,17 @@
 		{
 			"Configuration": "DebugGame",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "DebugGame",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "DebugGame",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "Development",
@@ -48,32 +48,32 @@
 		{
 			"Configuration": "Development",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "Development",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "Development",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "Shipping",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "Shipping",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		},
 		{
 			"Configuration": "Shipping",
 			"Platform": "Win64",
-			"Target": "Game"
+			"Target": "Program"
 		}
 	]
 }
