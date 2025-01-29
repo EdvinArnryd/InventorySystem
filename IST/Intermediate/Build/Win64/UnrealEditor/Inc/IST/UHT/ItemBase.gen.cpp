@@ -12,7 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeItemBase() {}
 
 // Begin Cross Module References
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
-IST_API UClass* Z_Construct_UClass_AISTCharacter_NoRegister();
+IST_API UClass* Z_Construct_UClass_ATP_TopDownPlayerController_NoRegister();
 IST_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 IST_API UClass* Z_Construct_UClass_UItemBase();
 IST_API UClass* Z_Construct_UClass_UItemBase_NoRegister();
@@ -249,7 +249,7 @@ struct Z_Construct_UFunction_UItemBase_Use_Statics
 {
 	struct ItemBase_eventUse_Parms
 	{
-		AISTCharacter* Character;
+		ATP_TopDownPlayerController* Character;
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -261,7 +261,7 @@ struct Z_Construct_UFunction_UItemBase_Use_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UItemBase_Use_Statics::NewProp_Character = { "Character", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemBase_eventUse_Parms, Character), Z_Construct_UClass_AISTCharacter_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UItemBase_Use_Statics::NewProp_Character = { "Character", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemBase_eventUse_Parms, Character), Z_Construct_UClass_ATP_TopDownPlayerController_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UItemBase_Use_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemBase_Use_Statics::NewProp_Character,
 };
@@ -279,7 +279,7 @@ UFunction* Z_Construct_UFunction_UItemBase_Use()
 }
 DEFINE_FUNCTION(UItemBase::execUse)
 {
-	P_GET_OBJECT(AISTCharacter,Z_Param_Character);
+	P_GET_OBJECT(ATP_TopDownPlayerController,Z_Param_Character);
 	P_FINISH;
 	P_NATIVE_BEGIN;
 	P_THIS->Use(Z_Param_Character);
@@ -380,7 +380,7 @@ struct Z_Construct_UClass_UItemBase_Statics
 		{ &Z_Construct_UFunction_UItemBase_GetItemStackWeight, "GetItemStackWeight" }, // 983320330
 		{ &Z_Construct_UFunction_UItemBase_IsFullItemStack, "IsFullItemStack" }, // 4072288870
 		{ &Z_Construct_UFunction_UItemBase_SetQuantity, "SetQuantity" }, // 3575416297
-		{ &Z_Construct_UFunction_UItemBase_Use, "Use" }, // 3658820977
+		{ &Z_Construct_UFunction_UItemBase_Use, "Use" }, // 506538776
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -453,10 +453,10 @@ UItemBase::~UItemBase() {}
 struct Z_CompiledInDeferFile_FID_IST_Source_IST_Public_Items_ItemBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UItemBase, UItemBase::StaticClass, TEXT("UItemBase"), &Z_Registration_Info_UClass_UItemBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemBase), 1779719945U) },
+		{ Z_Construct_UClass_UItemBase, UItemBase::StaticClass, TEXT("UItemBase"), &Z_Registration_Info_UClass_UItemBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemBase), 2941058428U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_IST_Source_IST_Public_Items_ItemBase_h_3523210662(TEXT("/Script/IST"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_IST_Source_IST_Public_Items_ItemBase_h_4041461943(TEXT("/Script/IST"),
 	Z_CompiledInDeferFile_FID_IST_Source_IST_Public_Items_ItemBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_IST_Source_IST_Public_Items_ItemBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

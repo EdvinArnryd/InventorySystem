@@ -3,6 +3,7 @@
 
 #include "Items/ItemBase.h"
 #include "Components/InventoryComponent.h"
+#include "IST/TP_TopDownPlayerController.h"
 
 UItemBase::UItemBase() : bIsCopy(false), bIsPickup(false)
 {
@@ -46,6 +47,6 @@ void UItemBase::SetQuantity(const int32 NewQuantity)
 	}
 }
 
-void UItemBase::Use(AISTCharacter* Character)
+void UItemBase::Use(ATP_TopDownPlayerController* Character)
 {
 }

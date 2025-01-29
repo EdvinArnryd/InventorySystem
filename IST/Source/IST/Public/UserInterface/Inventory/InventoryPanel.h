@@ -10,7 +10,7 @@ class UTextBlock;
 class UWrapBox;
 class UInventoryItemSlot;
 class UInventoryComponent;
-class AISTCharacter;
+class ATP_TopDownPlayerController;
 /**
  * 
  */
@@ -33,7 +33,7 @@ public:
 	UTextBlock* CapacityInfo;
 
 	UPROPERTY()
-	AISTCharacter* PlayerCharacter;
+	ATP_TopDownPlayerController* PlayerCharacter;
 
 	UPROPERTY()
 	UInventoryComponent* InventoryReference;

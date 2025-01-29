@@ -7,6 +7,7 @@
 #include "InteractionWidget.generated.h"
 
 class AISTCharacter;
+class ATP_TopDownPlayerController;
 struct FInteractableData;
 class UTextBlock;
 class UProgressBar;
@@ -21,7 +22,7 @@ class IST_API UInteractionWidget : public UUserWidget
 
 public:
 	UPROPERTY(VisibleAnywhere, Category="Interaction Widget | Player Reference")
-	AISTCharacter* PlayerReference;
+	ATP_TopDownPlayerController* PlayerReference;
 
 	void UpdateWidget(const FInteractableData* InteractableData);
 

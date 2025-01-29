@@ -83,7 +83,7 @@ void APickup::EndFocus()
 	}
 }
 
-void APickup::Interact(AISTCharacter* PlayerCharacter)
+void APickup::Interact(ATP_TopDownPlayerController* PlayerCharacter)
 {
 	if (PlayerCharacter)
 	{
@@ -91,7 +91,7 @@ void APickup::Interact(AISTCharacter* PlayerCharacter)
 	}
 }
 
-void APickup::TakePickup(const AISTCharacter* Taker)
+void APickup::TakePickup(const ATP_TopDownPlayerController* Taker)
 {
 	if (!IsPendingKillPending())
 	{
@@ -107,7 +107,7 @@ void APickup::TakePickup(const AISTCharacter* Taker)
 					break;
 				case EItemAddResult::IAR_PartialAmountItemAdded:
 					UpdateInteractableData();
-					Taker->UpdateInteractionWidget();
+					//Taker->UpdateInteractionWidget();
 				case EItemAddResult::IAR_AllItemAdded:
 					Destroy();
 					break;

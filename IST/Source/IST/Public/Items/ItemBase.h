@@ -74,7 +74,7 @@ public:
 	void SetQuantity(const int32 NewQuantity);
 
 	UFUNCTION(Category = "Item")
-	virtual void Use(AISTCharacter* Character);
+	virtual void Use(ATP_TopDownPlayerController* Character);
 
 protected:
 	bool operator == (const FName& OtherID) const

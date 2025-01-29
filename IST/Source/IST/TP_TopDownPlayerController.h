@@ -9,6 +9,7 @@
 #include "Logging/LogMacros.h"
 #include "TP_TopDownPlayerController.generated.h"
 
+class UInventoryComponent;
 /** Forward declaration to improve compiling times */
 class UNiagaraSystem;
 class UInputMappingContext;
@@ -43,6 +44,8 @@ class ATP_TopDownPlayerController : public APlayerController
 public:
 	ATP_TopDownPlayerController();
 
+	FORCEINLINE UInventoryComponent* GetInventory() const { return PlayerInventory; };
+
 	/** Time Threshold to know if it was a short press */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	float ShortPressThreshold;
@@ -76,11 +79,16 @@ protected:
 
 	UPROPERTY()
 	AActor* CurrentInteractable;
+
+	UPROPERTY(VisibleAnywhere, Category="Character | Inventory")
+	UInventoryComponent* PlayerInventory;
 	
 	/** True if the controlled character should navigate to the mouse cursor. */
 	uint32 bMoveToMouseCursor : 1;
 
 	Finter InteractionData;
+
+	
 
 	virtual void SetupInputComponent() override;
 	

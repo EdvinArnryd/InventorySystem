@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define IST_TP_TopDownPlayerController_generated_h
 
-#define FID_IST_Source_IST_TP_TopDownPlayerController_h_24_GENERATED_BODY \
+#define FID_IST_Source_IST_TP_TopDownPlayerController_h_25_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_Finter_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct Finter>();
 
-#define FID_IST_Source_IST_TP_TopDownPlayerController_h_41_INCLASS_NO_PURE_DECLS \
+#define FID_IST_Source_IST_TP_TopDownPlayerController_h_42_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATP_TopDownPlayerController(); \
 	friend struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ATP_TopDownPlayerController)
 
 
-#define FID_IST_Source_IST_TP_TopDownPlayerController_h_41_ENHANCED_CONSTRUCTORS \
+#define FID_IST_Source_IST_TP_TopDownPlayerController_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ATP_TopDownPlayerController(ATP_TopDownPlayerController&&); \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~ATP_TopDownPlayerController();
 
 
-#define FID_IST_Source_IST_TP_TopDownPlayerController_h_38_PROLOG
-#define FID_IST_Source_IST_TP_TopDownPlayerController_h_41_GENERATED_BODY \
+#define FID_IST_Source_IST_TP_TopDownPlayerController_h_39_PROLOG
+#define FID_IST_Source_IST_TP_TopDownPlayerController_h_42_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_IST_Source_IST_TP_TopDownPlayerController_h_41_INCLASS_NO_PURE_DECLS \
-	FID_IST_Source_IST_TP_TopDownPlayerController_h_41_ENHANCED_CONSTRUCTORS \
+	FID_IST_Source_IST_TP_TopDownPlayerController_h_42_INCLASS_NO_PURE_DECLS \
+	FID_IST_Source_IST_TP_TopDownPlayerController_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

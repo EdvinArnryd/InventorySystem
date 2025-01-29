@@ -9,7 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AISTCharacter;
+class ATP_TopDownPlayerController;
 class UItemBase;
 #ifdef IST_ItemBase_generated_h
 #error "ItemBase.generated.h already included, missing '#pragma once' in ItemBase.h"

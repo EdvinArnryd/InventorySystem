@@ -32,5 +32,5 @@ protected:
 	virtual void EndFocus() override;
 	virtual void BeginInteract() override;
 	virtual void EndInteract() override;
-	virtual void Interact(AISTCharacter* PlayerCharacter) override;
+	virtual void Interact(ATP_TopDownPlayerController* PlayerCharacter) override;
 };

@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define IST_InteractionInterface_generated_h
 
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_24_GENERATED_BODY \
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_25_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FInteractableData_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct FInteractableData>();
 
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_ENHANCED_CONSTRUCTORS \
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	IST_API UInteractionInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -35,7 +35,7 @@ public: \
 	IST_API virtual ~UInteractionInterface();
 
 
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_GENERATED_UINTERFACE_BODY() \
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUInteractionInterface(); \
 	friend struct Z_Construct_UClass_UInteractionInterface_Statics; \
@@ -44,15 +44,15 @@ public: \
 	DECLARE_SERIALIZER(UInteractionInterface)
 
 
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_GENERATED_BODY \
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_GENERATED_UINTERFACE_BODY() \
-	FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_ENHANCED_CONSTRUCTORS \
+	FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_GENERATED_UINTERFACE_BODY() \
+	FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IInteractionInterface() {} \
 public: \
@@ -61,11 +61,11 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_53_PROLOG
-#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_64_GENERATED_BODY \
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_54_PROLOG
+#define FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_65_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_56_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_IST_Source_IST_Public_Interfaces_InteractionInterface_h_57_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

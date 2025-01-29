@@ -7,6 +7,7 @@
 #include "Components/InventoryComponent.h"
 #include "UserInterface/Inventory/InventoryItemSlot.h"
 #include "Components/WrapBox.h"
+#include "IST/TP_TopDownPlayerController.h"
 #include "Items/ItemBase.h"
 
 
@@ -14,7 +15,7 @@ void UInventoryPanel::NativeOnInitialized()
 {
 	Super::NativeOnInitialized();
 
-	PlayerCharacter = Cast<AISTCharacter>(GetOwningPlayerPawn());
+	PlayerCharacter = Cast<ATP_TopDownPlayerController>(GetOwningPlayerPawn());
 	if (PlayerCharacter)
 	{
 		InventoryReference = PlayerCharacter->GetInventory();

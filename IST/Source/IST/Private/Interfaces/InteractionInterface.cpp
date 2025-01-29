@@ -20,6 +20,6 @@ void IInteractionInterface::EndInteract()
 {
 }
 
-void IInteractionInterface::Interact(AISTCharacter* PlayerCharacter)
+void IInteractionInterface::Interact(ATP_TopDownPlayerController* PlayerCharacter)
 {
 }

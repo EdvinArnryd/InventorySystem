@@ -7,6 +7,7 @@
 #include "Interfaces/InteractionInterface.h"
 #include "IST/ISTCharacter.h"
 #include "IST/TP_TopDownCharacter.h"
+#include "IST/TP_TopDownPlayerController.h"
 #include "Pickup.generated.h"
 
 class UItemBase;
@@ -50,11 +51,11 @@ protected:
 	
 	virtual void BeginPlay() override;
 	
-	virtual void Interact(AISTCharacter* PlayerCharacter) override;
+	virtual void Interact(ATP_TopDownPlayerController* PlayerCharacter) override;
 	
 	void UpdateInteractableData();
 	
-	void TakePickup(const AISTCharacter* Taker);
+	void TakePickup(const ATP_TopDownPlayerController* Taker);
 
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;

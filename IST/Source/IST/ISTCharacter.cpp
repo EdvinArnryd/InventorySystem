@@ -250,7 +250,7 @@ void AISTCharacter::Interact()
 
 	if (IsValid(TargetInteractable.GetObject()))
 	{
-		TargetInteractable->Interact(this);
+		//TargetInteractable->Interact(this);
 	}
 }
 

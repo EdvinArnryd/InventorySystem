@@ -1,17 +1,21 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\private\\items\\itembase.cpp",
+        "Source": "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\private\\items\\itembase.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\isteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\public\\items\\itembase.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\public\\data\\itemdatastructs.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\itemdatastructs.generated.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\itembase.generated.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\source\\ist\\public\\components\\inventorycomponent.h",
-            "c:\\users\\edvin\\desktop\\inventorysystemtutorial\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\inventorycomponent.generated.h"
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ist\\definitions.ist.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\public\\items\\itembase.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\public\\data\\itemdatastructs.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\itemdatastructs.generated.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\itembase.generated.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\public\\components\\inventorycomponent.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\inventorycomponent.generated.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\tp_topdownplayercontroller.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\source\\ist\\public\\interfaces\\interactioninterface.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\interactioninterface.generated.h",
+            "c:\\users\\edvin\\desktop\\inventorysystemtut\\inventorysystemtutorial\\ist\\intermediate\\build\\win64\\unrealeditor\\inc\\ist\\uht\\tp_topdownplayercontroller.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

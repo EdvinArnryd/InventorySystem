@@ -10,7 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMainMenu() {}
 
 // Begin Cross Module References
-IST_API UClass* Z_Construct_UClass_AISTCharacter_NoRegister();
+IST_API UClass* Z_Construct_UClass_ATP_TopDownPlayerController_NoRegister();
 IST_API UClass* Z_Construct_UClass_UMainMenu();
 IST_API UClass* Z_Construct_UClass_UMainMenu_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
@@ -48,7 +48,7 @@ struct Z_Construct_UClass_UMainMenu_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainMenu_Statics::NewProp_PlayerCharacter = { "PlayerCharacter", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMainMenu, PlayerCharacter), Z_Construct_UClass_AISTCharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerCharacter_MetaData), NewProp_PlayerCharacter_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainMenu_Statics::NewProp_PlayerCharacter = { "PlayerCharacter", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMainMenu, PlayerCharacter), Z_Construct_UClass_ATP_TopDownPlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerCharacter_MetaData), NewProp_PlayerCharacter_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMainMenu_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMainMenu_Statics::NewProp_PlayerCharacter,
 };
@@ -94,10 +94,10 @@ UMainMenu::~UMainMenu() {}
 struct Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_MainMenu_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMainMenu, UMainMenu::StaticClass, TEXT("UMainMenu"), &Z_Registration_Info_UClass_UMainMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMainMenu), 585538105U) },
+		{ Z_Construct_UClass_UMainMenu, UMainMenu::StaticClass, TEXT("UMainMenu"), &Z_Registration_Info_UClass_UMainMenu, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMainMenu), 2643875652U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_MainMenu_h_2822620448(TEXT("/Script/IST"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_MainMenu_h_3859347254(TEXT("/Script/IST"),
 	Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_MainMenu_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_MainMenu_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

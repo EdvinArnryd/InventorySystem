@@ -7,6 +7,7 @@
 #include "InteractionInterface.generated.h"
 
 class AISTCharacter;
+class ATP_TopDownPlayerController;
 
 UENUM()
 enum class EInteractableType : uint8
@@ -69,7 +70,7 @@ public:
 	virtual void EndFocus();
 	virtual void BeginInteract();
 	virtual void EndInteract();
-	virtual void Interact(AISTCharacter* PlayerCharacter);
+	virtual void Interact(ATP_TopDownPlayerController* PlayerCharacter);
 
 	FInteractableData InteractableData;
 };

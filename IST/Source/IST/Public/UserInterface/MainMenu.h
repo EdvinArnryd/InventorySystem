@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "IST/ISTCharacter.h"
+#include "IST/TP_TopDownPlayerController.h"
 #include "MainMenu.generated.h"
 
 /**
@@ -17,7 +18,7 @@ class IST_API UMainMenu : public UUserWidget
 
 public:
 	UPROPERTY()
-	AISTCharacter* PlayerCharacter;
+	ATP_TopDownPlayerController* PlayerCharacter;
 	
 protected:
 	virtual void NativeOnInitialized() override;

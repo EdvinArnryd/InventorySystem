@@ -16,7 +16,7 @@ void UMainMenu::NativeConstruct()
 {
 	Super::NativeConstruct();
 
-	PlayerCharacter = Cast<AISTCharacter>(GetOwningPlayerPawn());
+	PlayerCharacter = Cast<ATP_TopDownPlayerController>(GetOwningPlayerPawn());
 }
 
 bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent,
@@ -28,7 +28,7 @@ bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& 
 
 	if (PlayerCharacter && ItemDragDrop->SourceItem)
 	{
-		PlayerCharacter->DropItem(ItemDragDrop->SourceItem, ItemDragDrop->SourceItem->Quantity);
+		//PlayerCharacter->DropItem(ItemDragDrop->SourceItem, ItemDragDrop->SourceItem->Quantity);
 		return true;
 	}
 	return false;

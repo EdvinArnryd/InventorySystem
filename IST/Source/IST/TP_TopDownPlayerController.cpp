@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "InputActionValue.h"
 #include "EnhancedInputSubsystems.h"
+#include "Components/InventoryComponent.h"
 #include "Engine/LocalPlayer.h"
 #include "UserInterface/ISTHud.h"
 #include "World/Pickup.h"
@@ -22,6 +23,10 @@ ATP_TopDownPlayerController::ATP_TopDownPlayerController()
 	DefaultMouseCursor = EMouseCursor::Default;
 	CachedDestination = FVector::ZeroVector;
 	FollowTime = 0.f;
+
+	PlayerInventory = CreateDefaultSubobject<UInventoryComponent>(TEXT("PlayerInventory"));
+	PlayerInventory->SetSlotsCapacity(20);
+	PlayerInventory->SetWeightCapacity(50.0f);
 }
 
 void ATP_TopDownPlayerController::BeginPlay()
@@ -108,7 +113,7 @@ void ATP_TopDownPlayerController::OnSetDestinationTriggered()
 			UE_LOG(LogTemp, Warning, TEXT("%s"), *Hit.GetActor()->GetName());
 			if (IsValid(TargetInteractable.GetObject()))
 			{
-				//TargetInteractable->Interact(this);
+				TargetInteractable->Interact(this);
 			}
 			
 		}
