@@ -15,17 +15,23 @@ void UInventoryPanel::NativeOnInitialized()
 {
 	Super::NativeOnInitialized();
 
-	PlayerCharacter = Cast<ATP_TopDownPlayerController>(GetOwningPlayerPawn());
-	if (PlayerCharacter)
+	// FIX: Get the Controller, not the Pawn
+	APlayerController* PlayerController = GetOwningPlayer();
+	if (PlayerController)
 	{
-		InventoryReference = PlayerCharacter->GetInventory();
-		if (InventoryReference)
+		PlayerCharacter = Cast<ATP_TopDownPlayerController>(PlayerController);
+		if (PlayerCharacter)
 		{
-			InventoryReference->OnInventoryUpdated.AddUObject(this, &UInventoryPanel::RefreshInventory);
-			SetInfoText();
+			InventoryReference = PlayerCharacter->GetInventory(); // Now correctly gets inventory from Controller
+			if (InventoryReference)
+			{
+				InventoryReference->OnInventoryUpdated.AddUObject(this, &UInventoryPanel::RefreshInventory);
+				SetInfoText();
+			}
 		}
 	}
 }
+
 
 void UInventoryPanel::SetInfoText() const
 {

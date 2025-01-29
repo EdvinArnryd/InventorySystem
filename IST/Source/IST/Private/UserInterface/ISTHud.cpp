@@ -55,16 +55,16 @@ void AISTHud::ToggleMenu()
 	{
 		HideMenu();
 
-		//const FInputModeGameOnly InputMode;
-		//GetOwningPlayerController()->SetInputMode(InputMode);
-		//GetOwningPlayerController()->SetShowMouseCursor(false);
+		// const FInputModeGameOnly InputMode;
+		// GetOwningPlayerController()->SetInputMode(InputMode);
+		// GetOwningPlayerController()->SetShowMouseCursor(false);
 	}
 	else
 	{
 		DisplayMenu();
-		//const FInputModeGameAndUI InputMode;
-		//GetOwningPlayerController()->SetInputMode(InputMode);
-		//GetOwningPlayerController()->SetShowMouseCursor(true);
+		// const FInputModeGameAndUI InputMode;
+		// GetOwningPlayerController()->SetInputMode(InputMode);
+		// GetOwningPlayerController()->SetShowMouseCursor(true);
 	}
 }
 

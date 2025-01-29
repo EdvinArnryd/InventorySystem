@@ -3,7 +3,65 @@
     "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
     "runs": [
         {
-            "results": [],
+            "results": [
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'Cast::FStaticWarningMsg_158::condition': Attempting to use Cast<> on types that are not related"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Intermediate/Build/Win64/x64/UnrealEditor/Development/IST/Module.IST.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h"
+                                },
+                                "region": {
+                                    "startLine": 158,
+                                    "startColumn": 6
+                                }
+                            }
+                        }
+                    ],
+                    "relatedLocations": [
+                        {
+                            "id": 0,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h"
+                                },
+                                "region": {
+                                    "startLine": 158,
+                                    "startColumn": 6
+                                }
+                            },
+                            "message": {
+                                "text": "the template instantiation context (the oldest one first) is"
+                            }
+                        },
+                        {
+                            "id": 1,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/MainMenu.cpp"
+                                },
+                                "region": {
+                                    "startLine": 19,
+                                    "startColumn": 20
+                                }
+                            },
+                            "message": {
+                                "text": "see reference to function template instantiation 'To *Cast<ATP_TopDownPlayerController,APawn>(From *)' being compiled\n        with\n        [\n            To=ATP_TopDownPlayerController,\n            From=APawn\n        ]"
+                            },
+                            "properties": {
+                                "nestingLevel": 1
+                            }
+                        }
+                    ]
+                }
+            ],
             "tool": {
                 "driver": {
                     "name": "MSVC",
