@@ -27,8 +27,6 @@ void AISTHud::BeginPlay()
 		InteractionWidget->AddToViewport(-1);
 		InteractionWidget->SetVisibility(ESlateVisibility::Collapsed);
 	}
-
-	
 }
 
 void AISTHud::DisplayMenu()
@@ -55,16 +53,16 @@ void AISTHud::ToggleMenu()
 	{
 		HideMenu();
 
-		// const FInputModeGameOnly InputMode;
-		// GetOwningPlayerController()->SetInputMode(InputMode);
+		const FInputModeGameOnly InputMode;
+		GetOwningPlayerController()->SetInputMode(InputMode);
 		// GetOwningPlayerController()->SetShowMouseCursor(false);
 	}
 	else
 	{
 		DisplayMenu();
-		// const FInputModeGameAndUI InputMode;
-		// GetOwningPlayerController()->SetInputMode(InputMode);
-		// GetOwningPlayerController()->SetShowMouseCursor(true);
+		const FInputModeGameAndUI InputMode;
+		GetOwningPlayerController()->SetInputMode(InputMode);
+		GetOwningPlayerController()->SetShowMouseCursor(true);
 	}
 }
 
@@ -83,7 +81,6 @@ void AISTHud::HideInteractionWidget() const
 		InteractionWidget->SetVisibility(ESlateVisibility::Collapsed);
 	}
 }
-
 
 void AISTHud::UpdateInteractionWidget(const FInteractableData* InteractableData) const
 {

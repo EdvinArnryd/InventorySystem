@@ -10,13 +10,13 @@
                         "text": "'Cast::FStaticWarningMsg_158::condition': Attempting to use Cast<> on types that are not related"
                     },
                     "analysisTarget": {
-                        "uri": "file:///C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/MainMenu.cpp"
+                        "uri": "file:///C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/MainMenu.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///E:/UnrealEngine/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h"
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h"
                                 },
                                 "region": {
                                     "startLine": 158,
@@ -30,7 +30,7 @@
                             "id": 0,
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///E:/UnrealEngine/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h"
+                                    "uri": "file:///C:/Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h"
                                 },
                                 "region": {
                                     "startLine": 158,
@@ -45,7 +45,7 @@
                             "id": 1,
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/MainMenu.cpp"
+                                    "uri": "file:///C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/MainMenu.cpp"
                                 },
                                 "region": {
                                     "startLine": 19,

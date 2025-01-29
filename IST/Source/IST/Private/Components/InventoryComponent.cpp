@@ -212,4 +212,12 @@ void UInventoryComponent::AddNewItem(UItemBase* Item, const int32 AmountToAdd)
 	OnInventoryUpdated.Broadcast();
 }
 
+void UInventoryComponent::RemoveItem()
+{
+	InventoryContents.Pop();
+	OnInventoryUpdated.Broadcast();
+}
+
+
+
 

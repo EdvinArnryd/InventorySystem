@@ -58,6 +58,8 @@ void ATP_TopDownPlayerController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(SetDestinationClickAction, ETriggerEvent::Canceled, this, &ATP_TopDownPlayerController::OnSetDestinationReleased);
 
 		InputComponent->BindAction("ToggleMenu", IE_Pressed, this, &ATP_TopDownPlayerController::ToggleMenu);
+
+		InputComponent->BindAction("PopItem", IE_Pressed, this, &ATP_TopDownPlayerController::PopItem);
 		
 		// Setup touch input events
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Started, this, &ATP_TopDownPlayerController::OnInputStarted);
@@ -200,6 +202,38 @@ void ATP_TopDownPlayerController::InteractionCheck()
 
 	// Clear CurrentInteractable to prevent stale references
 	CurrentInteractable = nullptr;
+}
+
+void ATP_TopDownPlayerController::DropItem(UItemBase* ItemToDrop, const int32 QuantityToDrop)
+{
+	if (PlayerInventory->FindMatchingItem(ItemToDrop))
+	{
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.Owner = this;
+		SpawnParams.bNoFail = true;
+		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+
+		APawn* ControlledPawn = GetPawn();
+
+		const FVector SpawnLocations = ControlledPawn->GetActorLocation() + (ControlledPawn->GetActorForwardVector() * 50.0f);
+		const FTransform SpawnTransform(ControlledPawn->GetActorRotation(), SpawnLocations);
+
+		const int32 RemovedQuantity = PlayerInventory->RemoveAmountOfItem(ItemToDrop, QuantityToDrop);
+
+		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
+
+		Pickup->InitializeDrop(ItemToDrop, RemovedQuantity);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Item to drop was somehow null!"));
+	}
+}
+
+
+void ATP_TopDownPlayerController::PopItem()
+{
+	PlayerInventory->RemoveItem();
 }
 
 

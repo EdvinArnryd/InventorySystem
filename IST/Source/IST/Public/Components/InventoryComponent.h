@@ -105,6 +105,10 @@ public:
 	UFUNCTION(Category = "Inventory")
 	FORCEINLINE void SetWeightCapacity(const float NewWeightCapacity) { InventoryWeightCapacity = NewWeightCapacity; };
 
+
+	
+	void RemoveItem();
+
 protected:
 
 	UPROPERTY(VisibleAnywhere, Category="Inventory")
@@ -127,5 +131,4 @@ protected:
 	int32 CalculateNumberForFullStack(UItemBase* StackableItem, int32 InitialRequestedAddAmount);
 
 	void AddNewItem(UItemBase* Item, const int32 AmountToAdd);
-	
 };

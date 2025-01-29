@@ -9,6 +9,7 @@
 #include "Logging/LogMacros.h"
 #include "TP_TopDownPlayerController.generated.h"
 
+class UItemBase;
 class UInventoryComponent;
 /** Forward declaration to improve compiling times */
 class UNiagaraSystem;
@@ -66,6 +67,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* SetDestinationTouchAction;
 
+	void DropItem(UItemBase* ItemToDrop, const int32 QuantityToDrop);
 	
 	virtual void Tick(float DeltaSeconds) override;
 
@@ -105,6 +107,8 @@ protected:
 	void ToggleMenu();
 
 	void InteractionCheck();
+
+	void PopItem();
 
 private:
 	FVector CachedDestination;
