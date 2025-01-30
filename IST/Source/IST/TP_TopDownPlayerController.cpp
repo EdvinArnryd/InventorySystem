@@ -83,6 +83,27 @@ void ATP_TopDownPlayerController::Tick(float DeltaSeconds)
 	Super::Tick(DeltaSeconds);
 
 	InteractionCheck();
+	
+	if (CachedPickup)
+	{
+		APawn* ControlledPawn = GetPawn();
+		if (!ControlledPawn)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("No controlled pawn found in Tick()!"));
+			return;
+		}
+
+		float Distance = FVector::Dist(ControlledPawn->GetActorLocation(), CachedPickup->GetActorLocation());
+
+		// If in range, pick up the item
+		if (Distance <= PickupRange)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Picking up item: %s"), *CachedPickup->GetName());
+
+			CachedPickup->Interact(this);
+			CachedPickup = nullptr; // Clear cache after picking up
+		}
+	}
 }
 
 // Triggered every frame when the input is held down
@@ -94,6 +115,8 @@ void ATP_TopDownPlayerController::OnSetDestinationTriggered()
 	// We look for the location in the world where the player has pressed the input
 	FHitResult Hit;
 	bool bHitSuccessful = false;
+	APawn* ControlledPawn = GetPawn();
+	
 	if (bIsTouch)
 	{
 		bHitSuccessful = GetHitResultUnderFinger(ETouchIndex::Touch1, ECollisionChannel::ECC_Visibility, true, Hit);
@@ -101,8 +124,7 @@ void ATP_TopDownPlayerController::OnSetDestinationTriggered()
 	else
 	{
 		bHitSuccessful = GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, true, Hit);
-
-		
+		CachedPickup = nullptr;
 	}
 
 	// If we hit a surface, cache the location
@@ -110,19 +132,14 @@ void ATP_TopDownPlayerController::OnSetDestinationTriggered()
 	{
 		CachedDestination = Hit.Location;
 
-		if (Hit.GetActor()->IsA(APickup::StaticClass()))
+		if (Hit.GetActor() && Hit.GetActor()->IsA(APickup::StaticClass()))
 		{
-			UE_LOG(LogTemp, Warning, TEXT("%s"), *Hit.GetActor()->GetName());
-			if (IsValid(TargetInteractable.GetObject()))
-			{
-				TargetInteractable->Interact(this);
-			}
-			
+			CachedPickup = Cast<APickup>(Hit.GetActor());
+			UE_LOG(LogTemp, Warning, TEXT("Cached pickup: %s"), *CachedPickup->GetName());
 		}
 	}
 	
-	// Move towards mouse pointer or touch
-	APawn* ControlledPawn = GetPawn();
+	
 	if (ControlledPawn != nullptr)
 	{
 		FVector WorldDirection = (CachedDestination - ControlledPawn->GetActorLocation()).GetSafeNormal();

@@ -181,6 +181,10 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PickupRange_MetaData[] = {
+		{ "Category", "Interaction" },
+		{ "ModuleRelativePath", "TP_TopDownPlayerController.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ShortPressThreshold;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FXCursor;
@@ -191,6 +195,7 @@ struct Z_Construct_UClass_ATP_TopDownPlayerController_Statics
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_TargetInteractable;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CurrentInteractable;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerInventory;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_PickupRange;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -207,6 +212,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATP_TopDownPla
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_TargetInteractable = { "TargetInteractable", nullptr, (EPropertyFlags)0x0024080000020001, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATP_TopDownPlayerController, TargetInteractable), Z_Construct_UClass_UInteractionInterface_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetInteractable_MetaData), NewProp_TargetInteractable_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_CurrentInteractable = { "CurrentInteractable", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATP_TopDownPlayerController, CurrentInteractable), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentInteractable_MetaData), NewProp_CurrentInteractable_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_PlayerInventory = { "PlayerInventory", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATP_TopDownPlayerController, PlayerInventory), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerInventory_MetaData), NewProp_PlayerInventory_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_PickupRange = { "PickupRange", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATP_TopDownPlayerController, PickupRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PickupRange_MetaData), NewProp_PickupRange_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATP_TopDownPlayerController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_ShortPressThreshold,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_FXCursor,
@@ -217,6 +223,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATP_TopDo
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_TargetInteractable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_CurrentInteractable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_PlayerInventory,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATP_TopDownPlayerController_Statics::NewProp_PickupRange,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ATP_TopDownPlayerController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ATP_TopDownPlayerController_Statics::DependentSingletons[])() = {
@@ -256,18 +263,18 @@ ATP_TopDownPlayerController::~ATP_TopDownPlayerController() {}
 // End Class ATP_TopDownPlayerController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics
+struct Z_CompiledInDeferFile_FID_IST_Source_IST_TP_TopDownPlayerController_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ Finter::StaticStruct, Z_Construct_UScriptStruct_Finter_Statics::NewStructOps, TEXT("inter"), &Z_Registration_Info_UScriptStruct_inter, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(Finter), 1136290650U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATP_TopDownPlayerController, ATP_TopDownPlayerController::StaticClass, TEXT("ATP_TopDownPlayerController"), &Z_Registration_Info_UClass_ATP_TopDownPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownPlayerController), 1877210957U) },
+		{ Z_Construct_UClass_ATP_TopDownPlayerController, ATP_TopDownPlayerController::StaticClass, TEXT("ATP_TopDownPlayerController"), &Z_Registration_Info_UClass_ATP_TopDownPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATP_TopDownPlayerController), 4162004266U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_1461123859(TEXT("/Script/IST"),
-	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_IST_Source_IST_TP_TopDownPlayerController_h_13510970(TEXT("/Script/IST"),
+	Z_CompiledInDeferFile_FID_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_IST_Source_IST_TP_TopDownPlayerController_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

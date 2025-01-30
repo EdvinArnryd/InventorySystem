@@ -9,6 +9,7 @@
 #include "Logging/LogMacros.h"
 #include "TP_TopDownPlayerController.generated.h"
 
+class APickup;
 class UItemBase;
 class UInventoryComponent;
 /** Forward declaration to improve compiling times */
@@ -84,6 +85,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category="Character | Inventory")
 	UInventoryComponent* PlayerInventory;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Interaction")
+	float PickupRange = 200.0f;
 	
 	/** True if the controlled character should navigate to the mouse cursor. */
 	uint32 bMoveToMouseCursor : 1;
@@ -112,7 +116,9 @@ protected:
 
 private:
 	FVector CachedDestination;
+	APickup* CachedPickup = nullptr;
 
+	
 	bool bIsTouch; // Is it a touch device
 	float FollowTime; // For how long it has been pressed
 };

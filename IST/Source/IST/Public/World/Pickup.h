@@ -28,6 +28,8 @@ public:
 	
 	virtual void BeginFocus() override;
 	virtual void EndFocus() override;
+	
+	virtual void Interact(ATP_TopDownPlayerController* PlayerCharacter) override;
 
 	
 protected:
@@ -50,8 +52,6 @@ protected:
 	FInteractableData InstanceInteractableData;
 	
 	virtual void BeginPlay() override;
-	
-	virtual void Interact(ATP_TopDownPlayerController* PlayerCharacter) override;
 	
 	void UpdateInteractableData();
 	
