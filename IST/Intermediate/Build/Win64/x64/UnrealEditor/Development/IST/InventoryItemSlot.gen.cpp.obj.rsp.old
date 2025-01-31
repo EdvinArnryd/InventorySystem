@@ -1,12 +1,12 @@
-"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\UnrealEditor\Inc\IST\UHT\InventoryItemSlot.gen.cpp"
-/FI"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\Definitions.IST.h"
-/Yu"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\InventoryItemSlot.gen.cpp.obj"
-/experimental:log "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\InventoryItemSlot.gen.cpp.sarif"
-/sourceDependencies "C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\InventoryItemSlot.gen.cpp.dep.json"
-@"C:\Users\edvin.arnryd\OneDrive - Change Maker Education\Skrivbordet\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\IST.Shared.rsp"
+"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\UnrealEditor\Inc\IST\UHT\InventoryItemSlot.gen.cpp"
+/FI"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\Definitions.IST.h"
+/Yu"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\ISTEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\InventoryItemSlot.gen.cpp.obj"
+/experimental:log "C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\InventoryItemSlot.gen.cpp.sarif"
+/sourceDependencies "C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\InventoryItemSlot.gen.cpp.dep.json"
+@"C:\Users\Edvin\Desktop\InventorySystemTut\InventorySystemTutorial\IST\Intermediate\Build\Win64\x64\UnrealEditor\Development\IST\IST.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

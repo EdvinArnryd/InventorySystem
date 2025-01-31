@@ -16,10 +16,14 @@
 			"InventoryPanel.cpp.obj",
 			"InventoryToolTip.cpp.obj",
 			"ItemDragDropOperation.cpp.obj",
+			"ISTHud.cpp.obj",
+			"MainMenu.cpp.obj",
 			"InterfaceTestActor.cpp.obj",
+			"Pickup.cpp.obj",
 			"TP_TopDown.cpp.obj",
 			"TP_TopDownCharacter.cpp.obj",
 			"TP_TopDownGameMode.cpp.obj",
+			"TP_TopDownPlayerController.cpp.obj",
 			"DragItemVisual.gen.cpp.obj",
 			"InteractionInterface.gen.cpp.obj",
 			"InteractionWidget.gen.cpp.obj",
@@ -40,11 +44,7 @@
 			"Pickup.gen.cpp.obj",
 			"TP_TopDownCharacter.gen.cpp.obj",
 			"TP_TopDownGameMode.gen.cpp.obj",
-			"TP_TopDownPlayerController.gen.cpp.obj",
-			"ISTHud.cpp.obj",
-			"MainMenu.cpp.obj",
-			"Pickup.cpp.obj",
-			"TP_TopDownPlayerController.cpp.obj"
+			"TP_TopDownPlayerController.gen.cpp.obj"
 		]
 	}
 }
