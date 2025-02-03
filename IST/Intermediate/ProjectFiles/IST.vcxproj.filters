@@ -142,9 +142,6 @@
     <Filter Include="Source\IST\Private\World">
       <UniqueIdentifier>{BC07C59A-D602-325B-9AED-0D34EEF99265}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\IST\Private\World\InterfaceTestActor.cpp">
-      <Filter>Source\IST\Private\World</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Private\World\Pickup.cpp">
       <Filter>Source\IST\Private\World</Filter>
     </ClCompile>
@@ -217,9 +214,6 @@
     <Filter Include="Source\IST\Public\World">
       <UniqueIdentifier>{D1594C30-CB1B-3E1C-B08B-DF3C23ED0500}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\IST\Public\World\InterfaceTestActor.h">
-      <Filter>Source\IST\Public\World</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Public\World\Pickup.h">
       <Filter>Source\IST\Public\World</Filter>
     </ClCompile>

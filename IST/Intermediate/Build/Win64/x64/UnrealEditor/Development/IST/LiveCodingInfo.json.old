@@ -5,7 +5,6 @@
 			"DragItemVisual.gen.cpp.obj",
 			"InteractionInterface.gen.cpp.obj",
 			"InteractionWidget.gen.cpp.obj",
-			"InterfaceTestActor.gen.cpp.obj",
 			"InventoryComponent.gen.cpp.obj",
 			"InventoryItemSlot.gen.cpp.obj",
 			"InventoryPanel.gen.cpp.obj",
@@ -27,7 +26,6 @@
 			"IST.cpp.obj",
 			"ISTCharacter.cpp.obj",
 			"ISTGameMode.cpp.obj",
-			"InventoryComponent.cpp.obj",
 			"InteractionInterface.cpp.obj",
 			"ItemBase.cpp.obj",
 			"ISTPlayerController.cpp.obj",
@@ -39,12 +37,12 @@
 			"ItemDragDropOperation.cpp.obj",
 			"ISTHud.cpp.obj",
 			"MainMenu.cpp.obj",
-			"InterfaceTestActor.cpp.obj",
 			"Pickup.cpp.obj",
 			"TP_TopDown.cpp.obj",
 			"TP_TopDownCharacter.cpp.obj",
 			"TP_TopDownGameMode.cpp.obj",
-			"TP_TopDownPlayerController.cpp.obj"
+			"TP_TopDownPlayerController.cpp.obj",
+			"InventoryComponent.cpp.obj"
 		]
 	}
 }
