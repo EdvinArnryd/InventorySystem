@@ -10,6 +10,7 @@
 #include "IST/TP_TopDownPlayerController.h"
 #include "Pickup.generated.h"
 
+class UInteractionText;
 class UItemBase;
 
 UCLASS()
@@ -56,6 +57,9 @@ protected:
 	void UpdateInteractableData();
 	
 	void TakePickup(const ATP_TopDownPlayerController* Taker);
+
+	UPROPERTY()
+	UInteractionText* InteractionText;
 
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;

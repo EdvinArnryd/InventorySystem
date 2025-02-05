@@ -4,7 +4,10 @@
 #include "World/Pickup.h"
 
 #include "Components/InventoryComponent.h"
+#include "Components/SlateWrapperTypes.h"
+#include "Components/TextBlock.h"
 #include "Items/ItemBase.h"
+#include "UserInterface/Interaction/InteractionText.h"
 
 APickup::APickup()
 {
@@ -21,6 +24,16 @@ void APickup::BeginPlay()
 	Super::BeginPlay();
 
 	InitializePickup(UItemBase::StaticClass(), ItemQuantity);
+
+	if (!InteractionText)
+	{
+		InteractionText = CreateWidget<UInteractionText>(GetWorld(), UInteractionText::StaticClass());
+		
+		if (!InteractionText)
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to create InteractionText in APickup::BeginPlay"));
+		}
+	}
 	
 }
 
@@ -72,14 +85,46 @@ void APickup::BeginFocus()
 	if (PickupMesh)
 	{
 		PickupMesh->SetRenderCustomDepth(true);
+
+		
+		InteractionText = CreateWidget<UInteractionText>(GetWorld(), UInteractionText::StaticClass());
+		if (InteractionText)
+		{
+			InteractionText->AddToViewport();
+		}
+
+		if (!InteractionText)
+		{
+			UE_LOG(LogTemp, Error, TEXT("InteractionText is NULL in APickup::BeginFocus"));
+			return;
+		}
+		
+		if (!InteractionText->Name)
+		{
+			UE_LOG(LogTemp, Error, TEXT("InteractionText->Name is NULL in APickup::BeginFocus"));
+			return;
+		}
+
+		if (!ItemReference)
+		{
+			UE_LOG(LogTemp, Error, TEXT("ItemReference is NULL in APickup::BeginFocus"));
+			return;
+		}
+
+		UE_LOG(LogTemp, Warning, TEXT("Setting text: %s"), *ItemReference->TextData.Name.ToString());
+
+		InteractionText->Name->SetText(ItemReference->TextData.Name);
+		InteractionText->SetVisibility(ESlateVisibility::Visible);
 	}
 }
+
 
 void APickup::EndFocus()
 {
 	if (PickupMesh)
 	{
 		PickupMesh->SetRenderCustomDepth(false);
+		InteractionText->SetVisibility(ESlateVisibility::Collapsed);
 	}
 }
 

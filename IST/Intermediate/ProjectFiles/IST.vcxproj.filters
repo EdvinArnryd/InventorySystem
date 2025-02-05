@@ -118,6 +118,9 @@
     <Filter Include="Source\IST\Private\UserInterface\Interaction">
       <UniqueIdentifier>{FC764105-4946-3DE6-80FF-62BAE42DA81C}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\IST\Private\UserInterface\Interaction\InteractionText.cpp">
+      <Filter>Source\IST\Private\UserInterface\Interaction</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Private\UserInterface\Interaction\InteractionWidget.cpp">
       <Filter>Source\IST\Private\UserInterface\Interaction</Filter>
     </ClCompile>
@@ -190,6 +193,9 @@
     <Filter Include="Source\IST\Public\UserInterface\Interaction">
       <UniqueIdentifier>{50E0A701-91FF-332A-B279-E4400C1C7D49}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\IST\Public\UserInterface\Interaction\InteractionText.h">
+      <Filter>Source\IST\Public\UserInterface\Interaction</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\IST\Public\UserInterface\Interaction\InteractionWidget.h">
       <Filter>Source\IST\Public\UserInterface\Interaction</Filter>
     </ClCompile>
