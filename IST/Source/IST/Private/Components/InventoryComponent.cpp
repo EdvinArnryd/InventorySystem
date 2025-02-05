@@ -50,43 +50,6 @@ UItemBase* UInventoryComponent::FindNextItemByID(UItemBase* ItemIn) const
 	return nullptr;
 }
 
-UItemBase* UInventoryComponent::FindNextPartialStack(UItemBase* ItemIn) const
-{
-	// if (const TArray<TObjectPtr<UItemBase>>::ElementType* Result =
-	// 	InventoryContents.FindByPredicate([&ItemIn](const UItemBase* InventoryItem)
-	// 	{
-	// 		return InventoryItem->ID == ItemIn->ID && !InventoryItem->IsFullItemStack();
-	// 	}
-	// 	))
-	// {
-	// 	return *Result;
-	// }
-	
-	return nullptr;
-}
-
-
-int32 UInventoryComponent::CalculateWeightAddAmount(UItemBase* ItemIn, int32 RequestedAddAmount)
-{
-	// const int32 WeightMaxAddAmount = FMath::FloorToInt((GetWeightCapacity() - InventoryTotalWeight) / ItemIn->GetItemSingleWeight());
-	// if (WeightMaxAddAmount >= RequestedAddAmount)
-	// {
-	// 	return RequestedAddAmount;
-	// }
-	// return WeightMaxAddAmount;
-
-	return 0;
-}
-
-int32 UInventoryComponent::CalculateNumberForFullStack(UItemBase* StackableItem, int32 InitialRequestedAddAmount)
-{
-	// const int32 AddAmountToMakeFullStack = StackableItem->NumericData.MaxStackSize - StackableItem->Quantity;
-	//
-	// return FMath::Min(InitialRequestedAddAmount, AddAmountToMakeFullStack);
-
-	return 0;
-}
-
 void UInventoryComponent::RemoveSingleInstanceOfItem(UItemBase* ItemToRemove)
 {
 	InventoryContents.RemoveSingle(ItemToRemove);
@@ -107,38 +70,8 @@ int32 UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn, int32 DesiredAm
 	return ActualAmountToRemove;
 }
 
-void UInventoryComponent::SplitExistingStack(UItemBase* ItemIn, const int32 AMountToSplit)
-{
-	// if (!(InventoryContents.Num() + 1 > InventorySlotsCapacity))
-	// {
-	// 	RemoveAmountOfItem(ItemIn, AMountToSplit);
-	// 	AddNewItem(ItemIn, AMountToSplit);
-	// }
-}
-
 FItemAddResult UInventoryComponent::HandleNonStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
 {
-	// // check if the input item has valid weight
-	// if (FMath::IsNearlyZero(ItemIn->GetItemSingleWeight()) || ItemIn->GetItemSingleWeight() < 0)
-	// {
-	// 	return FItemAddResult::AddedNone(FText::Format(
-	// 		FText::FromString("Could not add {0} to the inventory. Item has invalid weight value."), ItemIn->TextData.Name));
-	// }
-	//
-	// // will the item weight overflow weight capacity
-	// if (InventoryTotalWeight + ItemIn->GetItemSingleWeight() > GetWeightCapacity())
-	// {
-	// 	return FItemAddResult::AddedNone(FText::Format(
-	// 		FText::FromString("Could not add {0} to the inventory. Item would overflow weight limit."), ItemIn->TextData.Name));
-	// }
-	//
-	// // adding one more item would overflow slot capacity
-	// if (InventoryContents.Num() + 1 > InventorySlotsCapacity)
-	// {
-	// 	return FItemAddResult::AddedNone(FText::Format(
-	// 		FText::FromString("Could not add {0} to the inventory. All inventory slots are full."), ItemIn->TextData.Name));
-	// }
-
 	//This line is the only necessary one, imo
 	AddNewItem(ItemIn, 1);
 	

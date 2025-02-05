@@ -16,30 +16,28 @@ struct FItemAddResult;
 #endif
 #define IST_InventoryComponent_generated_h
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_24_GENERATED_BODY \
+#define FID_IST_Source_IST_Public_Components_InventoryComponent_h_24_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemAddResult_Statics; \
 	IST_API static class UScriptStruct* StaticStruct();
 
 
 template<> IST_API UScriptStruct* StaticStruct<struct FItemAddResult>();
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetWeightCapacity); \
 	DECLARE_FUNCTION(execSetSlotsCapacity); \
 	DECLARE_FUNCTION(execGetInventoryContents); \
 	DECLARE_FUNCTION(execGetSlotsCapacity); \
 	DECLARE_FUNCTION(execGetWeightCapacity); \
 	DECLARE_FUNCTION(execGetInventoryTotalWeight); \
-	DECLARE_FUNCTION(execSplitExistingStack); \
 	DECLARE_FUNCTION(execRemoveAmountOfItem); \
 	DECLARE_FUNCTION(execRemoveSingleInstanceOfItem); \
-	DECLARE_FUNCTION(execFindNextPartialStack); \
 	DECLARE_FUNCTION(execFindNextItemByID); \
 	DECLARE_FUNCTION(execFindMatchingItem); \
 	DECLARE_FUNCTION(execHandleAddItem);
 
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_INCLASS_NO_PURE_DECLS \
+#define FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUInventoryComponent(); \
 	friend struct Z_Construct_UClass_UInventoryComponent_Statics; \
@@ -48,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryComponent)
 
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_ENHANCED_CONSTRUCTORS \
+#define FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UInventoryComponent(UInventoryComponent&&); \
@@ -60,13 +58,13 @@ public: \
 	NO_API virtual ~UInventoryComponent();
 
 
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_66_PROLOG
-#define FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_GENERATED_BODY \
+#define FID_IST_Source_IST_Public_Components_InventoryComponent_h_66_PROLOG
+#define FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_INCLASS_NO_PURE_DECLS \
-	FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h_69_ENHANCED_CONSTRUCTORS \
+	FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_INCLASS_NO_PURE_DECLS \
+	FID_IST_Source_IST_Public_Components_InventoryComponent_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -74,7 +72,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> IST_API UClass* StaticClass<class UInventoryComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_Components_InventoryComponent_h
+#define CURRENT_FILE_ID FID_IST_Source_IST_Public_Components_InventoryComponent_h
 
 
 #define FOREACH_ENUM_EITEMADDRESULT(op) \

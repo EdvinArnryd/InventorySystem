@@ -81,15 +81,11 @@ public:
 	UItemBase* FindMatchingItem(UItemBase* ItemIn) const;
 	UFUNCTION(Category = "Inventory")
 	UItemBase* FindNextItemByID(UItemBase* ItemIn) const;
-	UFUNCTION(Category = "Inventory")
-	UItemBase* FindNextPartialStack(UItemBase* ItemIn) const;
 
 	UFUNCTION(Category = "Inventory")
 	void RemoveSingleInstanceOfItem(UItemBase* ItemToRemove);
 	UFUNCTION(Category = "Inventory")
 	int32 RemoveAmountOfItem(UItemBase* ItemIn, int32 DesiredAmountToRemove);
-	UFUNCTION(Category = "Inventory")
-	void SplitExistingStack(UItemBase* ItemIn, const int32 AMountToSplit);
 
 	UFUNCTION(Category = "Inventory")
 	FORCEINLINE float GetInventoryTotalWeight() const { return InventoryTotalWeight; };
@@ -127,8 +123,6 @@ protected:
 
 	FItemAddResult HandleNonStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount);
 	int32 HandleStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount);
-	int32 CalculateWeightAddAmount(UItemBase* ItemIn, int32 RequestedAddAmount);
-	int32 CalculateNumberForFullStack(UItemBase* StackableItem, int32 InitialRequestedAddAmount);
 
 	void AddNewItem(UItemBase* Item, const int32 AmountToAdd);
 };
