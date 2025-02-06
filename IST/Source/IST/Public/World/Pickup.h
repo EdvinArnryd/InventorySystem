@@ -59,6 +59,9 @@ protected:
 	void TakePickup(const ATP_TopDownPlayerController* Taker);
 
 	UPROPERTY()
+	TSubclassOf<UUserWidget> WidgetClass;
+
+	UPROPERTY()
 	UInteractionText* InteractionText;
 
 #if WITH_EDITOR

@@ -10,6 +10,7 @@
 			"InteractionInterface.cpp.obj",
 			"ItemBase.cpp.obj",
 			"ISTPlayerController.cpp.obj",
+			"InteractionText.cpp.obj",
 			"InteractionWidget.cpp.obj",
 			"DragItemVisual.cpp.obj",
 			"InventoryItemSlot.cpp.obj",
@@ -43,7 +44,6 @@
 			"TP_TopDownCharacter.gen.cpp.obj",
 			"TP_TopDownGameMode.gen.cpp.obj",
 			"TP_TopDownPlayerController.gen.cpp.obj",
-			"InteractionText.cpp.obj",
 			"Pickup.cpp.obj"
 		]
 	}

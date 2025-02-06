@@ -3,6 +3,9 @@
 
 #include "World/Pickup.h"
 
+#include "MeshPaintVisualize.h"
+#include "Blueprint/WidgetLayoutLibrary.h"  // For ProjectWorldLocationToScreen
+#include "Kismet/GameplayStatics.h"         // For GetPlayerController
 #include "Components/InventoryComponent.h"
 #include "Components/SlateWrapperTypes.h"
 #include "Components/TextBlock.h"
@@ -16,6 +19,13 @@ APickup::APickup()
 	PickupMesh = CreateDefaultSubobject<UStaticMeshComponent>("PickupMesh");
 	PickupMesh->SetSimulatePhysics(true);
 	SetRootComponent(PickupMesh);
+
+	static ConstructorHelpers::FClassFinder<UInteractionText> WidgetBPClass(TEXT("/Game/UserInterface/WBP_Interaction"));
+
+	if (WidgetBPClass.Succeeded())
+	{
+		WidgetClass = WidgetBPClass.Class;
+	}
 }
 
 
@@ -25,14 +35,15 @@ void APickup::BeginPlay()
 
 	InitializePickup(UItemBase::StaticClass(), ItemQuantity);
 
-	if (!InteractionText)
+	if (WidgetClass)
 	{
-		InteractionText = CreateWidget<UInteractionText>(GetWorld(), UInteractionText::StaticClass());
-		
-		if (!InteractionText)
-		{
-			UE_LOG(LogTemp, Error, TEXT("Failed to create InteractionText in APickup::BeginPlay"));
-		}
+		InteractionText = CreateWidget<UInteractionText>(GetWorld(), WidgetClass);
+	
+		UE_LOG(LogTemp, Error, TEXT("Widget should work!"))
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Widget was not found."));
 	}
 	
 }
@@ -86,35 +97,48 @@ void APickup::BeginFocus()
 	{
 		PickupMesh->SetRenderCustomDepth(true);
 
-		
-		InteractionText = CreateWidget<UInteractionText>(GetWorld(), UInteractionText::StaticClass());
 		if (InteractionText)
 		{
 			InteractionText->AddToViewport();
 		}
 
-		if (!InteractionText)
-		{
-			UE_LOG(LogTemp, Error, TEXT("InteractionText is NULL in APickup::BeginFocus"));
-			return;
-		}
-		
-		if (!InteractionText->Name)
-		{
-			UE_LOG(LogTemp, Error, TEXT("InteractionText->Name is NULL in APickup::BeginFocus"));
-			return;
-		}
-
-		if (!ItemReference)
-		{
-			UE_LOG(LogTemp, Error, TEXT("ItemReference is NULL in APickup::BeginFocus"));
-			return;
-		}
-
-		UE_LOG(LogTemp, Warning, TEXT("Setting text: %s"), *ItemReference->TextData.Name.ToString());
-
+		// Set the interaction text to the name of the item
 		InteractionText->Name->SetText(ItemReference->TextData.Name);
 		InteractionText->SetVisibility(ESlateVisibility::Visible);
+
+		
+		FVector PickupLocation = GetActorLocation();
+		APlayerController* PC = UGameplayStatics::GetPlayerController(this, 0);
+
+		if (PC)
+		{
+			FVector2D InteractionTextPosition;
+			// Store the X and Y values from the world of the actor location inside the ScreenPosition
+			bool bProjected = PC->ProjectWorldLocationToScreen(PickupLocation, InteractionTextPosition);
+
+
+			if (bProjected)
+			{
+				InteractionText->SetPositionInViewport(InteractionTextPosition);
+				UE_LOG(LogTemp, Warning, TEXT("Widget moved to: %s"), *InteractionTextPosition.ToString());
+			}
+		}
+
+		switch (ItemReference->ItemQuality)
+		{
+		case EItemQuality::Common:
+			InteractionText->Name->SetColorAndOpacity(FLinearColor::Gray);
+			break;
+		case EItemQuality::Rare:
+			InteractionText->Name->SetColorAndOpacity(FLinearColor::Blue);
+			break;
+		case EItemQuality::Epic:
+			InteractionText->Name->SetColorAndOpacity(FLinearColor::Yellow);
+			break;
+		case EItemQuality::Legendary:
+			InteractionText->Name->SetColorAndOpacity(FLinearColor::Red);
+			break;
+		}
 	}
 }
 

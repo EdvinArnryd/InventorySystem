@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.IST.cpp.obj": [
-			"InteractionText.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"IST.cpp.obj",
 			"ISTCharacter.cpp.obj",
@@ -11,6 +10,7 @@
 			"InteractionInterface.cpp.obj",
 			"ItemBase.cpp.obj",
 			"ISTPlayerController.cpp.obj",
+			"InteractionText.cpp.obj",
 			"InteractionWidget.cpp.obj",
 			"DragItemVisual.cpp.obj",
 			"InventoryItemSlot.cpp.obj",
@@ -26,6 +26,7 @@
 			"TP_TopDownPlayerController.cpp.obj",
 			"DragItemVisual.gen.cpp.obj",
 			"InteractionInterface.gen.cpp.obj",
+			"InteractionText.gen.cpp.obj",
 			"InteractionWidget.gen.cpp.obj",
 			"InventoryComponent.gen.cpp.obj",
 			"InventoryItemSlot.gen.cpp.obj",
@@ -43,8 +44,7 @@
 			"Pickup.gen.cpp.obj",
 			"TP_TopDownCharacter.gen.cpp.obj",
 			"TP_TopDownGameMode.gen.cpp.obj",
-			"TP_TopDownPlayerController.gen.cpp.obj",
-			"InteractionText.cpp.obj"
+			"TP_TopDownPlayerController.gen.cpp.obj"
 		]
 	}
 }
