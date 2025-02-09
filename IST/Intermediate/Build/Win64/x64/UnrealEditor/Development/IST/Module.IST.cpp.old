@@ -16,7 +16,6 @@
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Inventory/ItemDragDropOperation.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/ISTHud.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/MainMenu.cpp"
-#include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/World/Pickup.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/TP_TopDown.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/TP_TopDownCharacter.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/TP_TopDownGameMode.cpp"

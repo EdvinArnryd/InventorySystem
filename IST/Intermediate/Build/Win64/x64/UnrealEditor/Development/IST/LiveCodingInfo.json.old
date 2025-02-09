@@ -19,7 +19,6 @@
 			"ItemDragDropOperation.cpp.obj",
 			"ISTHud.cpp.obj",
 			"MainMenu.cpp.obj",
-			"Pickup.cpp.obj",
 			"TP_TopDown.cpp.obj",
 			"TP_TopDownCharacter.cpp.obj",
 			"TP_TopDownGameMode.cpp.obj",
@@ -44,7 +43,8 @@
 			"Pickup.gen.cpp.obj",
 			"TP_TopDownCharacter.gen.cpp.obj",
 			"TP_TopDownGameMode.gen.cpp.obj",
-			"TP_TopDownPlayerController.gen.cpp.obj"
+			"TP_TopDownPlayerController.gen.cpp.obj",
+			"Pickup.cpp.obj"
 		]
 	}
 }
