@@ -1,4 +1,2 @@
-[0210/135032.146:ERROR:os_crypt_win.cc(93)] Failed to decrypt: Nyckeln går inte att använda i det angivna tillståndet. (0x8009000B)
-[0210/135032.687:ERROR:backend_impl.cc(1041)] Critical error found -8
-[0210/135033.050:WARNING:storage_block-inl.h(146)] Failed data load.
-[0210/135033.614:WARNING:value_store_frontend.cc(45)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[0210/135919.143:WARNING:value_store_frontend.cc(45)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[0210/140117.986:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
