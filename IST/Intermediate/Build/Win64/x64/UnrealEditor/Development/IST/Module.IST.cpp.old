@@ -24,7 +24,6 @@
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/IST.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/ISTCharacter.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/ISTGameMode.cpp"
-#include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/Components/InventoryComponent.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/Interfaces/InteractionInterface.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/Items/ItemBase.cpp"
 #include "C:/Users/Edvin/Desktop/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/Player/ISTPlayerController.cpp"

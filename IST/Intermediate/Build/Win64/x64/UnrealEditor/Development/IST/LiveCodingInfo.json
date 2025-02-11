@@ -27,6 +27,7 @@
 			"IST.cpp.obj",
 			"ISTCharacter.cpp.obj",
 			"ISTGameMode.cpp.obj",
+			"InventoryComponent.cpp.obj",
 			"InteractionInterface.cpp.obj",
 			"ItemBase.cpp.obj",
 			"ISTPlayerController.cpp.obj",
@@ -43,8 +44,7 @@
 			"TP_TopDown.cpp.obj",
 			"TP_TopDownCharacter.cpp.obj",
 			"TP_TopDownGameMode.cpp.obj",
-			"TP_TopDownPlayerController.cpp.obj",
-			"InventoryComponent.cpp.obj"
+			"TP_TopDownPlayerController.cpp.obj"
 		]
 	}
 }
