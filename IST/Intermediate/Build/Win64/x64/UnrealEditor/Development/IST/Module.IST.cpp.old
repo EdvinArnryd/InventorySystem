@@ -30,7 +30,7 @@
 #include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/Player/ISTPlayerController.cpp"
 #include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Interaction/InteractionText.cpp"
 #include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Interaction/InteractionWidget.cpp"
-#include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Inventory/InventoryItemSlot.cpp"
+#include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Inventory/DragItemVisual.cpp"
 #include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Inventory/InventoryPanel.cpp"
 #include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Inventory/InventoryToolTip.cpp"
 #include "C:/Users/edvin.arnryd/OneDrive - Change Maker Education/Skrivbordet/InventorySystemTut/InventorySystemTutorial/IST/Source/IST/Private/UserInterface/Inventory/ItemDragDropOperation.cpp"

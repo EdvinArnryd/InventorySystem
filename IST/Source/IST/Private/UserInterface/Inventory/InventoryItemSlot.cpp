@@ -46,15 +46,6 @@ void UInventoryItemSlot::NativeConstruct()
 		default:;
 		}
 		ItemIcon->SetBrushFromTexture(ItemReference->AssetData.Icon);
-
-		if (ItemReference->NumericData.bIsStackable)
-		{
-			ItemQuantity->SetText(FText::AsNumber(ItemReference->Quantity));
-		}
-		else
-		{
-			ItemQuantity->SetVisibility(ESlateVisibility::Collapsed);
-		}
 	}
 }
 

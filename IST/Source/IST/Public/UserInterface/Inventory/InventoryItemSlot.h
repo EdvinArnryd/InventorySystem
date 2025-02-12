@@ -41,9 +41,6 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category="Inventory Slot", meta=(BindWidget))
 	UImage* ItemIcon;
 
-	UPROPERTY(VisibleAnywhere, Category="Inventory Slot", meta=(BindWidget))
-	UTextBlock* ItemQuantity;
-
 	virtual void NativeOnInitialized() override;
 	virtual FReply NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent) override;
 	virtual void NativeOnMouseLeave(const FPointerEvent& InMouseEvent) override;
