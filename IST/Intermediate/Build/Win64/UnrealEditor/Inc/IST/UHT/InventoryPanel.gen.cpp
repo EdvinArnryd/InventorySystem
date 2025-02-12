@@ -16,7 +16,6 @@ IST_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 IST_API UClass* Z_Construct_UClass_UInventoryItemSlot_NoRegister();
 IST_API UClass* Z_Construct_UClass_UInventoryPanel();
 IST_API UClass* Z_Construct_UClass_UInventoryPanel_NoRegister();
-UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
 UMG_API UClass* Z_Construct_UClass_UWrapBox_NoRegister();
 UPackage* Z_Construct_UPackage__Script_IST();
@@ -80,16 +79,6 @@ struct Z_Construct_UClass_UInventoryPanel_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UserInterface/Inventory/InventoryPanel.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeightInfo_MetaData[] = {
-		{ "BindWidget", "" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/UserInterface/Inventory/InventoryPanel.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CapacityInfo_MetaData[] = {
-		{ "BindWidget", "" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/UserInterface/Inventory/InventoryPanel.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerCharacter_MetaData[] = {
 		{ "ModuleRelativePath", "Public/UserInterface/Inventory/InventoryPanel.h" },
 	};
@@ -103,8 +92,6 @@ struct Z_Construct_UClass_UInventoryPanel_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InventoryPanel;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_WeightInfo;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_CapacityInfo;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerCharacter;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InventoryReference;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_InventorySlotClass;
@@ -120,15 +107,11 @@ struct Z_Construct_UClass_UInventoryPanel_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryPanel_Statics::NewProp_InventoryPanel = { "InventoryPanel", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInventoryPanel, InventoryPanel), Z_Construct_UClass_UWrapBox_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryPanel_MetaData), NewProp_InventoryPanel_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryPanel_Statics::NewProp_WeightInfo = { "WeightInfo", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInventoryPanel, WeightInfo), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeightInfo_MetaData), NewProp_WeightInfo_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryPanel_Statics::NewProp_CapacityInfo = { "CapacityInfo", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInventoryPanel, CapacityInfo), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CapacityInfo_MetaData), NewProp_CapacityInfo_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryPanel_Statics::NewProp_PlayerCharacter = { "PlayerCharacter", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInventoryPanel, PlayerCharacter), Z_Construct_UClass_ATP_TopDownPlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerCharacter_MetaData), NewProp_PlayerCharacter_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInventoryPanel_Statics::NewProp_InventoryReference = { "InventoryReference", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInventoryPanel, InventoryReference), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryReference_MetaData), NewProp_InventoryReference_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UInventoryPanel_Statics::NewProp_InventorySlotClass = { "InventorySlotClass", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInventoryPanel, InventorySlotClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UInventoryItemSlot_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventorySlotClass_MetaData), NewProp_InventorySlotClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInventoryPanel_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryPanel_Statics::NewProp_InventoryPanel,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryPanel_Statics::NewProp_WeightInfo,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryPanel_Statics::NewProp_CapacityInfo,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryPanel_Statics::NewProp_PlayerCharacter,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryPanel_Statics::NewProp_InventoryReference,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInventoryPanel_Statics::NewProp_InventorySlotClass,
@@ -172,14 +155,14 @@ UInventoryPanel::~UInventoryPanel() {}
 // End Class UInventoryPanel
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInventoryPanel, UInventoryPanel::StaticClass, TEXT("UInventoryPanel"), &Z_Registration_Info_UClass_UInventoryPanel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryPanel), 2749509435U) },
+		{ Z_Construct_UClass_UInventoryPanel, UInventoryPanel::StaticClass, TEXT("UInventoryPanel"), &Z_Registration_Info_UClass_UInventoryPanel, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryPanel), 1894411942U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_2799990274(TEXT("/Script/IST"),
-	Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_143353395(TEXT("/Script/IST"),
+	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_InventoryPanel_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

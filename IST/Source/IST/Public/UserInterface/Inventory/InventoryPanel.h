@@ -26,12 +26,6 @@ public:
 	UPROPERTY(meta=(BindWidget))
 	UWrapBox* InventoryPanel;
 
-	UPROPERTY(meta=(BindWidget))
-	UTextBlock* WeightInfo;
-
-	UPROPERTY(meta=(BindWidget))
-	UTextBlock* CapacityInfo;
-
 	UPROPERTY()
 	ATP_TopDownPlayerController* PlayerCharacter;
 
@@ -42,7 +36,6 @@ public:
 	TSubclassOf<UInventoryItemSlot> InventorySlotClass;
 	
 protected:
-	void SetInfoText() const;
 	virtual void NativeOnInitialized() override;
 	virtual bool NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent,
 		UDragDropOperation* InOperation) override;

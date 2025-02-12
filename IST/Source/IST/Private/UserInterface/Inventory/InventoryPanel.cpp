@@ -26,21 +26,9 @@ void UInventoryPanel::NativeOnInitialized()
 			if (InventoryReference)
 			{
 				InventoryReference->OnInventoryUpdated.AddUObject(this, &UInventoryPanel::RefreshInventory);
-				SetInfoText();
 			}
 		}
 	}
-}
-
-
-void UInventoryPanel::SetInfoText() const
-{
-	WeightInfo->SetText(FText::Format(FText::FromString("{0}/{1}"),
-		InventoryReference->GetInventoryTotalWeight(),
-		InventoryReference->GetWeightCapacity()));
-	CapacityInfo->SetText(FText::Format(FText::FromString("{0}/{1}"),
-		InventoryReference->GetInventoryContents().Num(),
-		InventoryReference->GetSlotsCapacity()));
 }
 
 void UInventoryPanel::RefreshInventory()
