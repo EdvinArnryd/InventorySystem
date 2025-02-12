@@ -285,7 +285,7 @@ void AISTCharacter::DropItem(UItemBase* ItemToDrop, const int32 QuantityToDrop)
 
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
 
-		Pickup->InitializeDrop(ItemToDrop, RemovedQuantity);
+		Pickup->InitializeDrop(ItemToDrop);
 	}
 	else
 	{

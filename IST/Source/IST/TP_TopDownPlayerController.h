@@ -112,8 +112,6 @@ protected:
 
 	void InteractionCheck();
 
-	void PopItem();
-
 private:
 	FVector CachedDestination;
 	APickup* CachedPickup = nullptr;

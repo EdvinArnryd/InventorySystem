@@ -101,12 +101,6 @@ struct Z_Construct_UClass_UInteractionWidget_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UserInterface/Interaction/InteractionWidget.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuantityText_MetaData[] = {
-		{ "BindWidget", "" },
-		{ "Category", "Interaction Widget | Interactable Data" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/UserInterface/Interaction/InteractionWidget.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KeyPressText_MetaData[] = {
 		{ "BindWidget", "" },
 		{ "Category", "Interaction Widget | Interactable Data" },
@@ -128,7 +122,6 @@ struct Z_Construct_UClass_UInteractionWidget_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerReference;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NameText;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActionText;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_QuantityText;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_KeyPressText;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractionbProgressBar;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_CurrentInteractionDuration;
@@ -146,7 +139,6 @@ struct Z_Construct_UClass_UInteractionWidget_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_PlayerReference = { "PlayerReference", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, PlayerReference), Z_Construct_UClass_ATP_TopDownPlayerController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerReference_MetaData), NewProp_PlayerReference_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_NameText = { "NameText", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, NameText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NameText_MetaData), NewProp_NameText_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_ActionText = { "ActionText", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, ActionText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActionText_MetaData), NewProp_ActionText_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_QuantityText = { "QuantityText", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, QuantityText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuantityText_MetaData), NewProp_QuantityText_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_KeyPressText = { "KeyPressText", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, KeyPressText), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_KeyPressText_MetaData), NewProp_KeyPressText_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_InteractionbProgressBar = { "InteractionbProgressBar", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, InteractionbProgressBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionbProgressBar_MetaData), NewProp_InteractionbProgressBar_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UInteractionWidget_Statics::NewProp_CurrentInteractionDuration = { "CurrentInteractionDuration", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UInteractionWidget, CurrentInteractionDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentInteractionDuration_MetaData), NewProp_CurrentInteractionDuration_MetaData) };
@@ -154,7 +146,6 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UInteract
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_PlayerReference,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_NameText,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_ActionText,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_QuantityText,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_KeyPressText,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_InteractionbProgressBar,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UInteractionWidget_Statics::NewProp_CurrentInteractionDuration,
@@ -201,10 +192,10 @@ UInteractionWidget::~UInteractionWidget() {}
 struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Interaction_InteractionWidget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInteractionWidget, UInteractionWidget::StaticClass, TEXT("UInteractionWidget"), &Z_Registration_Info_UClass_UInteractionWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionWidget), 2141969640U) },
+		{ Z_Construct_UClass_UInteractionWidget, UInteractionWidget::StaticClass, TEXT("UInteractionWidget"), &Z_Registration_Info_UClass_UInteractionWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInteractionWidget), 1164521976U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Interaction_InteractionWidget_h_2332333434(TEXT("/Script/IST"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Interaction_InteractionWidget_h_3086573381(TEXT("/Script/IST"),
 	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Interaction_InteractionWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Interaction_InteractionWidget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

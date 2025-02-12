@@ -21,9 +21,9 @@ class IST_API APickup : public AActor, public IInteractionInterface
 public:
 	APickup();
 
-	void InitializePickup(const TSubclassOf<UItemBase> BaseClass, const int32 InQuantity);
+	void InitializePickup(const TSubclassOf<UItemBase> BaseClass);
 
-	void InitializeDrop(UItemBase* ItemToDrop, const int32 InQuantity);
+	void InitializeDrop(UItemBase* ItemToDrop);
 
 	FORCEINLINE UItemBase* GetItemData() { return ItemReference; };
 	
@@ -45,9 +45,6 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category="Pickup | Item Reference")
 	UItemBase* ItemReference;
-
-	UPROPERTY(EditInstanceOnly, Category="Pickup | Item Initialization")
-	int32 ItemQuantity;
 
 	UPROPERTY(VisibleInstanceOnly, Category="Pickup | Interaction")
 	FInteractableData InstanceInteractableData;

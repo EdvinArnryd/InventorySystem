@@ -58,8 +58,6 @@ void ATP_TopDownPlayerController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(SetDestinationClickAction, ETriggerEvent::Canceled, this, &ATP_TopDownPlayerController::OnSetDestinationReleased);
 
 		InputComponent->BindAction("ToggleMenu", IE_Pressed, this, &ATP_TopDownPlayerController::ToggleMenu);
-
-		InputComponent->BindAction("PopItem", IE_Pressed, this, &ATP_TopDownPlayerController::PopItem);
 		
 		// Setup touch input events
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Started, this, &ATP_TopDownPlayerController::OnInputStarted);
@@ -239,18 +237,12 @@ void ATP_TopDownPlayerController::DropItem(UItemBase* ItemToDrop, const int32 Qu
 
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
 
-		Pickup->InitializeDrop(ItemToDrop, RemovedQuantity);
+		Pickup->InitializeDrop(ItemToDrop);
 	}
 	else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Item to drop was somehow null!"));
 	}
-}
-
-
-void ATP_TopDownPlayerController::PopItem()
-{
-	PlayerInventory->RemoveItem();
 }
 
 

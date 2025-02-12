@@ -34,9 +34,6 @@ protected:
 	UTextBlock* ActionText;
 
 	UPROPERTY(VisibleAnywhere, meta = (BindWidget), Category="Interaction Widget | Interactable Data")
-	UTextBlock* QuantityText;
-
-	UPROPERTY(VisibleAnywhere, meta = (BindWidget), Category="Interaction Widget | Interactable Data")
 	UTextBlock* KeyPressText;
 
 	UPROPERTY(VisibleAnywhere, meta = (BindWidget), Category="Interaction Widget | Interactable Data")

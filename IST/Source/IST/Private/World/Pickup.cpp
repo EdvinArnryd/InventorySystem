@@ -33,7 +33,7 @@ void APickup::BeginPlay()
 {
 	Super::BeginPlay();
 
-	InitializePickup(UItemBase::StaticClass(), ItemQuantity);
+	InitializePickup(UItemBase::StaticClass());
 
 	if (WidgetClass)
 	{
@@ -48,7 +48,7 @@ void APickup::BeginPlay()
 	
 }
 
-void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass, const int32 InQuantity)
+void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass)
 {
 	if (ItemDataTable && !DesiredItemID.IsNone())
 	{
@@ -63,7 +63,7 @@ void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass, const int
 		ItemReference->TextData = ItemData->TextData;
 		ItemReference->AssetData = ItemData->AssetData;
 
-		InQuantity <= 0 ? ItemReference->SetQuantity(1) : ItemReference->SetQuantity(InQuantity);
+		ItemReference->SetQuantity(1);
 
 		PickupMesh->SetStaticMesh(ItemData->AssetData.Mesh);
 
@@ -71,10 +71,10 @@ void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass, const int
 	}
 }
 
-void APickup::InitializeDrop(UItemBase* ItemToDrop, const int32 InQuantity)
+void APickup::InitializeDrop(UItemBase* ItemToDrop)
 {
 	ItemReference = ItemToDrop;
-	InQuantity <= 0 ? ItemReference->SetQuantity(1) : ItemReference->SetQuantity(InQuantity);
+	ItemReference->SetQuantity(1);
 	ItemReference->NumericData.Weight = ItemToDrop->GetItemSingleWeight();
 	PickupMesh->SetStaticMesh(ItemToDrop->AssetData.Mesh);
 	
