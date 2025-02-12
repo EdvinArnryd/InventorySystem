@@ -27,12 +27,12 @@
 			"IST.cpp.obj",
 			"ISTCharacter.cpp.obj",
 			"ISTGameMode.cpp.obj",
+			"InventoryComponent.cpp.obj",
 			"InteractionInterface.cpp.obj",
 			"ItemBase.cpp.obj",
 			"ISTPlayerController.cpp.obj",
 			"InteractionText.cpp.obj",
 			"InteractionWidget.cpp.obj",
-			"DragItemVisual.cpp.obj",
 			"InventoryItemSlot.cpp.obj",
 			"InventoryPanel.cpp.obj",
 			"InventoryToolTip.cpp.obj",
@@ -44,7 +44,7 @@
 			"TP_TopDownCharacter.cpp.obj",
 			"TP_TopDownGameMode.cpp.obj",
 			"TP_TopDownPlayerController.cpp.obj",
-			"InventoryComponent.cpp.obj"
+			"DragItemVisual.cpp.obj"
 		]
 	}
 }

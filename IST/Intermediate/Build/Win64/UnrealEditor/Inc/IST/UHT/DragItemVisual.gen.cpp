@@ -14,7 +14,6 @@ IST_API UClass* Z_Construct_UClass_UDragItemVisual();
 IST_API UClass* Z_Construct_UClass_UDragItemVisual_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UBorder_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UImage_NoRegister();
-UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
 UPackage* Z_Construct_UPackage__Script_IST();
 // End Cross Module References
@@ -50,16 +49,9 @@ struct Z_Construct_UClass_UDragItemVisual_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/UserInterface/Inventory/DragItemVisual.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemQuantity_MetaData[] = {
-		{ "BindWidget", "" },
-		{ "Category", "Drag Item Visual" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/UserInterface/Inventory/DragItemVisual.h" },
-	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ItemBorder;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ItemIcon;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_ItemQuantity;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -69,11 +61,9 @@ struct Z_Construct_UClass_UDragItemVisual_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDragItemVisual_Statics::NewProp_ItemBorder = { "ItemBorder", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDragItemVisual, ItemBorder), Z_Construct_UClass_UBorder_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemBorder_MetaData), NewProp_ItemBorder_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDragItemVisual_Statics::NewProp_ItemIcon = { "ItemIcon", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDragItemVisual, ItemIcon), Z_Construct_UClass_UImage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemIcon_MetaData), NewProp_ItemIcon_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UDragItemVisual_Statics::NewProp_ItemQuantity = { "ItemQuantity", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDragItemVisual, ItemQuantity), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemQuantity_MetaData), NewProp_ItemQuantity_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDragItemVisual_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDragItemVisual_Statics::NewProp_ItemBorder,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDragItemVisual_Statics::NewProp_ItemIcon,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDragItemVisual_Statics::NewProp_ItemQuantity,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UDragItemVisual_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UDragItemVisual_Statics::DependentSingletons[])() = {
@@ -117,10 +107,10 @@ UDragItemVisual::~UDragItemVisual() {}
 struct Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_DragItemVisual_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDragItemVisual, UDragItemVisual::StaticClass, TEXT("UDragItemVisual"), &Z_Registration_Info_UClass_UDragItemVisual, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDragItemVisual), 1713454570U) },
+		{ Z_Construct_UClass_UDragItemVisual, UDragItemVisual::StaticClass, TEXT("UDragItemVisual"), &Z_Registration_Info_UClass_UDragItemVisual, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDragItemVisual), 1899320519U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_DragItemVisual_h_2178444016(TEXT("/Script/IST"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_DragItemVisual_h_2824784834(TEXT("/Script/IST"),
 	Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_DragItemVisual_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_edvin_arnryd_OneDrive___Change_Maker_Education_Skrivbordet_InventorySystemTut_InventorySystemTutorial_IST_Source_IST_Public_UserInterface_Inventory_DragItemVisual_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
