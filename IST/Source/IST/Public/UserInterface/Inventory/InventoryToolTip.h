@@ -40,13 +40,7 @@ public:
 	UTextBlock* ItemDescription;
 
 	UPROPERTY(meta=(BindWidget))
-	UTextBlock* MaxStackSize;
-
-	UPROPERTY(meta=(BindWidget))
 	UTextBlock* SellValue;
-
-	UPROPERTY(meta=(BindWidget))
-	UTextBlock* StackWeight;
 	
 
 protected:

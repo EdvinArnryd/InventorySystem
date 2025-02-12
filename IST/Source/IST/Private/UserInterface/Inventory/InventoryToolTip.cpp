@@ -39,14 +39,13 @@ void UInventoryToolTip::NativeConstruct()
 	UsageText->SetText(ItemBeingHovered->TextData.UsageText);
 	ItemDescription->SetText(ItemBeingHovered->TextData.Description);
 	SellValue->SetText(FText::AsNumber(ItemBeingHovered->ItemStatistics.SellValue));
-	StackWeight->SetText(FText::AsNumber(ItemBeingHovered->GetItemStackWeight()));
 
-	if (ItemBeingHovered->NumericData.bIsStackable)
-	{
-		MaxStackSize->SetText(FText::AsNumber(ItemBeingHovered->NumericData.MaxStackSize));
-	}
-	else
-	{
-		MaxStackSize->SetVisibility(ESlateVisibility::Collapsed);
-	}
+	// if (ItemBeingHovered->NumericData.bIsStackable)
+	// {
+	// 	MaxStackSize->SetText(FText::AsNumber(ItemBeingHovered->NumericData.MaxStackSize));
+	// }
+	// else
+	// {
+	// 	MaxStackSize->SetVisibility(ESlateVisibility::Collapsed);
+	// }
 }

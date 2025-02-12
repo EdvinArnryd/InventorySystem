@@ -7,10 +7,8 @@
 			"InteractionText.gen.cpp.obj",
 			"InteractionWidget.gen.cpp.obj",
 			"InventoryComponent.gen.cpp.obj",
-			"InventoryItemSlot.gen.cpp.obj",
 			"InventoryPanel.gen.cpp.obj",
 			"InventoryToolTip.gen.cpp.obj",
-			"IST.init.gen.cpp.obj",
 			"ISTCharacter.gen.cpp.obj",
 			"ISTGameMode.gen.cpp.obj",
 			"ISTHud.gen.cpp.obj",
@@ -44,6 +42,8 @@
 			"TP_TopDownCharacter.cpp.obj",
 			"TP_TopDownGameMode.cpp.obj",
 			"TP_TopDownPlayerController.cpp.obj",
+			"InventoryItemSlot.gen.cpp.obj",
+			"IST.init.gen.cpp.obj",
 			"InventoryItemSlot.cpp.obj"
 		]
 	}
