@@ -5,8 +5,8 @@
 /[Bb]uilds
 /Binaries
 /DerivedDataCache
-/Intermediate
-/Saved
+Intermediate/
+Saved/
 
 #################################
 # Visual Studio Generated Files #
