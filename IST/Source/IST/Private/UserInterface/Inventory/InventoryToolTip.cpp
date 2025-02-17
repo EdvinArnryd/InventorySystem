@@ -48,13 +48,4 @@ void UInventoryToolTip::NativeConstruct()
 	FText SellValueText = FText::Format(FText::FromString("Sell value: {0}"),
 		FText::AsNumber(ItemBeingHovered->ItemStatistics.SellValue));
 	SellValue->SetText(SellValueText);
-
-	// if (ItemBeingHovered->NumericData.bIsStackable)
-	// {
-	// 	MaxStackSize->SetText(FText::AsNumber(ItemBeingHovered->NumericData.MaxStackSize));
-	// }
-	// else
-	// {
-	// 	MaxStackSize->SetVisibility(ESlateVisibility::Collapsed);
-	// }
 }

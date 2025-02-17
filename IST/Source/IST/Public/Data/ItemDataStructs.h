@@ -51,18 +51,6 @@ struct FItemTextData
 	FText UsageText;
 };
 
-USTRUCT()
-struct FItemNumericData
-{
-	GENERATED_USTRUCT_BODY()
-
-	UPROPERTY(EditAnywhere)
-	float Weight;
-	UPROPERTY(EditAnywhere)
-	int32 MaxStackSize;
-	UPROPERTY(EditAnywhere)
-	bool bIsStackable;
-};
 
 USTRUCT()
 struct FItemAssetData
@@ -95,9 +83,6 @@ struct FItemData : public FTableRowBase
 
 	UPROPERTY(EditAnywhere, Category="Item Data")
 	FItemTextData TextData;
-
-	UPROPERTY(EditAnywhere, Category="Item Data")
-	FItemNumericData NumericData;
 
 	UPROPERTY(EditAnywhere, Category="Item Data")
 	FItemAssetData AssetData;

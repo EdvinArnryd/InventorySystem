@@ -59,12 +59,12 @@ void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass)
 		ItemReference->ID = ItemData->ID;
 		ItemReference->ItemType = ItemData->ItemType;
 		ItemReference->ItemQuality = ItemData->ItemQuality;
-		ItemReference->NumericData = ItemData->NumericData;
+		// ItemReference->NumericData = ItemData->NumericData;
 		ItemReference->TextData = ItemData->TextData;
 		ItemReference->AssetData = ItemData->AssetData;
 		ItemReference->ItemStatistics = ItemData->ItemStatistics;
 
-		ItemReference->SetQuantity(1);
+		// ItemReference->SetQuantity(1);
 
 		PickupMesh->SetStaticMesh(ItemData->AssetData.Mesh);
 
@@ -75,8 +75,8 @@ void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass)
 void APickup::InitializeDrop(UItemBase* ItemToDrop)
 {
 	ItemReference = ItemToDrop;
-	ItemReference->SetQuantity(1);
-	ItemReference->NumericData.Weight = ItemToDrop->GetItemSingleWeight();
+	// ItemReference->SetQuantity(1);
+	// ItemReference->NumericData.Weight = ItemToDrop->GetItemSingleWeight();
 	PickupMesh->SetStaticMesh(ItemToDrop->AssetData.Mesh);
 	
 	UpdateInteractableData();

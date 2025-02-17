@@ -38,9 +38,4 @@ public:
 
 	UPROPERTY(meta=(BindWidget))
 	UTextBlock* SellValue;
-	
-
-protected:
-	
-	
 };

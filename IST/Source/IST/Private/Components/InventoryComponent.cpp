@@ -58,16 +58,12 @@ void UInventoryComponent::RemoveSingleInstanceOfItem(UItemBase* ItemToRemove)
 
 int32 UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn)
 {
-	const int32 ActualAmountToRemove = FMath::Min(1, ItemIn->Quantity);
-
-	// Fix this. SetQuantity removes the item if the quantity is less than 0. It should always be removed.
-	ItemIn->SetQuantity(ItemIn->Quantity - ActualAmountToRemove);
-	
-	// InventoryTotalWeight -= ActualAmountToRemove * ItemIn->GetItemSingleWeight();
+	// Fix function to be const or something
+	ItemIn->RemoveItem();
 	
 	OnInventoryUpdated.Broadcast();
 	
-	return ActualAmountToRemove;
+	return 1;
 }
 
 FItemAddResult UInventoryComponent::HandleNonStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
@@ -91,36 +87,36 @@ FItemAddResult UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 		const int32 InitialRequestedAddAmount = InputItem->Quantity;
 
 		// handle non-stackable items
-		if (!InputItem->NumericData.bIsStackable)
+		if (true)
 		{
 			return HandleNonStackableItems(InputItem, InitialRequestedAddAmount);
 		}
 
 		// handle stackable
-		const int32 StackableAmountAdded = HandleStackableItems(InputItem, InitialRequestedAddAmount);
-
-		if (StackableAmountAdded == InitialRequestedAddAmount)
-		{
-			return FItemAddResult::AddedAll(InitialRequestedAddAmount, FText::Format(
-				FText::FromString("Successfully added {0} {1} to the inventory."),
-				InitialRequestedAddAmount,
-				InputItem->TextData.Name));
-		}
-
-		if (StackableAmountAdded < InitialRequestedAddAmount && StackableAmountAdded > 0)
-		{
-			return FItemAddResult::AddedPartial(StackableAmountAdded, FText::Format(
-				FText::FromString("Partial amount of {0} added to the inventory. Number added = {1}"),
-				InputItem->TextData.Name,
-				StackableAmountAdded));
-		}
-
-		if (StackableAmountAdded <= 0)
-		{
-			return FItemAddResult::AddedNone(FText::Format(
-				FText::FromString("Couldn't add {0} to the inventory. No remaining inventory slots, or invalid item."),
-				InputItem->TextData.Name));
-		}
+		// const int32 StackableAmountAdded = HandleStackableItems(InputItem, InitialRequestedAddAmount);
+		//
+		// if (StackableAmountAdded == InitialRequestedAddAmount)
+		// {
+		// 	return FItemAddResult::AddedAll(InitialRequestedAddAmount, FText::Format(
+		// 		FText::FromString("Successfully added {0} {1} to the inventory."),
+		// 		InitialRequestedAddAmount,
+		// 		InputItem->TextData.Name));
+		// }
+		//
+		// if (StackableAmountAdded < InitialRequestedAddAmount && StackableAmountAdded > 0)
+		// {
+		// 	return FItemAddResult::AddedPartial(StackableAmountAdded, FText::Format(
+		// 		FText::FromString("Partial amount of {0} added to the inventory. Number added = {1}"),
+		// 		InputItem->TextData.Name,
+		// 		StackableAmountAdded));
+		// }
+		//
+		// if (StackableAmountAdded <= 0)
+		// {
+		// 	return FItemAddResult::AddedNone(FText::Format(
+		// 		FText::FromString("Couldn't add {0} to the inventory. No remaining inventory slots, or invalid item."),
+		// 		InputItem->TextData.Name));
+		// }
 	}
 
 	check(false);
@@ -144,7 +140,7 @@ void UInventoryComponent::AddNewItem(UItemBase* Item, const int32 AmountToAdd)
 	}
 
 	NewItem->OwningInventory = this;
-	NewItem->SetQuantity(AmountToAdd);
+	// NewItem->SetQuantity(AmountToAdd);
 
 	InventoryContents.Add(NewItem);
 	// InventoryTotalWeight += NewItem->GetItemStackWeight();
