@@ -34,9 +34,6 @@ public:
 	UTextBlock* ArmorRating;
 
 	UPROPERTY(meta=(BindWidget))
-	UTextBlock* UsageText;
-
-	UPROPERTY(meta=(BindWidget))
 	UTextBlock* ItemDescription;
 
 	UPROPERTY(meta=(BindWidget))

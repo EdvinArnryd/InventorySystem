@@ -34,11 +34,20 @@ void UInventoryToolTip::NativeConstruct()
 	}
 
 	ItemName->SetText(ItemBeingHovered->TextData.Name);
-	DamageValue->SetText(FText::AsNumber(ItemBeingHovered->ItemStatistics.DamageValue));
-	ArmorRating->SetText(FText::AsNumber(ItemBeingHovered->ItemStatistics.ArmorValue));
-	UsageText->SetText(ItemBeingHovered->TextData.UsageText);
+
+	FText DamageText = FText::Format(FText::FromString("Damage: {0}"),
+		FText::AsNumber(ItemBeingHovered->ItemStatistics.DamageValue));
+	DamageValue->SetText(DamageText);
+
+	FText ArmorText = FText::Format(FText::FromString("Armor: {0}"),
+		FText::AsNumber(ItemBeingHovered->ItemStatistics.ArmorValue));
+	ArmorRating->SetText(ArmorText);
+	
 	ItemDescription->SetText(ItemBeingHovered->TextData.Description);
-	SellValue->SetText(FText::AsNumber(ItemBeingHovered->ItemStatistics.SellValue));
+
+	FText SellValueText = FText::Format(FText::FromString("Sell value: {0}"),
+		FText::AsNumber(ItemBeingHovered->ItemStatistics.SellValue));
+	SellValue->SetText(SellValueText);
 
 	// if (ItemBeingHovered->NumericData.bIsStackable)
 	// {
