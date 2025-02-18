@@ -86,7 +86,7 @@ void APickup::InitializeDrop(UItemBase* ItemToDrop)
 inline void APickup::UpdateInteractableData()
 {
 	InstanceInteractableData.InteractableType = EInteractableType::Pickup;
-	InstanceInteractableData.Action = ItemReference->TextData.InteractionText;
+	// InstanceInteractableData.Action = ItemReference->TextData.InteractionText;
 	InstanceInteractableData.Name = ItemReference->TextData.Name;
 	InstanceInteractableData.Quantity = ItemReference->Quantity;
 	InteractableData = InstanceInteractableData;

@@ -45,10 +45,6 @@ struct FItemTextData
 	FText Name;
 	UPROPERTY(EditAnywhere)
 	FText Description;
-	UPROPERTY(EditAnywhere)
-	FText InteractionText;
-	UPROPERTY(EditAnywhere)
-	FText UsageText;
 };
 
 
