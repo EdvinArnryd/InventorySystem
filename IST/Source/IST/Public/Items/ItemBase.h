@@ -24,9 +24,6 @@ public:
 	UPROPERTY()
 	UInventoryComponent* OwningInventory;
 	
-	UPROPERTY(VisibleAnywhere, Category = "Item", meta = (UIMin=1, UIMax=100))
-	int32 Quantity;
-	
 	UPROPERTY(VisibleAnywhere, Category="Item")
 	FName ID;
 

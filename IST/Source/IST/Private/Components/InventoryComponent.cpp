@@ -84,12 +84,12 @@ FItemAddResult UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 {
 	if (GetOwner())
 	{
-		const int32 InitialRequestedAddAmount = InputItem->Quantity;
+		// const int32 InitialRequestedAddAmount = InputItem->Quantity;
 
 		// handle non-stackable items
 		if (true)
 		{
-			return HandleNonStackableItems(InputItem, InitialRequestedAddAmount);
+			return HandleNonStackableItems(InputItem, 1);
 		}
 
 		// handle stackable
