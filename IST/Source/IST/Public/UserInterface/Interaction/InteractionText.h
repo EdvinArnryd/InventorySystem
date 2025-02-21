@@ -8,8 +8,7 @@
 
 class UItemBase;
 class UTextBlock;
-/**
- **/
+
 UCLASS()
 class IST_API UInteractionText : public UUserWidget
 {

@@ -31,7 +31,6 @@ public:
 	virtual void EndFocus() override;
 	
 	virtual void Interact(ATP_TopDownPlayerController* PlayerCharacter) override;
-
 	
 protected:
 	UPROPERTY(VisibleAnywhere, Category="Pickup | Components")

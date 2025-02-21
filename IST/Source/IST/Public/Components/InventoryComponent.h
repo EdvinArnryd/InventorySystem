@@ -86,38 +86,13 @@ public:
 	void RemoveSingleInstanceOfItem(UItemBase* ItemToRemove);
 	UFUNCTION(Category = "Inventory")
 	int32 RemoveAmountOfItem(UItemBase* ItemIn);
-
-	// UFUNCTION(Category = "Inventory")
-	// FORCEINLINE float GetInventoryTotalWeight() const { return InventoryTotalWeight; };
-	// UFUNCTION(Category = "Inventory")
-	// FORCEINLINE float GetWeightCapacity() const { return InventoryWeightCapacity; };
-	// UFUNCTION(Category = "Inventory")
-	// FORCEINLINE int32 GetSlotsCapacity() const { return InventorySlotsCapacity; };
 	UFUNCTION(Category = "Inventory")
 	FORCEINLINE TArray<UItemBase*> GetInventoryContents() const { return InventoryContents; };
 
-	// UFUNCTION(Category = "Inventory")
-	// FORCEINLINE void SetSlotsCapacity(const int32 NewSlotsCapacity) { InventorySlotsCapacity = NewSlotsCapacity; };
-	// UFUNCTION(Category = "Inventory")
-	// FORCEINLINE void SetWeightCapacity(const float NewWeightCapacity) { InventoryWeightCapacity = NewWeightCapacity; };
-
-
-	
-	// void RemoveItem();
-
 protected:
-
-	// UPROPERTY(VisibleAnywhere, Category="Inventory")
-	// float InventoryTotalWeight;
-	// UPROPERTY(EditInstanceOnly, Category="Inventory")
-	// int32 InventorySlotsCapacity;
-	// UPROPERTY(EditInstanceOnly, Category="Inventory")
-	// float InventoryWeightCapacity;
 
 	UPROPERTY(VisibleAnywhere, Category="Inventory")
 	TArray<TObjectPtr<UItemBase>> InventoryContents;
-
-
 	
 	virtual void BeginPlay() override;
 
