@@ -58,25 +58,9 @@ void UInventoryComponent::RemoveSingleInstanceOfItem(UItemBase* ItemToRemove)
 
 void UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn) const
 {
-	// Fix function to be const or something
 	ItemIn->RemoveItem();
-	
 	OnInventoryUpdated.Broadcast();
 }
-
-// FItemAddResult UInventoryComponent::HandleNonStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
-// {
-// 	//This line is the only necessary one, imo
-// 	
-// 	
-// 	return FItemAddResult::AddedAll(1, FText::Format(
-// 			FText::FromString("Successfully added a single {0} to the inventory."), ItemIn->TextData.Name));
-// }
-
-// int32 UInventoryComponent::HandleStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
-// {
-// 	return 0;
-// }
 
 bool UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 {
@@ -86,8 +70,7 @@ bool UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 		return true;
 	}
 
-	check(false);
-	// return FItemAddResult::AddedNone(FText::FromString("TryAddItem fallthrough error. GetOwner() check somehow failed."));
+	// check(false);
 	return false;
 }
 
@@ -114,12 +97,6 @@ void UInventoryComponent::AddNewItem(UItemBase* Item)
 	// InventoryTotalWeight += NewItem->GetItemStackWeight();
 	OnInventoryUpdated.Broadcast();
 }
-
-// void UInventoryComponent::RemoveItem()
-// {
-// 	InventoryContents.Pop();
-// 	OnInventoryUpdated.Broadcast();
-// }
 
 
 
