@@ -169,21 +169,20 @@ void APickup::TakePickup(const ATP_TopDownPlayerController* Taker)
 		{
 			if (UInventoryComponent* PlayerInventory = Taker->GetInventory())
 			{
-				const FItemAddResult AddResult = PlayerInventory->HandleAddItem(ItemReference);
+				PlayerInventory->HandleAddItem(ItemReference);
+				Destroy();
 
-				switch (AddResult.OperationResult)
-				{
-				case EItemAddResult::IAR_NoItemAdded:
-					break;
-				case EItemAddResult::IAR_PartialAmountItemAdded:
-					UpdateInteractableData();
-					//Taker->UpdateInteractionWidget();
-				case EItemAddResult::IAR_AllItemAdded:
-					Destroy();
-					break;
-				}
-
-				UE_LOG(LogTemp, Warning, TEXT("%s"), *AddResult.ResultMessage.ToString());
+				// switch (AddResult.OperationResult)
+				// {
+				// case EItemAddResult::IAR_NoItemAdded:
+				// 	break;
+				// case EItemAddResult::IAR_PartialAmountItemAdded:
+				// 	UpdateInteractableData();
+				// 	//Taker->UpdateInteractionWidget();
+				// case EItemAddResult::IAR_AllItemAdded:
+				// 	
+				// 	break;
+				// }
 			}
 			else
 			{
