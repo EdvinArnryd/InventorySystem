@@ -56,14 +56,12 @@ void UInventoryComponent::RemoveSingleInstanceOfItem(UItemBase* ItemToRemove)
 	OnInventoryUpdated.Broadcast();
 }
 
-int32 UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn)
+void UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn) const
 {
 	// Fix function to be const or something
 	ItemIn->RemoveItem();
 	
 	OnInventoryUpdated.Broadcast();
-	
-	return 1;
 }
 
 // FItemAddResult UInventoryComponent::HandleNonStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
@@ -75,16 +73,16 @@ int32 UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn)
 // 			FText::FromString("Successfully added a single {0} to the inventory."), ItemIn->TextData.Name));
 // }
 
-int32 UInventoryComponent::HandleStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
-{
-	return 0;
-}
+// int32 UInventoryComponent::HandleStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount)
+// {
+// 	return 0;
+// }
 
 bool UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 {
 	if (GetOwner())
 	{
-		AddNewItem(InputItem, 1);
+		AddNewItem(InputItem);
 		return true;
 	}
 
@@ -93,7 +91,7 @@ bool UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 	return false;
 }
 
-void UInventoryComponent::AddNewItem(UItemBase* Item, const int32 AmountToAdd)
+void UInventoryComponent::AddNewItem(UItemBase* Item)
 {
 	UItemBase* NewItem;
 

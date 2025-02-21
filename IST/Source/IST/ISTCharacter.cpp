@@ -281,7 +281,7 @@ void AISTCharacter::DropItem(UItemBase* ItemToDrop, const int32 QuantityToDrop)
 		const FVector SpawnLocation{GetActorLocation() + (GetActorForwardVector() * 50.0f)};
 		const FTransform SpawnTransform(GetActorRotation(), SpawnLocation);
 
-		const int32 RemovedQuantity = PlayerInventory->RemoveAmountOfItem(ItemToDrop);
+		// const int32 RemovedQuantity = PlayerInventory->RemoveAmountOfItem(ItemToDrop);
 
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
 

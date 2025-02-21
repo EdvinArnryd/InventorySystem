@@ -85,7 +85,7 @@ public:
 	UFUNCTION(Category = "Inventory")
 	void RemoveSingleInstanceOfItem(UItemBase* ItemToRemove);
 	UFUNCTION(Category = "Inventory")
-	int32 RemoveAmountOfItem(UItemBase* ItemIn);
+	void RemoveAmountOfItem(UItemBase* ItemIn) const;
 	UFUNCTION(Category = "Inventory")
 	FORCEINLINE TArray<UItemBase*> GetInventoryContents() const { return InventoryContents; };
 
@@ -97,7 +97,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	// FItemAddResult HandleNonStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount);
-	int32 HandleStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount);
+	// int32 HandleStackableItems(UItemBase* ItemIn, int32 RequestedAddAmount);
 
-	void AddNewItem(UItemBase* Item, const int32 AmountToAdd);
+	void AddNewItem(UItemBase* Item);
 };
