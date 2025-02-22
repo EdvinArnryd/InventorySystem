@@ -38,18 +38,6 @@ UItemBase* UInventoryComponent::FindMatchingItem(UItemBase* ItemIn) const
 	return nullptr;
 }
 
-UItemBase* UInventoryComponent::FindNextItemByID(UItemBase* ItemIn) const
-{
-	if (ItemIn)
-	{
-		if (const TArray<TObjectPtr<UItemBase>>::ElementType* Result = InventoryContents.FindByKey(ItemIn))
-		{
-			return *Result;
-		}
-	}
-	return nullptr;
-}
-
 void UInventoryComponent::RemoveItem(UItemBase* ItemIn)
 {
 	InventoryContents.RemoveSingle(ItemIn);

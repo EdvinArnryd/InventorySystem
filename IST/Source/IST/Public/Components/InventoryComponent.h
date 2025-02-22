@@ -28,9 +28,6 @@ public:
 	UItemBase* FindMatchingItem(UItemBase* ItemIn) const;
 	
 	UFUNCTION(Category = "Inventory")
-	UItemBase* FindNextItemByID(UItemBase* ItemIn) const;
-	
-	UFUNCTION(Category = "Inventory")
 	void RemoveItem(UItemBase* ItemIn);
 	
 	UFUNCTION(Category = "Inventory")

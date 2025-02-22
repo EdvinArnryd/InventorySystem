@@ -232,10 +232,7 @@ void ATP_TopDownPlayerController::DropItem(UItemBase* ItemToDrop)
 
 		const FVector SpawnLocations = ControlledPawn->GetActorLocation() + (ControlledPawn->GetActorForwardVector() * 50.0f);
 		const FTransform SpawnTransform(ControlledPawn->GetActorRotation(), SpawnLocations);
-
-		// const int32 RemovedQuantity = PlayerInventory->RemoveAmountOfItem(ItemToDrop);
-
-		// Player removes item, first step
+		
 		PlayerInventory->RemoveItem(ItemToDrop);
 		
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
