@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "ISTGameMode.h"
-#include "ISTCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
 AISTGameMode::AISTGameMode()

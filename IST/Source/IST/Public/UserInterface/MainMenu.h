@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "IST/ISTCharacter.h"
 #include "IST/TP_TopDownPlayerController.h"
 #include "MainMenu.generated.h"
 

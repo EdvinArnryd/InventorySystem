@@ -5,8 +5,6 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Interfaces/InteractionInterface.h"
-#include "IST/ISTCharacter.h"
-#include "IST/TP_TopDownCharacter.h"
 #include "IST/TP_TopDownPlayerController.h"
 #include "Pickup.generated.h"
 

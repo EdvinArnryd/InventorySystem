@@ -4,7 +4,6 @@
 #include "UserInterface/MainMenu.h"
 #include "UserInterface/Inventory/ItemDragDropOperation.h"
 
-#include "IST/ISTCharacter.h"
 #include "Items/ItemBase.h"
 
 void UMainMenu::NativeOnInitialized()

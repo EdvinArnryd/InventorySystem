@@ -2,7 +2,6 @@
 
 
 #include "UserInterface/Inventory/InventoryPanel.h"
-#include "IST/ISTCharacter.h"
 #include "Components/TextBlock.h"
 #include "Components/InventoryComponent.h"
 #include "UserInterface/Inventory/InventoryItemSlot.h"
