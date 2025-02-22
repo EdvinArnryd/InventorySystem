@@ -50,15 +50,9 @@ UItemBase* UInventoryComponent::FindNextItemByID(UItemBase* ItemIn) const
 	return nullptr;
 }
 
-void UInventoryComponent::RemoveSingleInstanceOfItem(UItemBase* ItemToRemove)
+void UInventoryComponent::RemoveItem(UItemBase* ItemIn)
 {
-	InventoryContents.RemoveSingle(ItemToRemove);
-	OnInventoryUpdated.Broadcast();
-}
-
-void UInventoryComponent::RemoveAmountOfItem(UItemBase* ItemIn) const
-{
-	ItemIn->RemoveItem();
+	InventoryContents.RemoveSingle(ItemIn);
 	OnInventoryUpdated.Broadcast();
 }
 
@@ -69,8 +63,7 @@ bool UInventoryComponent::HandleAddItem(UItemBase* InputItem)
 		AddNewItem(InputItem);
 		return true;
 	}
-
-	// check(false);
+	
 	return false;
 }
 

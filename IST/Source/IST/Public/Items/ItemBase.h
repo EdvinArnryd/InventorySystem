@@ -55,8 +55,8 @@ public:
 	UFUNCTION(Category = "Item")
 	UItemBase* CreateItemCopy();
 
-	UFUNCTION(Category = "Item")
-	void RemoveItem();
+	// UFUNCTION(Category = "Item")
+	// void RemoveItem();
 
 protected:
 	bool operator == (const FName& OtherID) const

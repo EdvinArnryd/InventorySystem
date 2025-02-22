@@ -30,8 +30,9 @@ UItemBase* UItemBase::CreateItemCopy()
 	return ItemCopy;
 }
 
-void UItemBase::RemoveItem()
-{
-	OwningInventory->RemoveSingleInstanceOfItem(this);
-}
+// void UItemBase::RemoveItem()
+// {
+// 	//Re-calls inventoryComponent function
+// 	OwningInventory->RemoveSingleInstanceOfItem(this);
+// }
 

@@ -26,13 +26,13 @@ public:
 	
 	UFUNCTION(Category = "Inventory")
 	UItemBase* FindMatchingItem(UItemBase* ItemIn) const;
+	
 	UFUNCTION(Category = "Inventory")
 	UItemBase* FindNextItemByID(UItemBase* ItemIn) const;
-
+	
 	UFUNCTION(Category = "Inventory")
-	void RemoveSingleInstanceOfItem(UItemBase* ItemToRemove);
-	UFUNCTION(Category = "Inventory")
-	void RemoveAmountOfItem(UItemBase* ItemIn) const;
+	void RemoveItem(UItemBase* ItemIn);
+	
 	UFUNCTION(Category = "Inventory")
 	FORCEINLINE TArray<UItemBase*> GetInventoryContents() const { return InventoryContents; };
 

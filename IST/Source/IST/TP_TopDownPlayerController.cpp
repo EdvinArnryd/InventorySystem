@@ -235,7 +235,8 @@ void ATP_TopDownPlayerController::DropItem(UItemBase* ItemToDrop)
 
 		// const int32 RemovedQuantity = PlayerInventory->RemoveAmountOfItem(ItemToDrop);
 
-		PlayerInventory->RemoveAmountOfItem(ItemToDrop);
+		// Player removes item, first step
+		PlayerInventory->RemoveItem(ItemToDrop);
 		
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
 
