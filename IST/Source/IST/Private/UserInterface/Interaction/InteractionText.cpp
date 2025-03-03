@@ -4,7 +4,7 @@
 void UInteractionText::NativeOnInitialized()
 {
 	Super::NativeOnInitialized();
-	UE_LOG(LogTemp, Warning, TEXT("UInteractionText::NativeOnInitialized() called"));
+	// UE_LOG(LogTemp, Warning, TEXT("UInteractionText::NativeOnInitialized() called"));
 }
 
 void UInteractionText::NativeConstruct()
