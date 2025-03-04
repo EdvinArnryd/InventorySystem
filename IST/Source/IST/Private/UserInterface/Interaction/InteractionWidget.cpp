@@ -41,14 +41,6 @@ void UInteractionWidget::UpdateWidget(const FInteractableData* InteractableData)
 		// 	QuantityText->SetVisibility(ESlateVisibility::Visible);
 		// }
 		break;
-	case EInteractableType::NonPlayerCharacter:
-		break;
-	case EInteractableType::Device:
-		break;
-	case EInteractableType::Toggle:
-		break;
-	case EInteractableType::Container:
-		break;
 	}
 
 	ActionText->SetText(InteractableData->Action);

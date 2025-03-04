@@ -12,11 +12,7 @@ class ATP_TopDownPlayerController;
 UENUM()
 enum class EInteractableType : uint8
 {
-	Pickup UMETA(DisplayName = "Pickup"),
-	NonPlayerCharacter UMETA(DisplayName = "NonPlayerCharacter"),
-	Device UMETA(DisplayName = "Device"),
-	Toggle UMETA(DisplayName = "Toggle"),
-	Container UMETA(DisplayName = "Container"),
+	Pickup UMETA(DisplayName = "Pickup")
 };
 
 USTRUCT()
@@ -28,7 +24,6 @@ struct FInteractableData
 	InteractableType(EInteractableType::Pickup),
 	Name(FText::GetEmpty()),
 	Action(FText::GetEmpty()),
-	// Quantity(0),
 	InteractionDuration(0.0f)
 	{
 		
@@ -42,9 +37,6 @@ struct FInteractableData
 
 	UPROPERTY(EditInstanceOnly)
 	FText Action;
-
-	// UPROPERTY(EditInstanceOnly)
-	// int8 Quantity;
 
 	UPROPERTY(EditInstanceOnly)
 	float InteractionDuration;

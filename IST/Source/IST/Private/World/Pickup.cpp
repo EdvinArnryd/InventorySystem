@@ -75,8 +75,6 @@ void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass)
 void APickup::InitializeDrop(UItemBase* ItemToDrop)
 {
 	ItemReference = ItemToDrop;
-	// ItemReference->SetQuantity(1);
-	// ItemReference->NumericData.Weight = ItemToDrop->GetItemSingleWeight();
 	PickupMesh->SetStaticMesh(ItemToDrop->AssetData.Mesh);
 	
 	UpdateInteractableData();
@@ -86,9 +84,7 @@ void APickup::InitializeDrop(UItemBase* ItemToDrop)
 inline void APickup::UpdateInteractableData()
 {
 	InstanceInteractableData.InteractableType = EInteractableType::Pickup;
-	// InstanceInteractableData.Action = ItemReference->TextData.InteractionText;
 	InstanceInteractableData.Name = ItemReference->TextData.Name;
-	// InstanceInteractableData.Quantity = ItemReference->Quantity;
 	InteractableData = InstanceInteractableData;
 }
 
@@ -171,18 +167,7 @@ void APickup::TakePickup(const ATP_TopDownPlayerController* Taker)
 			{
 				PlayerInventory->HandleAddItem(ItemReference);
 				Destroy();
-
-				// switch (AddResult.OperationResult)
-				// {
-				// case EItemAddResult::IAR_NoItemAdded:
-				// 	break;
-				// case EItemAddResult::IAR_PartialAmountItemAdded:
-				// 	UpdateInteractableData();
-				// 	//Taker->UpdateInteractionWidget();
-				// case EItemAddResult::IAR_AllItemAdded:
-				// 	
-				// 	break;
-				// }
+				
 			}
 			else
 			{
