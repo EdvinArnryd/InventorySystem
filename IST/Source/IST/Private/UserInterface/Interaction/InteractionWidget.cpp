@@ -29,17 +29,6 @@ void UInteractionWidget::UpdateWidget(const FInteractableData* InteractableData)
 	case EInteractableType::Pickup:
 		KeyPressText->SetText(FText::FromString("Press"));
 		InteractionbProgressBar->SetVisibility(ESlateVisibility::Collapsed);
-		//
-		// if (InteractableData->Quantity == 1)
-		// {
-		// 	QuantityText->SetVisibility(ESlateVisibility::Collapsed);
-		// }
-		// else
-		// {
-		// 	QuantityText->SetText(FText::Format(NSLOCTEXT("InteractionWidget", "QuantityText", "x{0}"),
-		// 		InteractableData->Quantity));
-		// 	QuantityText->SetVisibility(ESlateVisibility::Visible);
-		// }
 		break;
 	}
 
