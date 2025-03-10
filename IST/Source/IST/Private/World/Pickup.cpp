@@ -59,12 +59,9 @@ void APickup::InitializePickup(const TSubclassOf<UItemBase> BaseClass)
 		ItemReference->ID = ItemData->ID;
 		ItemReference->ItemType = ItemData->ItemType;
 		ItemReference->ItemQuality = ItemData->ItemQuality;
-		// ItemReference->NumericData = ItemData->NumericData;
 		ItemReference->TextData = ItemData->TextData;
 		ItemReference->AssetData = ItemData->AssetData;
 		ItemReference->ItemStatistics = ItemData->ItemStatistics;
-
-		// ItemReference->SetQuantity(1);
 
 		PickupMesh->SetStaticMesh(ItemData->AssetData.Mesh);
 
