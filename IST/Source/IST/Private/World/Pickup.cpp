@@ -96,7 +96,6 @@ void APickup::BeginFocus()
 			InteractionText->AddToViewport();
 		}
 
-		// Set the interaction text to the name of the item
 		InteractionText->Name->SetText(ItemReference->TextData.Name);
 		InteractionText->SetVisibility(ESlateVisibility::Visible);
 
@@ -107,7 +106,6 @@ void APickup::BeginFocus()
 		if (PC)
 		{
 			FVector2D InteractionTextPosition;
-			// Store the X and Y values from the world of the actor location inside the ScreenPosition
 			bool bProjected = PC->ProjectWorldLocationToScreen(PickupLocation, InteractionTextPosition);
 
 
