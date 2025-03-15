@@ -72,10 +72,8 @@ void UInventoryComponent::AddNewItem(UItemBase* Item)
 	}
 
 	NewItem->OwningInventory = this;
-	// NewItem->SetQuantity(AmountToAdd);
 
 	InventoryContents.Add(NewItem);
-	// InventoryTotalWeight += NewItem->GetItemStackWeight();
 	OnInventoryUpdated.Broadcast();
 }
 
