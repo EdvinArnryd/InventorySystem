@@ -25,8 +25,6 @@ ATP_TopDownPlayerController::ATP_TopDownPlayerController()
 	FollowTime = 0.f;
 
 	PlayerInventory = CreateDefaultSubobject<UInventoryComponent>(TEXT("PlayerInventory"));
-	// PlayerInventory->SetSlotsCapacity(20);
-	// PlayerInventory->SetWeightCapacity(50.0f);
 }
 
 void ATP_TopDownPlayerController::BeginPlay()

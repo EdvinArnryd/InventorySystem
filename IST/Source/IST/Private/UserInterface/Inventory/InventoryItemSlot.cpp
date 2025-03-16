@@ -19,6 +19,7 @@ void UInventoryItemSlot::NativeOnInitialized()
 	{
 		UInventoryToolTip* ToolTip = CreateWidget<UInventoryToolTip>(this, ToolTipClass);
 		ToolTip->InventorySlotBeingHovered = this;
+		//SetToolTip() is unreals own function for toolips.
 		SetToolTip(ToolTip);
 	}
 }
@@ -70,6 +71,7 @@ FReply UInventoryItemSlot::NativeOnMouseButtonDown(const FGeometry& InGeometry, 
 
 void UInventoryItemSlot::NativeOnMouseLeave(const FPointerEvent& InMouseEvent)
 {
+	// When the mouse leave is triggered, the tooltip will also close down.
 	Super::NativeOnMouseLeave(InMouseEvent);
 }
 
