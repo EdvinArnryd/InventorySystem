@@ -19,7 +19,7 @@ void UInventoryItemSlot::NativeOnInitialized()
 	{
 		UInventoryToolTip* ToolTip = CreateWidget<UInventoryToolTip>(this, ToolTipClass);
 		ToolTip->InventorySlotBeingHovered = this;
-		//SetToolTip() is unreals own function for toolips.
+		//SetToolTip() is unreal's own function for tooltips.
 		SetToolTip(ToolTip);
 	}
 }
