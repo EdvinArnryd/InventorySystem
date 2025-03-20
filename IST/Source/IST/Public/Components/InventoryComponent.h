@@ -24,7 +24,6 @@ public:
 	UFUNCTION(Category = "Inventory")
 	bool HandleAddItem(UItemBase* InputItem);
 
-	//Should be able to remove this function?
 	UFUNCTION(Category = "Inventory")
 	UItemBase* FindMatchingItem(UItemBase* ItemIn) const;
 	
