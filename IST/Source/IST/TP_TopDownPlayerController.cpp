@@ -131,7 +131,6 @@ void ATP_TopDownPlayerController::OnSetDestinationTriggered()
 		if (Hit.GetActor() && Hit.GetActor()->IsA(APickup::StaticClass()))
 		{
 			CachedPickup = Cast<APickup>(Hit.GetActor());
-			UE_LOG(LogTemp, Warning, TEXT("Cached pickup: %s"), *CachedPickup->GetName());
 		}
 	}
 	

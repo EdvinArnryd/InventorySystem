@@ -38,8 +38,6 @@ void APickup::BeginPlay()
 	if (WidgetClass)
 	{
 		InteractionText = CreateWidget<UInteractionText>(GetWorld(), WidgetClass);
-	
-		UE_LOG(LogTemp, Error, TEXT("Widget should work!"))
 	}
 	else
 	{
@@ -112,7 +110,6 @@ void APickup::BeginFocus()
 			if (bProjected)
 			{
 				InteractionText->SetPositionInViewport(InteractionTextPosition);
-				UE_LOG(LogTemp, Warning, TEXT("Widget moved to: %s"), *InteractionTextPosition.ToString());
 			}
 		}
 
