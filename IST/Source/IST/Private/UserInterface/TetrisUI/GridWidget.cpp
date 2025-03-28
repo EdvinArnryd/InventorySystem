@@ -1,9 +1,33 @@
 ﻿#include "UserInterface/TetrisUI/GridWidget.h"
+
+#include "Components/InventoryComponent.h"
 #include "UserInterface/TetrisUI/InventoryItemWidget.h"
 #include "UserInterface/TetrisUI/SlotWidget.h"
 
 #include "Components/UniformGridPanel.h"
 #include "Components/UniformGridSlot.h"
+#include "IST/TP_TopDownPlayerController.h"
+#include "UserInterface/Inventory/InventoryPanel.h"
+
+void UGridWidget::NativeOnInitialized()
+{
+	Super::NativeOnInitialized();
+
+	// FIX: Get the Controller, not the Pawn
+	APlayerController* PlayerController = GetOwningPlayer();
+	if (PlayerController)
+	{
+		PlayerCharacter = Cast<ATP_TopDownPlayerController>(PlayerController);
+		if (PlayerCharacter)
+		{
+			InventoryReference = PlayerCharacter->GetInventory();
+			if (InventoryReference)
+			{
+				InventoryReference->OnInventoryUpdated.AddUObject(this, &UGridWidget::RefreshInventory);
+			}
+		}
+	}
+}
 
 void UGridWidget::NativeConstruct()
 {

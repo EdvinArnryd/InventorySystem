@@ -5,6 +5,8 @@
 #include "Components/UniformGridPanel.h"
 #include "GridWidget.generated.h"
 
+class UInventoryComponent;
+class ATP_TopDownPlayerController;
 class UInventoryItemWidget;
 class USlotWidget;
 
@@ -17,7 +19,14 @@ class IST_API UGridWidget : public UUserWidget
 	GENERATED_BODY()
 
 protected:
+	virtual void NativeOnInitialized() override;
 	virtual void NativeConstruct() override;
+
+	UPROPERTY()
+	ATP_TopDownPlayerController* PlayerCharacter;
+
+	UPROPERTY()
+	UInventoryComponent* InventoryReference;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Inventory")
 	TSubclassOf<USlotWidget> SlotWidgetClass;

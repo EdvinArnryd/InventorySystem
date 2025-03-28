@@ -21,7 +21,7 @@ void UInventoryPanel::NativeOnInitialized()
 		PlayerCharacter = Cast<ATP_TopDownPlayerController>(PlayerController);
 		if (PlayerCharacter)
 		{
-			InventoryReference = PlayerCharacter->GetInventory(); // Now correctly gets inventory from Controller
+			InventoryReference = PlayerCharacter->GetInventory();
 			if (InventoryReference)
 			{
 				InventoryReference->OnInventoryUpdated.AddUObject(this, &UInventoryPanel::RefreshInventory);
