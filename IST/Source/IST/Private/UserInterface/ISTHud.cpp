@@ -14,11 +14,21 @@ void AISTHud::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
+
 	if (MainMenuClass)
 	{
 		MainMenuWidget = CreateWidget<UMainMenu>(GetWorld(), MainMenuClass);
 		MainMenuWidget->AddToViewport(5);
 		MainMenuWidget->SetVisibility(ESlateVisibility::Collapsed);
+	}
+
+	if (GridWidgetClass)
+	{
+		UE_LOG(LogTemp, Display, TEXT("Grid Widget created"));
+		GridWidget = CreateWidget<UGridWidget>(GetWorld(), GridWidgetClass);
+		GridWidget->AddToViewport(6);
+		GridWidget->SetVisibility(ESlateVisibility::Collapsed);
 	}
 
 	if (InteractionWidgetClass)
@@ -57,6 +67,20 @@ void AISTHud::ToggleMenu()
 	{
 		DisplayMenu();
 	}
+}
+
+void AISTHud::ToggleTetris()
+{
+	if (bIsTetrisVisible)
+	{
+		GridWidget->SetVisibility(ESlateVisibility::Collapsed);
+	}
+	else
+	{
+		GridWidget->SetVisibility(ESlateVisibility::Visible);
+	}
+	
+	bIsTetrisVisible = !bIsTetrisVisible;
 }
 
 void AISTHud::ShowInteractionWidget() const

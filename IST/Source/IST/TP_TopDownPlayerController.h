@@ -109,6 +109,7 @@ protected:
 	void OnTouchReleased();
 
 	void ToggleMenu();
+	void OpenTetrisMenu();
 
 	void InteractionCheck();
 

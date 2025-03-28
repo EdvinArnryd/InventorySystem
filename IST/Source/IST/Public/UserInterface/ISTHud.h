@@ -6,6 +6,7 @@
 #include "MainMenu.h"
 #include "GameFramework/HUD.h"
 #include "Interaction/InteractionWidget.h"
+#include "TetrisUI/GridWidget.h"
 #include "ISTHud.generated.h"
 
 /**
@@ -21,15 +22,21 @@ public:
 	TSubclassOf<UUserWidget> MainMenuClass;
 
 	UPROPERTY(EditDefaultsOnly, Category="Widgets")
+	TSubclassOf<UUserWidget> GridWidgetClass;
+
+	UPROPERTY(EditDefaultsOnly, Category="Widgets")
 	TSubclassOf<UInteractionWidget> InteractionWidgetClass;
 
 	bool bIsMenuVisiable;
+
+	bool bIsTetrisVisible;
 
 	AISTHud();
 
 	void DisplayMenu();
 	void HideMenu();
 	void ToggleMenu();
+	void ToggleTetris();
 
 	void ShowInteractionWidget() const;
 	void HideInteractionWidget() const;
@@ -38,6 +45,9 @@ public:
 protected:
 	UPROPERTY()
 	UMainMenu* MainMenuWidget;
+
+	UPROPERTY()
+	UGridWidget* GridWidget;
 
 	UPROPERTY()
 	UInteractionWidget* InteractionWidget;

@@ -56,6 +56,8 @@ void ATP_TopDownPlayerController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(SetDestinationClickAction, ETriggerEvent::Canceled, this, &ATP_TopDownPlayerController::OnSetDestinationReleased);
 
 		InputComponent->BindAction("ToggleMenu", IE_Pressed, this, &ATP_TopDownPlayerController::ToggleMenu);
+
+		InputComponent->BindAction("OpenTetrisMenu", IE_Pressed, this, &ATP_TopDownPlayerController::OpenTetrisMenu);
 		
 		// Setup touch input events
 		EnhancedInputComponent->BindAction(SetDestinationTouchAction, ETriggerEvent::Started, this, &ATP_TopDownPlayerController::OnInputStarted);
@@ -171,6 +173,12 @@ void ATP_TopDownPlayerController::OnTouchReleased()
 void ATP_TopDownPlayerController::ToggleMenu()
 {
 	HUD->ToggleMenu();
+}
+
+void ATP_TopDownPlayerController::OpenTetrisMenu()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Opening Tetris menu"));
+	HUD->ToggleTetris();
 }
 
 void ATP_TopDownPlayerController::InteractionCheck()
