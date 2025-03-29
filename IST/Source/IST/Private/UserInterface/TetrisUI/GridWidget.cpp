@@ -29,6 +29,23 @@ void UGridWidget::NativeOnInitialized()
 	}
 }
 
+void UGridWidget::RefreshInventory()
+{
+	if (InventoryReference && SlotWidgetClass)
+	{
+		Grid->ClearChildren();
+		for (UItemBase* const& InventoryItem : InventoryReference->GetInventoryContents())
+		{
+			UInventoryItemSlot* ItemSlot = CreateWidget<UInventoryItemSlot>(this, SlotWidgetClass);
+			// Have to set this to be child of slot and get the item??
+			// This has the be restructured to take the new slots into a count.
+			ItemSlot->SetItemReference(InventoryItem);
+			
+			Grid->AddChildToUniformGrid(ItemSlot);
+		}
+	}
+}
+
 void UGridWidget::NativeConstruct()
 {
 	Super::NativeConstruct();

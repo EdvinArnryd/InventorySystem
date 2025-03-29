@@ -22,6 +22,9 @@ protected:
 	virtual void NativeOnInitialized() override;
 	virtual void NativeConstruct() override;
 
+	UFUNCTION()
+	void RefreshInventory();
+
 	UPROPERTY()
 	ATP_TopDownPlayerController* PlayerCharacter;
 
