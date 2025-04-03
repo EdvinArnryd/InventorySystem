@@ -3,10 +3,29 @@
 #include "UserInterface/TetrisUI/GridWidget.h"
 #include "UserInterface/TetrisUI/InventoryDragDropOperation.h"
 
+#include "UserInterface/Inventory/InventoryToolTip.h"
 #include "Blueprint/WidgetBlueprintLibrary.h"
 #include "Components/Image.h"
 #include "Components/Border.h"
 #include "Items/ItemBase.h"
+
+void UInventoryItemWidget::NativeOnInitialized()
+{
+    Super::NativeOnInitialized();
+
+    if (ToolTipClass)
+    {
+        UInventoryToolTip* ToolTip = CreateWidget<UInventoryToolTip>(this, ToolTipClass);
+        ToolTip->InventorySlotBeingHovered = this;
+        //SetToolTip() is unreal's own function for tooltips.
+        SetToolTip(ToolTip);
+    }
+}
+
+void UInventoryItemWidget::NativeOnMouseLeave(const FPointerEvent& InMouseEvent)
+{
+    Super::NativeOnMouseLeave(InMouseEvent);
+}
 
 void UInventoryItemWidget::NativeConstruct()
 {
@@ -100,6 +119,7 @@ void UInventoryItemWidget::NativeOnDragDetected(const FGeometry& MyGeometry, con
         OutOperation = DragOp;
     }
 }
+
 
 
 

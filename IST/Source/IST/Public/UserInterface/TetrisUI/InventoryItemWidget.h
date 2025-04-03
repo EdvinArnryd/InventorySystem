@@ -4,6 +4,7 @@
 #include "Blueprint/UserWidget.h"
 #include "InventoryItemWidget.generated.h"
 
+class UInventoryToolTip;
 class UGridWidget;
 class USlotWidget;
 class UImage;
@@ -17,6 +18,7 @@ class IST_API UInventoryItemWidget : public UUserWidget
 
 public:
 	FORCEINLINE void SetItemReference(UItemBase* ItemIn) { ItemReference = ItemIn; };
+	FORCEINLINE UItemBase* GetItemReference() const { return ItemReference; }
 	
 	virtual void NativeConstruct() override;
 
@@ -31,7 +33,7 @@ public:
 	void SetItemIcon(UTexture2D* NewIcon);
 
 	virtual void NativeOnDragDetected(const FGeometry& MyGeometry, const FPointerEvent& MouseEvent, UDragDropOperation*& OutOperation) override;
-
+	
 	UPROPERTY()
 	USlotWidget* OriginalSlot = nullptr;
 
@@ -45,8 +47,15 @@ public:
 	UGridWidget* ParentGridWidget;
 	
 protected:
+	
+	virtual void NativeOnInitialized() override;
+	virtual void NativeOnMouseLeave(const FPointerEvent& InMouseEvent) override;
+
 	UPROPERTY(VisibleAnywhere, Category="Inventory Slot")
 	UItemBase* ItemReference;
+
+	UPROPERTY(EditDefaultsOnly, Category="Inventory Slot")
+	TSubclassOf<UInventoryToolTip> ToolTipClass;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Item")
 	int32 ItemID;

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "UserInterface/TetrisUI/InventoryItemWidget.h"
 #include "InventoryToolTip.generated.h"
 
 class UTextBlock;
@@ -20,7 +21,9 @@ protected:
 	virtual void NativeConstruct() override;
 
 public:
-	UInventoryItemSlot* InventorySlotBeingHovered;
+	// UInventoryItemSlot* InventorySlotBeingHovered;
+
+	UInventoryItemWidget* InventorySlotBeingHovered;
 	UPROPERTY(meta=(BindWidget))
 	UTextBlock* ItemName;
 

@@ -14,14 +14,14 @@
 
 void UInventoryItemSlot::NativeOnInitialized()
 {
-	Super::NativeOnInitialized();
-	if (ToolTipClass)
-	{
-		UInventoryToolTip* ToolTip = CreateWidget<UInventoryToolTip>(this, ToolTipClass);
-		ToolTip->InventorySlotBeingHovered = this;
-		//SetToolTip() is unreal's own function for tooltips.
-		SetToolTip(ToolTip);
-	}
+	// Super::NativeOnInitialized();
+	// if (ToolTipClass)
+	// {
+	// 	UInventoryToolTip* ToolTip = CreateWidget<UInventoryToolTip>(this, ToolTipClass);
+	// 	// ToolTip->InventorySlotBeingHovered = this;
+	// 	//SetToolTip() is unreal's own function for tooltips.
+	// 	SetToolTip(ToolTip);
+	// }
 }
 
 void UInventoryItemSlot::NativeConstruct()
