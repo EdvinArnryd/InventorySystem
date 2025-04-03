@@ -8,6 +8,7 @@ class UGridWidget;
 class USlotWidget;
 class UImage;
 class UBorder;
+class UItemBase;
 
 UCLASS()
 class IST_API UInventoryItemWidget : public UUserWidget
@@ -15,6 +16,8 @@ class IST_API UInventoryItemWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
+	FORCEINLINE void SetItemReference(UItemBase* ItemIn) { ItemReference = ItemIn; };
+	
 	virtual void NativeConstruct() override;
 
 	int32 GetItemWidth() const { return ItemWidth; }
@@ -42,6 +45,9 @@ public:
 	UGridWidget* ParentGridWidget;
 	
 protected:
+	UPROPERTY(VisibleAnywhere, Category="Inventory Slot")
+	UItemBase* ItemReference;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Item")
 	int32 ItemID;
 
