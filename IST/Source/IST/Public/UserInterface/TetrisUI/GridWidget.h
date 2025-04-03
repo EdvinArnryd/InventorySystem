@@ -42,10 +42,10 @@ protected:
 	TArray<USlotWidget*> SlotArray;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
-	int32 GridRows = 10;
+	int32 GridRows = 5;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
-	int32 GridColumns = 10;
+	int32 GridColumns = 8;
 
 	bool CanPlaceItem(int32 GridX, int32 GridY);
 
