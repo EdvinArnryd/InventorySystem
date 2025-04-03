@@ -5,6 +5,7 @@
 #include "Components/UniformGridPanel.h"
 #include "GridWidget.generated.h"
 
+class UItemBase;
 class UInventoryComponent;
 class ATP_TopDownPlayerController;
 class UInventoryItemWidget;
@@ -58,7 +59,7 @@ public:
 
 	void PopulateGrid(int32 Rows, int32 Columns);
 
-	void CreateNewItem();
+	void CreateNewItem(UItemBase* ItemReference);
 
 	// Delegates
 	UPROPERTY(BlueprintAssignable)

@@ -34,17 +34,19 @@ void UGridWidget::RefreshInventory()
 	if (InventoryReference && SlotWidgetClass)
 	{
 		// Grid->ClearChildren();
-		for (UItemBase* const& InventoryItem : InventoryReference->GetInventoryContents())
-		{
-			UInventoryItemWidget* ItemSlot = CreateWidget<UInventoryItemWidget>(this, SlotWidgetClass);
-			// Have to set this to be child of slot and get the item??
-			// This has the be restructured to take the new slots into a count.
-			ItemSlot->SetItemReference(InventoryItem);
-			
-			Grid->AddChildToUniformGrid(ItemSlot);
-		}
+		// for (UItemBase* const& InventoryItem : InventoryReference->GetInventoryContents())
+		// {
+		// 	UInventoryItemWidget* ItemSlot = CreateWidget<UInventoryItemWidget>(this, SlotWidgetClass);
+		// 	// Have to set this to be child of slot and get the item??
+		// 	// This has the be restructured to take the new slots into a count.
+		// 	ItemSlot->SetItemReference(InventoryItem);
+		// 	
+		// 	Grid->AddChildToUniformGrid(ItemSlot);
+		// }
 
-		CreateNewItem();
+		UItemBase* InventoryItem = InventoryReference->GetInventoryContents().Last();
+
+		CreateNewItem(InventoryItem);
 	}
 }
 
@@ -101,14 +103,15 @@ void UGridWidget::PopulateGrid(int32 Rows, int32 Columns)
 	}
 }
 
-void UGridWidget::CreateNewItem()
+void UGridWidget::CreateNewItem(UItemBase* ItemReference)
 {
 	if (!Grid || !ItemWidgetClass) return;
 
 	// Create the item widget
 	UInventoryItemWidget* NewItem = CreateWidget<UInventoryItemWidget>(GetWorld(), ItemWidgetClass);
 	if (!NewItem) return;
-
+	
+	NewItem->SetItemReference(ItemReference);
 	// Find the first available slot
 	for (int32 Row = 0; Row < GridRows; Row++)
 	{

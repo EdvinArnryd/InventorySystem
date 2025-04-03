@@ -6,6 +6,7 @@
 #include "Blueprint/WidgetBlueprintLibrary.h"
 #include "Components/Image.h"
 #include "Components/Border.h"
+#include "Items/ItemBase.h"
 
 void UInventoryItemWidget::NativeConstruct()
 {
@@ -18,6 +19,27 @@ void UInventoryItemWidget::NativeConstruct()
     if (ItemBorder)
     {
         ItemBorder->SetBrushColor(FLinearColor::White);
+    }
+
+    if (ItemReference)
+    {
+        switch (ItemReference->ItemQuality)
+        {
+        case EItemQuality::Common:
+            ItemBorder->SetBrushColor(FLinearColor::Gray);
+            break;
+        case EItemQuality::Rare:
+            ItemBorder->SetBrushColor(FLinearColor::Blue);
+            break;
+        case EItemQuality::Epic:
+            ItemBorder->SetBrushColor(FLinearColor::Yellow);
+            break;
+        case EItemQuality::Legendary:
+            ItemBorder->SetBrushColor(FLinearColor::Red);;
+            break;
+        default:;
+        }
+        ItemIcon->SetBrushFromTexture(ItemReference->AssetData.Icon);
     }
 }
 
