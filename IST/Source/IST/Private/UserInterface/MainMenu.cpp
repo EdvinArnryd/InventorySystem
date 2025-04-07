@@ -23,13 +23,17 @@ bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& 
 {
 	//return Super::NativeOnDrop(InGeometry, InDragDropEvent, InOperation);
 
-	const UItemDragDropOperation* ItemDragDrop = Cast<UItemDragDropOperation>(InOperation);
+	// const UItemDragDropOperation* ItemDragDrop = Cast<UItemDragDropOperation>(InOperation);
+	//
+	// if (PlayerCharacter && ItemDragDrop->SourceItem)
+	// {
+	// 	PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
+	// 	return true;
+	// }
+	UE_LOG(LogTemp, Display, TEXT("UMainMenu::NativeOnDrop"));
 
-	if (PlayerCharacter && ItemDragDrop->SourceItem)
-	{
-		PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
-		return true;
-	}
+	// Keep looking here and in the player controller: DropItem
+	// Write debug logs and try to solve it
 	
 	return false;
 }
