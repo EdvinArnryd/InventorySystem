@@ -232,17 +232,19 @@ void ATP_TopDownPlayerController::DropItem(UItemBase* ItemToDrop)
 		SpawnParams.Owner = this;
 		SpawnParams.bNoFail = true;
 		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
-
+		
 		APawn* ControlledPawn = GetPawn();
-
+		
 		const FVector SpawnLocations = ControlledPawn->GetActorLocation() + (ControlledPawn->GetActorForwardVector() * 50.0f);
 		const FTransform SpawnTransform(ControlledPawn->GetActorRotation(), SpawnLocations);
 		
 		PlayerInventory->RemoveItem(ItemToDrop);
 		
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
-
+		
 		Pickup->InitializeDrop(ItemToDrop);
+
+		UE_LOG(LogTemp, Warning, TEXT("Trying to drop item sucess!"));
 	}
 	else
 	{

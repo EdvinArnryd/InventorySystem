@@ -54,7 +54,7 @@ void UInventoryItemWidget::NativeConstruct()
             ItemBorder->SetBrushColor(FLinearColor::Yellow);
             break;
         case EItemQuality::Legendary:
-            ItemBorder->SetBrushColor(FLinearColor::Red);;
+            ItemBorder->SetBrushColor(FLinearColor::Red);
             break;
         default:;
         }
@@ -101,6 +101,10 @@ void UInventoryItemWidget::NativeOnDragDetected(const FGeometry& MyGeometry, con
         UImage* DraggedImage = NewObject<UImage>(this);
         FSlateBrush Brush = ItemIcon->GetBrush();
         Brush.ImageSize = FVector2D(60.f, 60.f);
+        //
+        // UInventoryDragDropOperation* DragItemOperation = NewObject<UInventoryDragDropOperation>();
+        DragOp->SourceItem = ItemReference;
+        DragOp->SourceInventory = ItemReference->OwningInventory;
 
         if (DraggedImage)
         {

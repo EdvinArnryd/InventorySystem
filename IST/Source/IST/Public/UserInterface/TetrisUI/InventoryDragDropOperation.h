@@ -13,5 +13,11 @@ class IST_API UInventoryDragDropOperation : public UDragDropOperation
 
 public:
 	UPROPERTY()
+	UItemBase* SourceItem;
+
+	UPROPERTY()
+	UInventoryComponent* SourceInventory;
+	
+	UPROPERTY()
 	UInventoryItemWidget* DraggedItem;
 };
