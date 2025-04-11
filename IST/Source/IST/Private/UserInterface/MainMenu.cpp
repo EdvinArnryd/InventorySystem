@@ -19,66 +19,69 @@ void UMainMenu::NativeConstruct()
 	PlayerCharacter = Cast<ATP_TopDownPlayerController>(GetOwningPlayer());
 }
 
-// bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent,
-// 	UDragDropOperation* InOperation)
-// {
-// 	//return Super::NativeOnDrop(InGeometry, InDragDropEvent, InOperation);
+bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent,
+	UDragDropOperation* InOperation)
+{
+	//return Super::NativeOnDrop(InGeometry, InDragDropEvent, InOperation);
+
+	// const UItemDragDropOperation* ItemDragDrop = Cast<UItemDragDropOperation>(InOperation);
+	const UInventoryDragDropOperation* ItemDragDrop = Cast<UInventoryDragDropOperation>(InOperation);
+	UE_LOG(LogTemp, Warning, TEXT("Before SourceItem check"));
+	if (PlayerCharacter && ItemDragDrop->SourceItem)
+	{
+		// It's the DropItem function that is causing issues
+		PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
+		UE_LOG(LogTemp, Warning, TEXT("Drop item function should trigger"));
+		return true;
+	}
+
+	UE_LOG(LogTemp, Warning, TEXT("NativeOndrop called"));
+
+	// Keep looking here and in the player controller: DropItem
+	// Write debug logs and try to solve it
+	
+	return false;
+}
+
+
 //
-// 	// const UItemDragDropOperation* ItemDragDrop = Cast<UItemDragDropOperation>(InOperation);
-// 	const UInventoryDragDropOperation* ItemDragDrop = Cast<UInventoryDragDropOperation>(InOperation);
-// 	
-// 	if (PlayerCharacter && ItemDragDrop->SourceItem)
+// bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation)
+// {
+// 	UE_LOG(LogTemp, Warning, TEXT("NativeOnDrop triggered"));
+//
+// 	if (!InOperation)
 // 	{
-// 		PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
-// 		UE_LOG(LogTemp, Warning, TEXT("Drop item function should trigger"));
-// 		return true;
+// 		UE_LOG(LogTemp, Error, TEXT("InOperation is null"));
+// 		return false;
 // 	}
 //
-// 	UE_LOG(LogTemp, Warning, TEXT("NativeOndrop called"));
+// 	const UInventoryDragDropOperation* ItemDragDrop = Cast<UInventoryDragDropOperation>(InOperation);
+// 	if (!ItemDragDrop)
+// 	{
+// 		UE_LOG(LogTemp, Error, TEXT("Cast to UInventoryDragDropOperation failed"));
+// 		return false;
+// 	}
 //
-// 	// Keep looking here and in the player controller: DropItem
-// 	// Write debug logs and try to solve it
-// 	
-// 	return false;
+// 	if (!ItemDragDrop->SourceItem)
+// 	{
+// 		UE_LOG(LogTemp, Error, TEXT("ItemDragDrop->SourceItem is null"));
+// 		return false;
+// 	}
+//
+// 	if (!PlayerCharacter)
+// 	{
+// 		PlayerCharacter = Cast<ATP_TopDownPlayerController>(GetOwningPlayer());
+// 	}
+//
+// 	if (!PlayerCharacter)
+// 	{
+// 		UE_LOG(LogTemp, Error, TEXT("PlayerCharacter is null"));
+// 		return false;
+// 	}
+//
+// 	PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
+// 	UE_LOG(LogTemp, Warning, TEXT("DropItem called successfully"));
+// 	return true;
 // }
-
-bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& InDragDropEvent, UDragDropOperation* InOperation)
-{
-	UE_LOG(LogTemp, Warning, TEXT("NativeOnDrop triggered"));
-
-	if (!InOperation)
-	{
-		UE_LOG(LogTemp, Error, TEXT("InOperation is null"));
-		return false;
-	}
-
-	const UInventoryDragDropOperation* ItemDragDrop = Cast<UInventoryDragDropOperation>(InOperation);
-	if (!ItemDragDrop)
-	{
-		UE_LOG(LogTemp, Error, TEXT("Cast to UInventoryDragDropOperation failed"));
-		return false;
-	}
-
-	if (!ItemDragDrop->SourceItem)
-	{
-		UE_LOG(LogTemp, Error, TEXT("ItemDragDrop->SourceItem is null"));
-		return false;
-	}
-
-	if (!PlayerCharacter)
-	{
-		PlayerCharacter = Cast<ATP_TopDownPlayerController>(GetOwningPlayer());
-	}
-
-	if (!PlayerCharacter)
-	{
-		UE_LOG(LogTemp, Error, TEXT("PlayerCharacter is null"));
-		return false;
-	}
-
-	PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
-	UE_LOG(LogTemp, Warning, TEXT("DropItem called successfully"));
-	return true;
-}
 
 

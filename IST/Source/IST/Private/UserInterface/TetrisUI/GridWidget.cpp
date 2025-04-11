@@ -23,6 +23,7 @@ void UGridWidget::NativeOnInitialized()
 			InventoryReference = PlayerCharacter->GetInventory();
 			if (InventoryReference)
 			{
+				// This delegate gets called everytime an item is dropped
 				InventoryReference->OnInventoryUpdated.AddUObject(this, &UGridWidget::RefreshInventory);
 			}
 		}

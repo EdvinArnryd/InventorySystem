@@ -237,8 +237,9 @@ void ATP_TopDownPlayerController::DropItem(UItemBase* ItemToDrop)
 		
 		const FVector SpawnLocations = ControlledPawn->GetActorLocation() + (ControlledPawn->GetActorForwardVector() * 50.0f);
 		const FTransform SpawnTransform(ControlledPawn->GetActorRotation(), SpawnLocations);
-		
-		PlayerInventory->RemoveItem(ItemToDrop);
+
+		// This is the issue!!!
+		// PlayerInventory->RemoveItem(ItemToDrop);
 		
 		APickup* Pickup = GetWorld()->SpawnActor<APickup>(APickup::StaticClass(), SpawnTransform, SpawnParams);
 		
