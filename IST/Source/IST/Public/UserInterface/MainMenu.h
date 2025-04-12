@@ -7,6 +7,7 @@
 #include "IST/TP_TopDownPlayerController.h"
 #include "MainMenu.generated.h"
 
+class UGridWidget;
 /**
  * 
  */
@@ -18,6 +19,9 @@ class IST_API UMainMenu : public UUserWidget
 public:
 	UPROPERTY()
 	ATP_TopDownPlayerController* PlayerCharacter;
+	UPROPERTY(meta = (BindWidget))
+	UGridWidget* GridWidget;
+
 	
 protected:
 	virtual void NativeOnInitialized() override;

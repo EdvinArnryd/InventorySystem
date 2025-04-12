@@ -61,6 +61,8 @@ public:
 
 	void CreateNewItem(UItemBase* ItemReference);
 
+	void RemoveItem(UInventoryItemWidget* Item);
+
 	// Delegates
 	UPROPERTY(BlueprintAssignable)
 	FOnItemDropped OnItemDropped;

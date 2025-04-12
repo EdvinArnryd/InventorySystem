@@ -5,6 +5,7 @@
 #include "UserInterface/Inventory/ItemDragDropOperation.h"
 
 #include "Items/ItemBase.h"
+#include "UserInterface/TetrisUI/GridWidget.h"
 #include "UserInterface/TetrisUI/InventoryDragDropOperation.h"
 
 void UMainMenu::NativeOnInitialized()
@@ -30,6 +31,7 @@ bool UMainMenu::NativeOnDrop(const FGeometry& InGeometry, const FDragDropEvent& 
 	if (PlayerCharacter && ItemDragDrop->SourceItem)
 	{
 		// It's the DropItem function that is causing issues
+		GridWidget->RemoveItem(ItemDragDrop->DraggedItem);
 		PlayerCharacter->DropItem(ItemDragDrop->SourceItem);
 		UE_LOG(LogTemp, Warning, TEXT("Drop item function should trigger"));
 		return true;

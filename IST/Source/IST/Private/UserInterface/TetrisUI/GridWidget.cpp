@@ -25,6 +25,7 @@ void UGridWidget::NativeOnInitialized()
 			{
 				// This delegate gets called everytime an item is dropped
 				InventoryReference->OnInventoryUpdated.AddUObject(this, &UGridWidget::RefreshInventory);
+				UE_LOG(LogTemp, Warning, TEXT("Delegate was called before."));
 			}
 		}
 	}
@@ -139,6 +140,27 @@ void UGridWidget::CreateNewItem(UItemBase* ItemReference)
 	}
 
 	// UE_LOG(LogTemp, Warning, TEXT("No available slots to place item."));
+}
+
+void UGridWidget::RemoveItem(UInventoryItemWidget* Item)
+{
+	if (!Item || !Grid) return;
+
+	// Remove the widget from the grid
+	Grid->RemoveChild(Item);
+
+	// Find and clear the slot that was holding this item
+	for (USlotWidget* ChildSlot : SlotArray)
+	{
+		if (ChildSlot && ChildSlot->GetOccupiedItem() == Item)
+		{
+			ChildSlot->ClearSlot();
+			break;
+		}
+	}
+
+	// Optionally: Remove from viewport if it’s not inside the grid anymore
+	Item->RemoveFromParent();
 }
 
 
